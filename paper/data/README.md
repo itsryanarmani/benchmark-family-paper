@@ -24,14 +24,14 @@
   do not. `locators` aligns with `packages`: the
   i-th semicolon-separated locator set sources the i-th package, with
   multiple references joined by ` + `. A locator is `<repo>#<n>` for an
-  issue or pull request in `pooriaarab/<repo>`, or
+  issue or pull request in `itsryanarmani/<repo>`, or
   `<repo>:CHANGELOG.md#L<n>` for a changelog line on `main` (checked
   2026-10-16). The collector renders the classes in
   `generated/defects.tex` and the locators in
   `generated/defect-locators.tex`; never type these numbers into `.tex`.
 - `review-rounds.csv` counts fix rounds per package (one round can fix
   several defects, so it is a proxy). The counts repeat from release
-  [`review-log-v1`](https://github.com/pooriaarab/benchmark-family-paper/releases/tag/review-log-v1):
+  [`review-log-v1`](https://github.com/itsryanarmani/benchmark-family-paper/releases/tag/review-log-v1):
   download `review-log.tar.gz` (checksum in `review-log.sha256`), unpack
   it, and run `ls fix-briefs | sed -E 's/-fix[0-9]*\.md//' | sort | uniq -c`
   inside the archive. The release ships the re-review protocol the
