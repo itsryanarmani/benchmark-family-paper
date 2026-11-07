@@ -86,7 +86,7 @@ memorized in training. benchmark-schema-mutation measures that choice:
 60 tasks, each one a freshly migrated tool schema plus a user request,
 graded by exact match on the emitted JSON tool call.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-schema-mutation/blob/v0.1.0/README.md#L7}{\texttt{benchmark-schema-mutation:README.md\#L7}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-schema-mutation/blob/v0.1.0/README.md#L7}{\texttt{benchmark-schema-mutation:README.md\#L7}}.}
 
 Its index entry states the measured construct as: ``Whether a model follows the current tool schema after a migration, renamed fields, new required fields, changed enums, split endpoints and type changes, instead of the version it memorized.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-schema-mutation.whatItMeasures}).
 Table~\ref{tab:tasks} counts the tasks by family.
@@ -120,7 +120,7 @@ Saturation & \texttt{\pkgSaturation{}} \\
 Category & \pkgCategory{} \\
 Tags & \texttt{helpful} \\
 Public seed & none declared \\
-Repository & \url{https://github.com/pooriaarab/benchmark-schema-mutation} \\
+Repository & \url{https://github.com/itsryanarmani/benchmark-schema-mutation} \\
 Documentation & \url{https://private-repo-337e.com/benchmarks/benchmark-schema-mutation} \\
 \bottomrule
 \end{tabular}}
@@ -132,7 +132,7 @@ Every task is synthetic, produced by the committed generator from 12
 hand-authored base schemas resembling everyday SaaS tools. No
 third-party benchmark text is copied.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-schema-mutation/blob/v0.1.0/README.md#L79}{\texttt{benchmark-schema-mutation:README.md\#L79}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-schema-mutation/blob/v0.1.0/README.md#L79}{\texttt{benchmark-schema-mutation:README.md\#L79}}.}
 
 \section{Grader and surfaces}
 The grading document states the mechanism in its own words:
@@ -147,7 +147,7 @@ same normalisation. A canonical match against \texttt{metadata.stale}
 (the call that was correct under the pre-migration schema) scores 0
 and is flagged \texttt{staleSchemaUsed} in the reason and details.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-schema-mutation/blob/v0.1.0/docs/grading.md#L5}{\texttt{benchmark-schema-mutation:docs/grading.md\#L5}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-schema-mutation/blob/v0.1.0/docs/grading.md#L5}{\texttt{benchmark-schema-mutation:docs/grading.md\#L5}}.}
 
 The index entry summarises the grader as: ``Canonical JSON equality on the tool name and arguments after normalisation; exact matches against the pre-migration call are reported as staleSchemaUsed.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-schema-mutation.grader}).
 Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README line that describes it, and the quoted lines follow.
@@ -160,10 +160,10 @@ Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README 
 \toprule
 Surface & README line \\
 \midrule
-TypeScript SDK & \href{https://github.com/pooriaarab/benchmark-schema-mutation/blob/v0.1.0/README.md#L95}{\texttt{README.md\#L95}} \\
-Command-line interface & \href{https://github.com/pooriaarab/benchmark-schema-mutation/blob/v0.1.0/README.md#L10}{\texttt{README.md\#L10}} \\
-Model Context Protocol server & \href{https://github.com/pooriaarab/benchmark-schema-mutation/blob/v0.1.0/README.md#L107}{\texttt{README.md\#L107}} \\
-Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-schema-mutation/blob/v0.1.0/README.md#L114}{\texttt{README.md\#L114}} \\
+TypeScript SDK & \href{https://github.com/itsryanarmani/benchmark-schema-mutation/blob/v0.1.0/README.md#L95}{\texttt{README.md\#L95}} \\
+Command-line interface & \href{https://github.com/itsryanarmani/benchmark-schema-mutation/blob/v0.1.0/README.md#L10}{\texttt{README.md\#L10}} \\
+Model Context Protocol server & \href{https://github.com/itsryanarmani/benchmark-schema-mutation/blob/v0.1.0/README.md#L107}{\texttt{README.md\#L107}} \\
+Fetch-style HTTP API & \href{https://github.com/itsryanarmani/benchmark-schema-mutation/blob/v0.1.0/README.md#L114}{\texttt{README.md\#L114}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -172,18 +172,18 @@ Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-schema-muta
 import~\{~benchmark,~run,~score~\}~from\\
 $\hookrightarrow$\hspace*{0.5em}~"benchmark-schema-mutation";\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-schema-mutation/blob/v0.1.0/README.md#L95}{\texttt{benchmark-schema-mutation:README.md\#L95}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-schema-mutation/blob/v0.1.0/README.md#L95}{\texttt{benchmark-schema-mutation:README.md\#L95}}.}
 % quote: benchmark-schema-mutation/README.md#L10
 \begin{quote}\ttfamily
 npx~benchmark-schema-mutation~run~-{}-model~offline~-{}-provider\\
 $\hookrightarrow$\hspace*{0.5em}~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-schema-mutation/blob/v0.1.0/README.md#L10}{\texttt{benchmark-schema-mutation:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-schema-mutation/blob/v0.1.0/README.md#L10}{\texttt{benchmark-schema-mutation:README.md\#L10}}.}
 % quote: benchmark-schema-mutation/README.md#L107
 \begin{quote}\ttfamily
 npx~benchmark-schema-mutation~mcp\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-schema-mutation/blob/v0.1.0/README.md#L107}{\texttt{benchmark-schema-mutation:README.md\#L107}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-schema-mutation/blob/v0.1.0/README.md#L107}{\texttt{benchmark-schema-mutation:README.md\#L107}}.}
 % quote: benchmark-schema-mutation/README.md#L114
 \begin{quote}
 Import \texttt{handler} from \texttt{benchmark-schema-mutation/api}
@@ -192,7 +192,7 @@ serve}. Routes: \texttt{GET /health}, \texttt{GET /v1/tasks},
 \texttt{GET /v1/tasks/:id}, \texttt{POST /v1/score}, \texttt{GET
 /v1/provenance}, \texttt{GET /v1/index-entry}.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-schema-mutation/blob/v0.1.0/README.md#L114}{\texttt{benchmark-schema-mutation:README.md\#L114}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-schema-mutation/blob/v0.1.0/README.md#L114}{\texttt{benchmark-schema-mutation:README.md\#L114}}.}
 
 \section{Offline validation}
 No real model was run. The family data records mock runs at seeds \pkgMockSeedA{} and \pkgMockSeedB{}
@@ -212,7 +212,7 @@ The README prints a sample run:
 -~95\%~CI:~38.3\%\textendash{}61.7\%\\
 -~Tasks:~60\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-schema-mutation/blob/v0.1.0/README.md#L14}{\texttt{benchmark-schema-mutation:README.md\#L14}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-schema-mutation/blob/v0.1.0/README.md#L14}{\texttt{benchmark-schema-mutation:README.md\#L14}}.}
 
 \section{Review record}
 The package went through \pkgFixRounds{} fix rounds recorded in \texttt{paper/data/review-rounds.csv}, counted from release \texttt{review-log-v1} of this repository.
@@ -226,8 +226,8 @@ Table~\ref{tab:defects} lists the defect classes that touched this package, each
 \toprule
 Defect class & Record kind & Locators \\
 \midrule
-\texttt{unsolvable-\allowbreak tasks} & {\footnotesize 0.2.0 changelogs; schema-mutation Unreleased changelog and issue 20; silent-constraints issue 9} & \href{https://github.com/pooriaarab/benchmark-schema-mutation/blob/v0.1.0/CHANGELOG.md#L10}{\texttt{benchmark-\allowbreak schema-\allowbreak mutation:\allowbreak CHANGELOG.md\#L10}};\ \href{https://github.com/pooriaarab/benchmark-schema-mutation/issues/20}{\texttt{benchmark-\allowbreak schema-\allowbreak mutation\#20}} \\
-\texttt{honest-\allowbreak answer-\allowbreak rejected} & {\footnotesize review issues and PRs (per-package locators)} & \href{https://github.com/pooriaarab/benchmark-schema-mutation/issues/9}{\texttt{benchmark-\allowbreak schema-\allowbreak mutation\#9}} \\
+\texttt{unsolvable-\allowbreak tasks} & {\footnotesize 0.2.0 changelogs; schema-mutation Unreleased changelog and issue 20; silent-constraints issue 9} & \href{https://github.com/itsryanarmani/benchmark-schema-mutation/blob/v0.1.0/CHANGELOG.md#L10}{\texttt{benchmark-\allowbreak schema-\allowbreak mutation:\allowbreak CHANGELOG.md\#L10}};\ \href{https://github.com/itsryanarmani/benchmark-schema-mutation/issues/20}{\texttt{benchmark-\allowbreak schema-\allowbreak mutation\#20}} \\
+\texttt{honest-\allowbreak answer-\allowbreak rejected} & {\footnotesize review issues and PRs (per-package locators)} & \href{https://github.com/itsryanarmani/benchmark-schema-mutation/issues/9}{\texttt{benchmark-\allowbreak schema-\allowbreak mutation\#9}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -244,18 +244,18 @@ and \pkgCouncilFailed{} requests that ever showed a failing \texttt{vibecoderevi
 \toprule
 Pull request & Council reviews & Approved & Council run & CI check \\
 \midrule
-\href{https://github.com/pooriaarab/benchmark-schema-mutation/pull/2}{\#2} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-schema-mutation/pull/4}{\#4} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-schema-mutation/pull/6}{\#6} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-schema-mutation/pull/12}{\#12} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-schema-mutation/pull/13}{\#13} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-schema-mutation/pull/14}{\#14} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-schema-mutation/pull/15}{\#15} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-schema-mutation/pull/16}{\#16} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-schema-mutation/pull/21}{\#21} & 1 & no & success & success \\
-\href{https://github.com/pooriaarab/benchmark-schema-mutation/pull/22}{\#22} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-schema-mutation/pull/23}{\#23} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-schema-mutation/pull/24}{\#24} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-schema-mutation/pull/2}{\#2} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-schema-mutation/pull/4}{\#4} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-schema-mutation/pull/6}{\#6} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-schema-mutation/pull/12}{\#12} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-schema-mutation/pull/13}{\#13} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-schema-mutation/pull/14}{\#14} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-schema-mutation/pull/15}{\#15} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-schema-mutation/pull/16}{\#16} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-schema-mutation/pull/21}{\#21} & 1 & no & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-schema-mutation/pull/22}{\#22} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-schema-mutation/pull/23}{\#23} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-schema-mutation/pull/24}{\#24} & 2 & yes & success & success \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -273,7 +273,7 @@ The mutation catalogue is authored, so the 60 tasks cover five kinds
 well but not every real-world migration (deprecation warnings,
 paginated renames, OAuth scope shifts).
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-schema-mutation/blob/v0.1.0/README.md#L122}{\texttt{benchmark-schema-mutation:README.md\#L122}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-schema-mutation/blob/v0.1.0/README.md#L122}{\texttt{benchmark-schema-mutation:README.md\#L122}}.}
 
 This report claims no model capability: it records no real-model run, no leaderboard, and no comparison between models.
 These offline numbers describe the graders and the scripted policies. They say nothing about a hosted model.
@@ -287,12 +287,12 @@ The README gives the install and the offline run:
 npx~benchmark-schema-mutation~run~-{}-model~offline~-{}-provider\\
 $\hookrightarrow$\hspace*{0.5em}~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-schema-mutation/blob/v0.1.0/README.md#L10}{\texttt{benchmark-schema-mutation:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-schema-mutation/blob/v0.1.0/README.md#L10}{\texttt{benchmark-schema-mutation:README.md\#L10}}.}
 % quote: benchmark-schema-mutation/README.md#L29
 \begin{quote}\ttfamily
 npm~install~benchmark-schema-mutation\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-schema-mutation/blob/v0.1.0/README.md#L29}{\texttt{benchmark-schema-mutation:README.md\#L29}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-schema-mutation/blob/v0.1.0/README.md#L29}{\texttt{benchmark-schema-mutation:README.md\#L29}}.}
 
 The README also gives a run against a paid provider; it needs a paid key, and this report does not run it:
 % quote: benchmark-schema-mutation/README.md#L69
@@ -302,7 +302,7 @@ npx~benchmark-schema-mutation~run~-{}-model\\
 $\hookrightarrow$\hspace*{0.5em}~anthropic/claude-sonnet-4~-{}-provider\\
 $\hookrightarrow$\hspace*{0.5em}~openrouter\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-schema-mutation/blob/v0.1.0/README.md#L69}{\texttt{benchmark-schema-mutation:README.md\#L69}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-schema-mutation/blob/v0.1.0/README.md#L69}{\texttt{benchmark-schema-mutation:README.md\#L69}}.}
 
 \noindent\texttt{npm install benchmark-schema-mutation@\pkgVersion{}} installs the measured version.
 Table~\ref{tab:sources} lists the declared data sources from the index entry (\texttt{paper/data/suite.json}).

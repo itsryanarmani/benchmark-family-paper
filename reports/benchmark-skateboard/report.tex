@@ -90,7 +90,7 @@ same time? \textbf{benchmark-skateboard} measures signed 3D trick
 rotations, projectile-motion arithmetic, wheels-down orientation, and
 whether a trick can finish before landing.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-skateboard/blob/v0.2.0/README.md#L7}{\texttt{benchmark-skateboard:README.md\#L7}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-skateboard/blob/v0.2.0/README.md#L7}{\texttt{benchmark-skateboard:README.md\#L7}}.}
 
 Its index entry states the measured construct as: ``Signed 3D rotation understanding, projectile-motion arithmetic, landing orientation, and whether a skateboard trick fits its airtime.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-skateboard.whatItMeasures}).
 Table~\ref{tab:tasks} counts the tasks by family.
@@ -124,7 +124,7 @@ Saturation & \texttt{\pkgSaturation{}} \\
 Category & \pkgCategory{} \\
 Tags & \texttt{viral}, \texttt{silly}, \texttt{science} \\
 Public seed & \pkgPublicSeed{} \\
-Repository & \url{https://github.com/pooriaarab/benchmark-skateboard} \\
+Repository & \url{https://github.com/itsryanarmani/benchmark-skateboard} \\
 Documentation & \url{https://private-repo-337e.com/benchmarks/benchmark-skateboard} \\
 \bottomrule
 \end{tabular}}
@@ -138,7 +138,7 @@ tricks across three gravity and launch-speed variants, including half
 flips that cannot land wheels-down and launches too weak to finish the
 rotation. Rebuild them exactly:
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-skateboard/blob/v0.2.0/README.md#L64}{\texttt{benchmark-skateboard:README.md\#L64}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-skateboard/blob/v0.2.0/README.md#L64}{\texttt{benchmark-skateboard:README.md\#L64}}.}
 
 \section{Grader and surfaces}
 The grading document states the mechanism in its own words:
@@ -148,7 +148,7 @@ The grader reads model text, strips one surrounding Markdown code
 fence when present, parses the last balanced JSON object in the text,
 and awards deterministic partial credit. It does not call a model.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-skateboard/blob/v0.2.0/docs/grading.md#L3}{\texttt{benchmark-skateboard:docs/grading.md\#L3}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-skateboard/blob/v0.2.0/docs/grading.md#L3}{\texttt{benchmark-skateboard:docs/grading.md\#L3}}.}
 
 The index entry summarises the grader as: ``Strict JSON shape; exact signed rotations in turns; 5\% relative tolerance for airtime and peak height; landing and feasibility booleans scored only when both physics values are within tolerance.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-skateboard.grader}).
 Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README line that describes it, and the quoted lines follow.
@@ -161,10 +161,10 @@ Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README 
 \toprule
 Surface & README line \\
 \midrule
-TypeScript SDK & \href{https://github.com/pooriaarab/benchmark-skateboard/blob/v0.2.0/README.md#L81}{\texttt{README.md\#L81}} \\
-Command-line interface & \href{https://github.com/pooriaarab/benchmark-skateboard/blob/v0.2.0/README.md#L10}{\texttt{README.md\#L10}} \\
-Model Context Protocol server & \href{https://github.com/pooriaarab/benchmark-skateboard/blob/v0.2.0/README.md#L95}{\texttt{README.md\#L95}} \\
-Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-skateboard/blob/v0.2.0/README.md#L102}{\texttt{README.md\#L102}} \\
+TypeScript SDK & \href{https://github.com/itsryanarmani/benchmark-skateboard/blob/v0.2.0/README.md#L81}{\texttt{README.md\#L81}} \\
+Command-line interface & \href{https://github.com/itsryanarmani/benchmark-skateboard/blob/v0.2.0/README.md#L10}{\texttt{README.md\#L10}} \\
+Model Context Protocol server & \href{https://github.com/itsryanarmani/benchmark-skateboard/blob/v0.2.0/README.md#L95}{\texttt{README.md\#L95}} \\
+Fetch-style HTTP API & \href{https://github.com/itsryanarmani/benchmark-skateboard/blob/v0.2.0/README.md#L102}{\texttt{README.md\#L102}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -173,24 +173,24 @@ Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-skateboard/
 import~\{~benchmark,~run,~score~\}~from\\
 $\hookrightarrow$\hspace*{0.5em}~"benchmark-skateboard";\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-skateboard/blob/v0.2.0/README.md#L81}{\texttt{benchmark-skateboard:README.md\#L81}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-skateboard/blob/v0.2.0/README.md#L81}{\texttt{benchmark-skateboard:README.md\#L81}}.}
 % quote: benchmark-skateboard/README.md#L10
 \begin{quote}\ttfamily
 npx~benchmark-skateboard~run~-{}-provider~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-skateboard/blob/v0.2.0/README.md#L10}{\texttt{benchmark-skateboard:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-skateboard/blob/v0.2.0/README.md#L10}{\texttt{benchmark-skateboard:README.md\#L10}}.}
 % quote: benchmark-skateboard/README.md#L95
 \begin{quote}\ttfamily
 npx~benchmark-skateboard~mcp\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-skateboard/blob/v0.2.0/README.md#L95}{\texttt{benchmark-skateboard:README.md\#L95}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-skateboard/blob/v0.2.0/README.md#L95}{\texttt{benchmark-skateboard:README.md\#L95}}.}
 % quote: benchmark-skateboard/README.md#L102
 \begin{quote}
 Import \texttt{handler} from \texttt{benchmark-skateboard/api}, or
 start a local server with \texttt{npx benchmark-skateboard serve}. The
 fetch-style handler works in Node.js and Cloudflare Workers.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-skateboard/blob/v0.2.0/README.md#L102}{\texttt{benchmark-skateboard:README.md\#L102}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-skateboard/blob/v0.2.0/README.md#L102}{\texttt{benchmark-skateboard:README.md\#L102}}.}
 
 \section{Offline validation}
 No real model was run. The family data records mock runs at seeds \pkgMockSeedA{} and \pkgMockSeedB{}
@@ -212,7 +212,7 @@ The README prints a sample run:
 \\
 Breakdown~\textemdash{}~rotations:~13.0\%,~physics:~20.6\%,~landing:~20.6\%\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-skateboard/blob/v0.2.0/README.md#L16}{\texttt{benchmark-skateboard:README.md\#L16}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-skateboard/blob/v0.2.0/README.md#L16}{\texttt{benchmark-skateboard:README.md\#L16}}.}
 
 \section{Review record}
 The package went through \pkgFixRounds{} fix rounds recorded in \texttt{paper/data/review-rounds.csv}, counted from release \texttt{review-log-v1} of this repository.
@@ -226,10 +226,10 @@ Table~\ref{tab:defects} lists the defect classes that touched this package, each
 \toprule
 Defect class & Record kind & Locators \\
 \midrule
-\texttt{blind-\allowbreak strategy-\allowbreak credit} & {\footnotesize issues and changelogs (per-package locators)} & \href{https://github.com/pooriaarab/benchmark-skateboard/issues/7}{\texttt{benchmark-\allowbreak skateboard\#7}} \\
-\texttt{honest-\allowbreak answer-\allowbreak rejected} & {\footnotesize review issues and PRs (per-package locators)} & \href{https://github.com/pooriaarab/benchmark-skateboard/issues/15}{\texttt{benchmark-\allowbreak skateboard\#15}} \\
-\texttt{hidden-\allowbreak split-\allowbreak not-\allowbreak hidden} & {\footnotesize review issues and PRs (per-package locators); 0.2.0 changelogs} & \href{https://github.com/pooriaarab/benchmark-skateboard/issues/5}{\texttt{benchmark-\allowbreak skateboard\#5}};\ \href{https://github.com/pooriaarab/benchmark-skateboard/issues/21}{\texttt{benchmark-\allowbreak skateboard\#21}} \\
-\texttt{task-\allowbreak list-\allowbreak cache} & {\footnotesize changelogs and issues (payment-delegation under 0.1.0/Unreleased)} & \href{https://github.com/pooriaarab/benchmark-skateboard/blob/v0.2.0/CHANGELOG.md#L11}{\texttt{benchmark-\allowbreak skateboard:\allowbreak CHANGELOG.md\#L11}};\ \href{https://github.com/pooriaarab/benchmark-skateboard/issues/17}{\texttt{benchmark-\allowbreak skateboard\#17}} \\
+\texttt{blind-\allowbreak strategy-\allowbreak credit} & {\footnotesize issues and changelogs (per-package locators)} & \href{https://github.com/itsryanarmani/benchmark-skateboard/issues/7}{\texttt{benchmark-\allowbreak skateboard\#7}} \\
+\texttt{honest-\allowbreak answer-\allowbreak rejected} & {\footnotesize review issues and PRs (per-package locators)} & \href{https://github.com/itsryanarmani/benchmark-skateboard/issues/15}{\texttt{benchmark-\allowbreak skateboard\#15}} \\
+\texttt{hidden-\allowbreak split-\allowbreak not-\allowbreak hidden} & {\footnotesize review issues and PRs (per-package locators); 0.2.0 changelogs} & \href{https://github.com/itsryanarmani/benchmark-skateboard/issues/5}{\texttt{benchmark-\allowbreak skateboard\#5}};\ \href{https://github.com/itsryanarmani/benchmark-skateboard/issues/21}{\texttt{benchmark-\allowbreak skateboard\#21}} \\
+\texttt{task-\allowbreak list-\allowbreak cache} & {\footnotesize changelogs and issues (payment-delegation under 0.1.0/Unreleased)} & \href{https://github.com/itsryanarmani/benchmark-skateboard/blob/v0.2.0/CHANGELOG.md#L11}{\texttt{benchmark-\allowbreak skateboard:\allowbreak CHANGELOG.md\#L11}};\ \href{https://github.com/itsryanarmani/benchmark-skateboard/issues/17}{\texttt{benchmark-\allowbreak skateboard\#17}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -239,7 +239,7 @@ The package changelog for this version states:
 \textbf{0.1.0 scores are not comparable to 0.2.0} because weights,
 grading rules, and task physics changed.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-skateboard/blob/v0.2.0/CHANGELOG.md#L15}{\texttt{benchmark-skateboard:CHANGELOG.md\#L15}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-skateboard/blob/v0.2.0/CHANGELOG.md#L15}{\texttt{benchmark-skateboard:CHANGELOG.md\#L15}}.}
 
 The merged feature pull requests for this package are listed in Table~\ref{tab:council}:
 \pkgCouncilPrs{} requests, \pkgCouncilReviews{} council reviews, \pkgCouncilApproved{} approvals,
@@ -253,10 +253,10 @@ and \pkgCouncilFailed{} request that ever showed a failing \texttt{vibecoderevie
 \toprule
 Pull request & Council reviews & Approved & Council run & CI check \\
 \midrule
-\href{https://github.com/pooriaarab/benchmark-skateboard/pull/3}{\#3} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-skateboard/pull/4}{\#4} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-skateboard/pull/9}{\#9} & 2 & no & success & success \\
-\href{https://github.com/pooriaarab/benchmark-skateboard/pull/22}{\#22} & 0 & no & failure & success \\
+\href{https://github.com/itsryanarmani/benchmark-skateboard/pull/3}{\#3} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-skateboard/pull/4}{\#4} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-skateboard/pull/9}{\#9} & 2 & no & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-skateboard/pull/22}{\#22} & 0 & no & failure & success \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -275,7 +275,7 @@ The package documents its own limit:
 The flight model ignores drag, deck inertia, foot contact, body
 rotation, and unequal landing height.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-skateboard/blob/v0.2.0/README.md#L119}{\texttt{benchmark-skateboard:README.md\#L119}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-skateboard/blob/v0.2.0/README.md#L119}{\texttt{benchmark-skateboard:README.md\#L119}}.}
 
 This report claims no model capability: it records no real-model run, no leaderboard, and no comparison between models.
 These offline numbers describe the graders and the scripted policies. They say nothing about a hosted model.
@@ -288,12 +288,12 @@ The README gives the install and the offline run:
 \begin{quote}\ttfamily
 npx~benchmark-skateboard~run~-{}-provider~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-skateboard/blob/v0.2.0/README.md#L10}{\texttt{benchmark-skateboard:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-skateboard/blob/v0.2.0/README.md#L10}{\texttt{benchmark-skateboard:README.md\#L10}}.}
 % quote: benchmark-skateboard/README.md#L33
 \begin{quote}\ttfamily
 npm~install~benchmark-skateboard\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-skateboard/blob/v0.2.0/README.md#L33}{\texttt{benchmark-skateboard:README.md\#L33}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-skateboard/blob/v0.2.0/README.md#L33}{\texttt{benchmark-skateboard:README.md\#L33}}.}
 
 The README also gives a run against a paid provider; it needs a paid key, and this report does not run it:
 % quote: benchmark-skateboard/README.md#L43
@@ -301,7 +301,7 @@ The README also gives a run against a paid provider; it needs a paid key, and th
 npx~benchmark-skateboard~run~-{}-provider~openrouter~-{}-model\\
 $\hookrightarrow$\hspace*{0.5em}~openai/gpt-4o-mini\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-skateboard/blob/v0.2.0/README.md#L43}{\texttt{benchmark-skateboard:README.md\#L43}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-skateboard/blob/v0.2.0/README.md#L43}{\texttt{benchmark-skateboard:README.md\#L43}}.}
 
 \noindent\texttt{npm install benchmark-skateboard@\pkgVersion{}} installs the measured version.
 Table~\ref{tab:sources} lists the declared data sources from the index entry (\texttt{paper/data/suite.json}).

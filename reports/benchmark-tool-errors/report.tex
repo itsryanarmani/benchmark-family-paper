@@ -89,7 +89,7 @@ benchmark-tool-errors is an open-source AI agent benchmark for API
 failure recovery. It checks safe retries, idempotency, and truthful
 final reports.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-tool-errors/blob/v0.2.0/README.md#L7}{\texttt{benchmark-tool-errors:README.md\#L7}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-tool-errors/blob/v0.2.0/README.md#L7}{\texttt{benchmark-tool-errors:README.md\#L7}}.}
 
 Its index entry states the measured construct as: ``Safe, bounded recovery from API faults without duplicate side effects or false success reports.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-tool-errors.whatItMeasures}).
 Table~\ref{tab:tasks} counts the tasks by family.
@@ -123,7 +123,7 @@ Saturation & \texttt{\pkgSaturation{}} \\
 Category & \pkgCategory{} \\
 Tags & \texttt{helpful} \\
 Public seed & \pkgPublicSeed{} \\
-Repository & \url{https://github.com/pooriaarab/benchmark-tool-errors} \\
+Repository & \url{https://github.com/itsryanarmani/benchmark-tool-errors} \\
 Documentation & \url{https://private-repo-337e.com/benchmarks/benchmark-tool-errors} \\
 \bottomrule
 \end{tabular}}
@@ -141,7 +141,7 @@ out of packages and repositories; the SDK (\texttt{run(adapter, \{
 tasksPath \})}), API (\texttt{createApiHandler(\{ tasksPath \})}), and
 \texttt{mcp -{}-tasks} accept the same file.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-tool-errors/blob/v0.2.0/README.md#L211}{\texttt{benchmark-tool-errors:README.md\#L211}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-tool-errors/blob/v0.2.0/README.md#L211}{\texttt{benchmark-tool-errors:README.md\#L211}}.}
 
 \section{Grader and surfaces}
 The grading document states the mechanism in its own words:
@@ -151,7 +151,7 @@ The grader replays the submitted tool log in a fresh simulator. It
 does not trust a submitted final state, model prose, or provider
 metadata.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-tool-errors/blob/v0.2.0/docs/grading.md#L3}{\texttt{benchmark-tool-errors:docs/grading.md\#L3}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-tool-errors/blob/v0.2.0/docs/grading.md#L3}{\texttt{benchmark-tool-errors:docs/grading.md\#L3}}.}
 
 The index entry summarises the grader as: ``Deterministic replay scores end state (45\%), side-effect safety (25\%), bounded and timed retries (20\%), and truthful reporting (10\%); duplicate side effects score zero.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-tool-errors.grader}).
 Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README line that describes it, and the quoted lines follow.
@@ -164,10 +164,10 @@ Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README 
 \toprule
 Surface & README line \\
 \midrule
-TypeScript SDK & \href{https://github.com/pooriaarab/benchmark-tool-errors/blob/v0.2.0/README.md#L130}{\texttt{README.md\#L130}} \\
-Command-line interface & \href{https://github.com/pooriaarab/benchmark-tool-errors/blob/v0.2.0/README.md#L24}{\texttt{README.md\#L24}} \\
-Model Context Protocol server & \href{https://github.com/pooriaarab/benchmark-tool-errors/blob/v0.2.0/README.md#L170}{\texttt{README.md\#L170}} \\
-Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-tool-errors/blob/v0.2.0/README.md#L162}{\texttt{README.md\#L162}} \\
+TypeScript SDK & \href{https://github.com/itsryanarmani/benchmark-tool-errors/blob/v0.2.0/README.md#L130}{\texttt{README.md\#L130}} \\
+Command-line interface & \href{https://github.com/itsryanarmani/benchmark-tool-errors/blob/v0.2.0/README.md#L24}{\texttt{README.md\#L24}} \\
+Model Context Protocol server & \href{https://github.com/itsryanarmani/benchmark-tool-errors/blob/v0.2.0/README.md#L170}{\texttt{README.md\#L170}} \\
+Fetch-style HTTP API & \href{https://github.com/itsryanarmani/benchmark-tool-errors/blob/v0.2.0/README.md#L162}{\texttt{README.md\#L162}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -176,22 +176,22 @@ Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-tool-errors
 import~\{~benchmark,~run,~score~\}~from\\
 $\hookrightarrow$\hspace*{0.5em}~"benchmark-tool-errors";\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-tool-errors/blob/v0.2.0/README.md#L130}{\texttt{benchmark-tool-errors:README.md\#L130}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-tool-errors/blob/v0.2.0/README.md#L130}{\texttt{benchmark-tool-errors:README.md\#L130}}.}
 % quote: benchmark-tool-errors/README.md#L24
 \begin{quote}\ttfamily
 npx~benchmark-tool-errors~run~-{}-provider~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-tool-errors/blob/v0.2.0/README.md#L24}{\texttt{benchmark-tool-errors:README.md\#L24}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-tool-errors/blob/v0.2.0/README.md#L24}{\texttt{benchmark-tool-errors:README.md\#L24}}.}
 % quote: benchmark-tool-errors/README.md#L170
 \begin{quote}
 Start the stdio server with \texttt{npx benchmark-tool-errors mcp}. It exposes
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-tool-errors/blob/v0.2.0/README.md#L170}{\texttt{benchmark-tool-errors:README.md\#L170}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-tool-errors/blob/v0.2.0/README.md#L170}{\texttt{benchmark-tool-errors:README.md\#L170}}.}
 % quote: benchmark-tool-errors/README.md#L162
 \begin{quote}
 Import \texttt{handler} from \texttt{benchmark-tool-errors/api}, or start the self-hosted Node
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-tool-errors/blob/v0.2.0/README.md#L162}{\texttt{benchmark-tool-errors:README.md\#L162}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-tool-errors/blob/v0.2.0/README.md#L162}{\texttt{benchmark-tool-errors:README.md\#L162}}.}
 
 \section{Offline validation}
 No real model was run. The family data records mock runs at seeds \pkgMockSeedA{} and \pkgMockSeedB{}
@@ -211,7 +211,7 @@ The README prints a sample run:
 -~95\%~CI:~35.0\%\textendash{}65.0\%\\
 -~Tasks:~40\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-tool-errors/blob/v0.2.0/README.md#L30}{\texttt{benchmark-tool-errors:README.md\#L30}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-tool-errors/blob/v0.2.0/README.md#L30}{\texttt{benchmark-tool-errors:README.md\#L30}}.}
 
 \section{Review record}
 The package went through \pkgFixRounds{} fix rounds recorded in \texttt{paper/data/review-rounds.csv}, counted from release \texttt{review-log-v1} of this repository.
@@ -225,10 +225,10 @@ Table~\ref{tab:defects} lists the defect classes that touched this package, each
 \toprule
 Defect class & Record kind & Locators \\
 \midrule
-\texttt{blind-\allowbreak strategy-\allowbreak credit} & {\footnotesize issues and changelogs (per-package locators)} & \href{https://github.com/pooriaarab/benchmark-tool-errors/issues/8}{\texttt{benchmark-\allowbreak tool-\allowbreak errors\#8}} \\
-\texttt{honest-\allowbreak answer-\allowbreak rejected} & {\footnotesize review issues and PRs (per-package locators)} & \href{https://github.com/pooriaarab/benchmark-tool-errors/issues/8}{\texttt{benchmark-\allowbreak tool-\allowbreak errors\#8}} \\
-\texttt{hidden-\allowbreak split-\allowbreak not-\allowbreak hidden} & {\footnotesize review issues and PRs (per-package locators); 0.2.0 changelogs} & \href{https://github.com/pooriaarab/benchmark-tool-errors/issues/7}{\texttt{benchmark-\allowbreak tool-\allowbreak errors\#7}} \\
-\texttt{dropped-\allowbreak breakdowns} & {\footnotesize review issues and PRs (per-package locators)} & \href{https://github.com/pooriaarab/benchmark-tool-errors/issues/19}{\texttt{benchmark-\allowbreak tool-\allowbreak errors\#19}};\ \href{https://github.com/pooriaarab/benchmark-tool-errors/issues/9}{\texttt{benchmark-\allowbreak tool-\allowbreak errors\#9}} \\
+\texttt{blind-\allowbreak strategy-\allowbreak credit} & {\footnotesize issues and changelogs (per-package locators)} & \href{https://github.com/itsryanarmani/benchmark-tool-errors/issues/8}{\texttt{benchmark-\allowbreak tool-\allowbreak errors\#8}} \\
+\texttt{honest-\allowbreak answer-\allowbreak rejected} & {\footnotesize review issues and PRs (per-package locators)} & \href{https://github.com/itsryanarmani/benchmark-tool-errors/issues/8}{\texttt{benchmark-\allowbreak tool-\allowbreak errors\#8}} \\
+\texttt{hidden-\allowbreak split-\allowbreak not-\allowbreak hidden} & {\footnotesize review issues and PRs (per-package locators); 0.2.0 changelogs} & \href{https://github.com/itsryanarmani/benchmark-tool-errors/issues/7}{\texttt{benchmark-\allowbreak tool-\allowbreak errors\#7}} \\
+\texttt{dropped-\allowbreak breakdowns} & {\footnotesize review issues and PRs (per-package locators)} & \href{https://github.com/itsryanarmani/benchmark-tool-errors/issues/19}{\texttt{benchmark-\allowbreak tool-\allowbreak errors\#19}};\ \href{https://github.com/itsryanarmani/benchmark-tool-errors/issues/9}{\texttt{benchmark-\allowbreak tool-\allowbreak errors\#9}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -237,7 +237,7 @@ The package changelog for this version states:
 \begin{quote}
 Scores from 0.1.0 are not comparable with 0.2.0.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-tool-errors/blob/v0.2.0/CHANGELOG.md#L5}{\texttt{benchmark-tool-errors:CHANGELOG.md\#L5}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-tool-errors/blob/v0.2.0/CHANGELOG.md#L5}{\texttt{benchmark-tool-errors:CHANGELOG.md\#L5}}.}
 
 The merged feature pull requests for this package are listed in Table~\ref{tab:council}:
 \pkgCouncilPrs{} requests, \pkgCouncilReviews{} council reviews, \pkgCouncilApproved{} approvals,
@@ -251,12 +251,12 @@ and \pkgCouncilFailed{} request that ever showed a failing \texttt{vibecoderevie
 \toprule
 Pull request & Council reviews & Approved & Council run & CI check \\
 \midrule
-\href{https://github.com/pooriaarab/benchmark-tool-errors/pull/2}{\#2} & 1 & no & success & success \\
-\href{https://github.com/pooriaarab/benchmark-tool-errors/pull/4}{\#4} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-tool-errors/pull/6}{\#6} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-tool-errors/pull/12}{\#12} & 3 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-tool-errors/pull/13}{\#13} & 3 & no & failure & success \\
-\href{https://github.com/pooriaarab/benchmark-tool-errors/pull/20}{\#20} & 0 & no & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-tool-errors/pull/2}{\#2} & 1 & no & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-tool-errors/pull/4}{\#4} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-tool-errors/pull/6}{\#6} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-tool-errors/pull/12}{\#12} & 3 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-tool-errors/pull/13}{\#13} & 3 & no & failure & success \\
+\href{https://github.com/itsryanarmani/benchmark-tool-errors/pull/20}{\#20} & 0 & no & success & success \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -274,7 +274,7 @@ The package documents its own limit:
 \begin{quote}
 Synthetic APIs simplify authentication, concurrency, and vendor semantics.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-tool-errors/blob/v0.2.0/README.md#L176}{\texttt{benchmark-tool-errors:README.md\#L176}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-tool-errors/blob/v0.2.0/README.md#L176}{\texttt{benchmark-tool-errors:README.md\#L176}}.}
 
 This report claims no model capability: it records no real-model run, no leaderboard, and no comparison between models.
 These offline numbers describe the graders and the scripted policies. They say nothing about a hosted model.
@@ -287,18 +287,18 @@ The README gives the install and the offline run:
 \begin{quote}\ttfamily
 npm~install~benchmark-tool-errors\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-tool-errors/blob/v0.2.0/README.md#L15}{\texttt{benchmark-tool-errors:README.md\#L15}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-tool-errors/blob/v0.2.0/README.md#L15}{\texttt{benchmark-tool-errors:README.md\#L15}}.}
 % quote: benchmark-tool-errors/README.md#L24
 \begin{quote}\ttfamily
 npx~benchmark-tool-errors~run~-{}-provider~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-tool-errors/blob/v0.2.0/README.md#L24}{\texttt{benchmark-tool-errors:README.md\#L24}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-tool-errors/blob/v0.2.0/README.md#L24}{\texttt{benchmark-tool-errors:README.md\#L24}}.}
 % quote: benchmark-tool-errors/README.md#L208
 \begin{quote}\ttfamily
 npx~benchmark-tool-errors~run~-{}-provider~mock~-{}-tasks\\
 $\hookrightarrow$\hspace*{0.5em}~.hidden/tasks.jsonl\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-tool-errors/blob/v0.2.0/README.md#L208}{\texttt{benchmark-tool-errors:README.md\#L208}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-tool-errors/blob/v0.2.0/README.md#L208}{\texttt{benchmark-tool-errors:README.md\#L208}}.}
 
 The README also gives a run against a paid provider; it needs a paid key, and this report does not run it:
 % quote: benchmark-tool-errors/README.md#L194
@@ -306,7 +306,7 @@ The README also gives a run against a paid provider; it needs a paid key, and th
 OPENROUTER\_API\_KEY=your\_key~npx~benchmark-tool-errors~run~\textbackslash{}\\
 \hspace*{1em}-{}-provider~openrouter~-{}-model~openai/gpt-5.1\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-tool-errors/blob/v0.2.0/README.md#L194}{\texttt{benchmark-tool-errors:README.md\#L194}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-tool-errors/blob/v0.2.0/README.md#L194}{\texttt{benchmark-tool-errors:README.md\#L194}}.}
 
 \noindent\texttt{npm install benchmark-tool-errors@\pkgVersion{}} installs the measured version.
 Table~\ref{tab:sources} lists the declared data sources from the index entry (\texttt{paper/data/suite.json}).

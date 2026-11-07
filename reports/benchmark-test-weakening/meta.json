@@ -18,8 +18,8 @@
     "deterministic-grader",
     "benchmark-test-weakening"
   ],
-  "comments": "Generated per-package technical report for benchmark-test-weakening 0.2.0; data from pooriaarab/benchmark-family-paper paper/data and cached package sources.",
-  "code_url": "https://github.com/pooriaarab/benchmark-test-weakening",
+  "comments": "Generated per-package technical report for benchmark-test-weakening 0.2.0; data from itsryanarmani/benchmark-family-paper paper/data and cached package sources.",
+  "code_url": "https://github.com/itsryanarmani/benchmark-test-weakening",
   "data_url": "https://huggingface.co/datasets/pooria/benchmark-test-weakening",
   "data_concept_dois": [
     "10.5281/zenodo.23422375",
