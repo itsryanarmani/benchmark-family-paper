@@ -18,8 +18,8 @@
     "deterministic-grader",
     "benchmark-instruction-hierarchy"
   ],
-  "comments": "Generated per-package technical report for benchmark-instruction-hierarchy 0.1.0; data from pooriaarab/benchmark-family-paper paper/data and cached package sources.",
-  "code_url": "https://github.com/pooriaarab/benchmark-instruction-hierarchy",
+  "comments": "Generated per-package technical report for benchmark-instruction-hierarchy 0.1.0; data from itsryanarmani/benchmark-family-paper paper/data and cached package sources.",
+  "code_url": "https://github.com/itsryanarmani/benchmark-instruction-hierarchy",
   "data_url": "https://huggingface.co/datasets/pooria/benchmark-instruction-hierarchy",
   "data_concept_dois": [
     "10.5281/zenodo.23422396",

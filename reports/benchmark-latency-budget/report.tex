@@ -82,7 +82,7 @@ The package states its question in its own README:
 It measures one named behavior with inspectable tasks and grading.
 General leaderboards combine broader capabilities.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-latency-budget/blob/v0.1.0/README.md#L291}{\texttt{benchmark-latency-budget:README.md\#L291}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-latency-budget/blob/v0.1.0/README.md#L291}{\texttt{benchmark-latency-budget:README.md\#L291}}.}
 
 Its index entry states the measured construct as: ``Whether an agent gives the right answer before its deadline (voice 447-641 ms, UI 875-1494 ms, background 2025-3714 ms), each set at 1.5-2x the shortest correct path, with virtual per-tool latencies.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-latency-budget.whatItMeasures}).
 Table~\ref{tab:tasks} counts the tasks by family.
@@ -116,7 +116,7 @@ Saturation & \texttt{\pkgSaturation{}} \\
 Category & \pkgCategory{} \\
 Tags & \texttt{helpful} \\
 Public seed & \pkgPublicSeed{} \\
-Repository & \url{https://github.com/pooriaarab/benchmark-latency-budget} \\
+Repository & \url{https://github.com/itsryanarmani/benchmark-latency-budget} \\
 Documentation & \url{https://private-repo-337e.com/benchmarks/benchmark-latency-budget} \\
 \bottomrule
 \end{tabular}}
@@ -131,7 +131,7 @@ rebuild the public set and \texttt{node scripts/gen-tasks.mjs -{}-seed
 <n> -{}-split hidden} for a hidden split (written to gitignored
 \texttt{artifacts/}, never published).
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-latency-budget/blob/v0.1.0/README.md#L218}{\texttt{benchmark-latency-budget:README.md\#L218}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-latency-budget/blob/v0.1.0/README.md#L218}{\texttt{benchmark-latency-budget:README.md\#L218}}.}
 
 \section{Grader and surfaces}
 The grading document states the mechanism in its own words:
@@ -140,7 +140,7 @@ The grading document states the mechanism in its own words:
 This file is written before the grader code. It lists every way the
 grader can fail, so the end-to-end test can pin each one.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-latency-budget/blob/v0.1.0/docs/grading.md#L3}{\texttt{benchmark-latency-budget:docs/grading.md\#L3}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-latency-budget/blob/v0.1.0/docs/grading.md#L3}{\texttt{benchmark-latency-budget:docs/grading.md\#L3}}.}
 
 The index entry summarises the grader as: ``qualityWithinBudget: a single named candidate value (bounded, case-insensitive) grounded in replayed tool output, scored 1 only when total time (measured or declared per-turn model time plus scheduled tool latencies) is within the task deadline. Reports p50/p95 time, lateButCorrect count, and a 0.5x-4x deadline curve.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-latency-budget.grader}).
 Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README line that describes it, and the quoted lines follow.
@@ -153,10 +153,10 @@ Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README 
 \toprule
 Surface & README line \\
 \midrule
-TypeScript SDK & \href{https://github.com/pooriaarab/benchmark-latency-budget/blob/v0.1.0/README.md#L172}{\texttt{README.md\#L172}} \\
-Command-line interface & \href{https://github.com/pooriaarab/benchmark-latency-budget/blob/v0.1.0/README.md#L15}{\texttt{README.md\#L15}} \\
-Model Context Protocol server & \href{https://github.com/pooriaarab/benchmark-latency-budget/blob/v0.1.0/README.md#L197}{\texttt{README.md\#L197}} \\
-Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-latency-budget/blob/v0.1.0/README.md#L207}{\texttt{README.md\#L207}} \\
+TypeScript SDK & \href{https://github.com/itsryanarmani/benchmark-latency-budget/blob/v0.1.0/README.md#L172}{\texttt{README.md\#L172}} \\
+Command-line interface & \href{https://github.com/itsryanarmani/benchmark-latency-budget/blob/v0.1.0/README.md#L15}{\texttt{README.md\#L15}} \\
+Model Context Protocol server & \href{https://github.com/itsryanarmani/benchmark-latency-budget/blob/v0.1.0/README.md#L197}{\texttt{README.md\#L197}} \\
+Fetch-style HTTP API & \href{https://github.com/itsryanarmani/benchmark-latency-budget/blob/v0.1.0/README.md#L207}{\texttt{README.md\#L207}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -165,23 +165,23 @@ Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-latency-bud
 import~\{~benchmark,~run,~score~\}~from\\
 $\hookrightarrow$\hspace*{0.5em}~"benchmark-latency-budget";\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-latency-budget/blob/v0.1.0/README.md#L172}{\texttt{benchmark-latency-budget:README.md\#L172}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-latency-budget/blob/v0.1.0/README.md#L172}{\texttt{benchmark-latency-budget:README.md\#L172}}.}
 % quote: benchmark-latency-budget/README.md#L15
 \begin{quote}\ttfamily
 npx~benchmark-latency-budget~run~-{}-model~offline~-{}-provider\\
 $\hookrightarrow$\hspace*{0.5em}~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-latency-budget/blob/v0.1.0/README.md#L15}{\texttt{benchmark-latency-budget:README.md\#L15}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-latency-budget/blob/v0.1.0/README.md#L15}{\texttt{benchmark-latency-budget:README.md\#L15}}.}
 % quote: benchmark-latency-budget/README.md#L197
 \begin{quote}\ttfamily
 npx~benchmark-latency-budget~mcp\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-latency-budget/blob/v0.1.0/README.md#L197}{\texttt{benchmark-latency-budget:README.md\#L197}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-latency-budget/blob/v0.1.0/README.md#L197}{\texttt{benchmark-latency-budget:README.md\#L197}}.}
 % quote: benchmark-latency-budget/README.md#L207
 \begin{quote}
 Import \texttt{handler} from \texttt{benchmark-latency-budget/api}, or run
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-latency-budget/blob/v0.1.0/README.md#L207}{\texttt{benchmark-latency-budget:README.md\#L207}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-latency-budget/blob/v0.1.0/README.md#L207}{\texttt{benchmark-latency-budget:README.md\#L207}}.}
 
 \section{Offline validation}
 No real model was run. The family data records mock runs at seeds \pkgMockSeedA{} and \pkgMockSeedB{}
@@ -208,7 +208,7 @@ $\hookrightarrow$\hspace*{0.5em}~0ms~against~a~641ms~deadline.~|\\
 |~voice-02~|~100.0\%~|~Correct~answer~in~121ms,~within~the\\
 $\hookrightarrow$\hspace*{0.5em}~484ms~deadline.~|\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-latency-budget/blob/v0.1.0/README.md#L19}{\texttt{benchmark-latency-budget:README.md\#L19}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-latency-budget/blob/v0.1.0/README.md#L19}{\texttt{benchmark-latency-budget:README.md\#L19}}.}
 
 \section{Review record}
 The package went through \pkgFixRounds{} fix rounds recorded in \texttt{paper/data/review-rounds.csv}, counted from release \texttt{review-log-v1} of this repository.
@@ -226,8 +226,8 @@ and \pkgCouncilFailed{} requests that ever showed a failing \texttt{vibecoderevi
 \toprule
 Pull request & Council reviews & Approved & Council run & CI check \\
 \midrule
-\href{https://github.com/pooriaarab/benchmark-latency-budget/pull/4}{\#4} & 1 & no & success & success \\
-\href{https://github.com/pooriaarab/benchmark-latency-budget/pull/16}{\#16} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-latency-budget/pull/4}{\#4} & 1 & no & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-latency-budget/pull/16}{\#16} & 2 & yes & success & success \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -251,7 +251,7 @@ data; keep a separately seeded hidden split for final comparisons.
 Remote providers can add cost and retain prompts under their own
 policies.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-latency-budget/blob/v0.1.0/README.md#L226}{\texttt{benchmark-latency-budget:README.md\#L226}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-latency-budget/blob/v0.1.0/README.md#L226}{\texttt{benchmark-latency-budget:README.md\#L226}}.}
 
 This report claims no model capability: it records no real-model run, no leaderboard, and no comparison between models.
 These offline numbers describe the graders and the scripted policies. They say nothing about a hosted model.
@@ -265,12 +265,12 @@ The README gives the install and the offline run:
 npx~benchmark-latency-budget~run~-{}-model~offline~-{}-provider\\
 $\hookrightarrow$\hspace*{0.5em}~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-latency-budget/blob/v0.1.0/README.md#L15}{\texttt{benchmark-latency-budget:README.md\#L15}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-latency-budget/blob/v0.1.0/README.md#L15}{\texttt{benchmark-latency-budget:README.md\#L15}}.}
 % quote: benchmark-latency-budget/README.md#L42
 \begin{quote}\ttfamily
 npm~install~benchmark-latency-budget\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-latency-budget/blob/v0.1.0/README.md#L42}{\texttt{benchmark-latency-budget:README.md\#L42}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-latency-budget/blob/v0.1.0/README.md#L42}{\texttt{benchmark-latency-budget:README.md\#L42}}.}
 
 The README also gives a run against a paid provider; it needs a paid key, and this report does not run it:
 % quote: benchmark-latency-budget/README.md#L62
@@ -279,7 +279,7 @@ OPENROUTER\_API\_KEY=sk-or-...~npx~benchmark-latency-budget\\
 $\hookrightarrow$\hspace*{0.5em}~run~-{}-model~openai/gpt-4o-mini~-{}-provider\\
 $\hookrightarrow$\hspace*{0.5em}~openrouter\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-latency-budget/blob/v0.1.0/README.md#L62}{\texttt{benchmark-latency-budget:README.md\#L62}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-latency-budget/blob/v0.1.0/README.md#L62}{\texttt{benchmark-latency-budget:README.md\#L62}}.}
 
 \noindent\texttt{npm install benchmark-latency-budget@\pkgVersion{}} installs the measured version.
 Table~\ref{tab:sources} lists the declared data sources from the index entry (\texttt{paper/data/suite.json}).

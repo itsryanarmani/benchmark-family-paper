@@ -83,7 +83,7 @@ Rollback Recovery measures whether an agent notices a self-inflicted
 mistake in a sandboxed CRM, file store, or mailing list, rolls the
 state back without extra damage, and tells the user honestly.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-rollback-recovery/blob/v0.1.0/README.md#L7}{\texttt{benchmark-rollback-recovery:README.md\#L7}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-rollback-recovery/blob/v0.1.0/README.md#L7}{\texttt{benchmark-rollback-recovery:README.md\#L7}}.}
 
 Its index entry states the measured construct as: ``Whether an agent detects a self-inflicted CRM, file, or messaging mistake, rolls back cleanly, and discloses it.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-rollback-recovery.whatItMeasures}).
 Table~\ref{tab:tasks} counts the tasks by family.
@@ -117,7 +117,7 @@ Saturation & \texttt{\pkgSaturation{}} \\
 Category & \pkgCategory{} \\
 Tags & \texttt{helpful} \\
 Public seed & \pkgPublicSeed{} \\
-Repository & \url{https://github.com/pooriaarab/benchmark-rollback-recovery} \\
+Repository & \url{https://github.com/itsryanarmani/benchmark-rollback-recovery} \\
 Documentation & \url{https://private-repo-337e.com/benchmarks/benchmark-rollback-recovery} \\
 \bottomrule
 \end{tabular}}
@@ -127,7 +127,7 @@ The README records where the task data comes from:
 \begin{quote}
 Committed generator output; MIT licence. Regenerate with \texttt{npm run generate:tasks}.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-rollback-recovery/blob/v0.1.0/README.md#L101}{\texttt{benchmark-rollback-recovery:README.md\#L101}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-rollback-recovery/blob/v0.1.0/README.md#L101}{\texttt{benchmark-rollback-recovery:README.md\#L101}}.}
 
 \section{Grader and surfaces}
 The grading document states the mechanism in its own words:
@@ -136,7 +136,7 @@ The grading document states the mechanism in its own words:
 Episode tasks replay the submitted tool log in a seeded simulator. The
 grader never calls a model.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-rollback-recovery/blob/v0.1.0/docs/grading.md#L3}{\texttt{benchmark-rollback-recovery:docs/grading.md\#L3}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-rollback-recovery/blob/v0.1.0/docs/grading.md#L3}{\texttt{benchmark-rollback-recovery:docs/grading.md\#L3}}.}
 
 The index-entry grader summary trips this report's wording rule, so it is not quoted here (\texttt{paper/data/suite.json}, \texttt{benchmark-rollback-recovery.grader}).
 Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README line that describes it, and the quoted lines follow.
@@ -149,10 +149,10 @@ Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README 
 \toprule
 Surface & README line \\
 \midrule
-TypeScript SDK & \href{https://github.com/pooriaarab/benchmark-rollback-recovery/blob/v0.1.0/README.md#L62}{\texttt{README.md\#L62}} \\
-Command-line interface & \href{https://github.com/pooriaarab/benchmark-rollback-recovery/blob/v0.1.0/README.md#L10}{\texttt{README.md\#L10}} \\
-Model Context Protocol server & \href{https://github.com/pooriaarab/benchmark-rollback-recovery/blob/v0.1.0/README.md#L72}{\texttt{README.md\#L72}} \\
-Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-rollback-recovery/blob/v0.1.0/README.md#L79}{\texttt{README.md\#L79}} \\
+TypeScript SDK & \href{https://github.com/itsryanarmani/benchmark-rollback-recovery/blob/v0.1.0/README.md#L62}{\texttt{README.md\#L62}} \\
+Command-line interface & \href{https://github.com/itsryanarmani/benchmark-rollback-recovery/blob/v0.1.0/README.md#L10}{\texttt{README.md\#L10}} \\
+Model Context Protocol server & \href{https://github.com/itsryanarmani/benchmark-rollback-recovery/blob/v0.1.0/README.md#L72}{\texttt{README.md\#L72}} \\
+Fetch-style HTTP API & \href{https://github.com/itsryanarmani/benchmark-rollback-recovery/blob/v0.1.0/README.md#L79}{\texttt{README.md\#L79}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -160,24 +160,24 @@ Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-rollback-re
 \begin{quote}\ttfamily
 import~\{~run,~score~\}~from~"benchmark-rollback-recovery";\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-rollback-recovery/blob/v0.1.0/README.md#L62}{\texttt{benchmark-rollback-recovery:README.md\#L62}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-rollback-recovery/blob/v0.1.0/README.md#L62}{\texttt{benchmark-rollback-recovery:README.md\#L62}}.}
 % quote: benchmark-rollback-recovery/README.md#L10
 \begin{quote}\ttfamily
 npx~benchmark-rollback-recovery~run~-{}-model~offline\\
 $\hookrightarrow$\hspace*{0.5em}~-{}-provider~mock~-{}-json\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-rollback-recovery/blob/v0.1.0/README.md#L10}{\texttt{benchmark-rollback-recovery:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-rollback-recovery/blob/v0.1.0/README.md#L10}{\texttt{benchmark-rollback-recovery:README.md\#L10}}.}
 % quote: benchmark-rollback-recovery/README.md#L72
 \begin{quote}\ttfamily
 npx~benchmark-rollback-recovery~mcp\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-rollback-recovery/blob/v0.1.0/README.md#L72}{\texttt{benchmark-rollback-recovery:README.md\#L72}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-rollback-recovery/blob/v0.1.0/README.md#L72}{\texttt{benchmark-rollback-recovery:README.md\#L72}}.}
 % quote: benchmark-rollback-recovery/README.md#L79
 \begin{quote}
 Import \texttt{handler} from \texttt{benchmark-rollback-recovery/api},
 or run \texttt{npx benchmark-rollback-recovery serve}.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-rollback-recovery/blob/v0.1.0/README.md#L79}{\texttt{benchmark-rollback-recovery:README.md\#L79}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-rollback-recovery/blob/v0.1.0/README.md#L79}{\texttt{benchmark-rollback-recovery:README.md\#L79}}.}
 
 \section{Offline validation}
 No real model was run. The family data records mock runs at seeds \pkgMockSeedA{} and \pkgMockSeedB{}
@@ -196,7 +196,7 @@ $\hookrightarrow$\hspace*{0.5em}8,"passed":27,"failed":0\},"subscores":\{"not\\
 $\hookrightarrow$\hspace*{0.5em}iced":31,"repaired":27,"disclosed":31,"coll\\
 $\hookrightarrow$\hspace*{0.5em}ateralFree":48,"collateralHits":0\}\}\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-rollback-recovery/blob/v0.1.0/README.md#L14}{\texttt{benchmark-rollback-recovery:README.md\#L14}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-rollback-recovery/blob/v0.1.0/README.md#L14}{\texttt{benchmark-rollback-recovery:README.md\#L14}}.}
 
 \section{Review record}
 The package went through \pkgFixRounds{} fix rounds recorded in \texttt{paper/data/review-rounds.csv}, counted from release \texttt{review-log-v1} of this repository.
@@ -210,7 +210,7 @@ Table~\ref{tab:defects} lists the defect class that touched this package, each c
 \toprule
 Defect class & Record kind & Locators \\
 \midrule
-\texttt{blind-\allowbreak strategy-\allowbreak credit} & {\footnotesize issues and changelogs (per-package locators)} & \href{https://github.com/pooriaarab/benchmark-rollback-recovery/issues/23}{\texttt{benchmark-\allowbreak rollback-\allowbreak recovery\#23}} \\
+\texttt{blind-\allowbreak strategy-\allowbreak credit} & {\footnotesize issues and changelogs (per-package locators)} & \href{https://github.com/itsryanarmani/benchmark-rollback-recovery/issues/23}{\texttt{benchmark-\allowbreak rollback-\allowbreak recovery\#23}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -227,8 +227,8 @@ and \pkgCouncilFailed{} request that ever showed a failing \texttt{vibecoderevie
 \toprule
 Pull request & Council reviews & Approved & Council run & CI check \\
 \midrule
-\href{https://github.com/pooriaarab/benchmark-rollback-recovery/pull/3}{\#3} & 3 & yes & failure & success \\
-\href{https://github.com/pooriaarab/benchmark-rollback-recovery/pull/26}{\#26} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-rollback-recovery/pull/3}{\#3} & 3 & yes & failure & success \\
+\href{https://github.com/itsryanarmani/benchmark-rollback-recovery/pull/26}{\#26} & 2 & yes & success & success \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -245,7 +245,7 @@ The package documents its own limit:
 Disclosure is judged on the \texttt{report\_incident} call only;
 wording in the final answer is unscored.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-rollback-recovery/blob/v0.1.0/README.md#L85}{\texttt{benchmark-rollback-recovery:README.md\#L85}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-rollback-recovery/blob/v0.1.0/README.md#L85}{\texttt{benchmark-rollback-recovery:README.md\#L85}}.}
 
 This report claims no model capability: it records no real-model run, no leaderboard, and no comparison between models.
 These offline numbers describe the graders and the scripted policies. They say nothing about a hosted model.
@@ -259,12 +259,12 @@ The README gives the install and the offline run:
 npx~benchmark-rollback-recovery~run~-{}-model~offline\\
 $\hookrightarrow$\hspace*{0.5em}~-{}-provider~mock~-{}-json\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-rollback-recovery/blob/v0.1.0/README.md#L10}{\texttt{benchmark-rollback-recovery:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-rollback-recovery/blob/v0.1.0/README.md#L10}{\texttt{benchmark-rollback-recovery:README.md\#L10}}.}
 % quote: benchmark-rollback-recovery/README.md#L26
 \begin{quote}\ttfamily
 npm~install~benchmark-rollback-recovery\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-rollback-recovery/blob/v0.1.0/README.md#L26}{\texttt{benchmark-rollback-recovery:README.md\#L26}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-rollback-recovery/blob/v0.1.0/README.md#L26}{\texttt{benchmark-rollback-recovery:README.md\#L26}}.}
 
 The README also gives a run against a paid provider; it needs a paid key, and this report does not run it:
 % quote: benchmark-rollback-recovery/README.md#L32
@@ -274,7 +274,7 @@ npx~benchmark-rollback-recovery~run~-{}-model\\
 $\hookrightarrow$\hspace*{0.5em}~anthropic/claude-sonnet-4~-{}-provider\\
 $\hookrightarrow$\hspace*{0.5em}~openrouter~-{}-json\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-rollback-recovery/blob/v0.1.0/README.md#L32}{\texttt{benchmark-rollback-recovery:README.md\#L32}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-rollback-recovery/blob/v0.1.0/README.md#L32}{\texttt{benchmark-rollback-recovery:README.md\#L32}}.}
 
 \noindent\texttt{npm install benchmark-rollback-recovery@\pkgVersion{}} installs the measured version.
 Table~\ref{tab:sources} lists the declared data sources from the index entry (\texttt{paper/data/suite.json}).
