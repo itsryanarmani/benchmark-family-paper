@@ -405,7 +405,7 @@ async function emit(pkg, data, d) {
 \\usepackage{microtype}
 ${M}
 \\title{${tex(title)}}
-\\author{Pooria Arab\\\\ Independent researcher\\\\ \\texttt{papers@private-repo-337e.com}}
+\\author{Ryan Armani\\\\ Independent researcher\\\\ \\texttt{papers@private-repo-337e.com}}
 \\begin{document}
 \\maketitle
 \\begin{abstract}
@@ -477,7 +477,7 @@ and the family paper record \\texttt{${data.dois.paper.version_doi}} (\\texttt{p
 `;
   const dir = join(OUT, pkg); mkdirSync(dir, { recursive: true }); writeFileSync(join(dir, "report.tex"), body);
   const meta = { generated_by: "scripts/pkg-reports.mjs", title, abstract, license: "cc-by-4.0", subject_class: "cs.AI",
-    authors: [{ name: "Arab, Pooria", affiliation: "Independent researcher", orcid: process.env.ORCID_ID || null }],
+    authors: [{ name: "Armani, Ryan", affiliation: "Independent researcher", orcid: process.env.ORCID_ID || null }],
     keywords: ["ai-benchmark", "llm-evaluation", "agent-evaluation", "deterministic-grader", pkg],
     comments: `Generated per-package technical report for ${pkg} ${s.version}; data from pooriaarab/benchmark-family-paper paper/data and cached package sources.`,
     code_url: s.repo, data_url: `https://huggingface.co/datasets/pooria/${pkg}`,

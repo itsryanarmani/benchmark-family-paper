@@ -30,7 +30,7 @@ Agents Can Build Benchmarks. Approvals Missed What Probing Found: 22 Cases
 Authors:
 
 ```text
-Pooria Arab
+Ryan Armani
 ```
 
 Abstract (plain text, macros expanded by `scripts/submit-md.mjs` from the generated files):
