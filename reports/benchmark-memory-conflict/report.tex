@@ -84,7 +84,7 @@ household bookings aligned with the \textbf{latest} valid memory:
 reversed preferences, disagreements between adults, private notes,
 expired allergies, cancel-first rules, and who may authorize spend.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-memory-conflict/blob/v0.1.0/README.md#L7}{\texttt{benchmark-memory-conflict:README.md\#L7}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-memory-conflict/blob/v0.1.0/README.md#L7}{\texttt{benchmark-memory-conflict:README.md\#L7}}.}
 
 Its index entry states the measured construct as: ``Whether an assistant applies the latest valid household preference, respects privacy and authority, and keeps bookings reversible.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-memory-conflict.whatItMeasures}).
 Table~\ref{tab:tasks} counts the tasks by family.
@@ -118,7 +118,7 @@ Saturation & \texttt{\pkgSaturation{}} \\
 Category & \pkgCategory{} \\
 Tags & \texttt{helpful} \\
 Public seed & \pkgPublicSeed{} \\
-Repository & \url{https://github.com/pooriaarab/benchmark-memory-conflict} \\
+Repository & \url{https://github.com/itsryanarmani/benchmark-memory-conflict} \\
 Documentation & \url{https://private-repo-337e.com/benchmarks/benchmark-memory-conflict} \\
 \bottomrule
 \end{tabular}}
@@ -128,7 +128,7 @@ The README records where the task data comes from:
 \begin{quote}
 Forty synthetic household episodes are generated from MIT templates:
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-memory-conflict/blob/v0.1.0/README.md#L60}{\texttt{benchmark-memory-conflict:README.md\#L60}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-memory-conflict/blob/v0.1.0/README.md#L60}{\texttt{benchmark-memory-conflict:README.md\#L60}}.}
 
 \section{Grader and surfaces}
 The grading document states the mechanism in its own words:
@@ -140,7 +140,7 @@ Deterministic replay of the household simulator. See
 \texttt{cancel}, \texttt{ask\_user}, \texttt{read\_memory},
 \texttt{write\_memory}.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-memory-conflict/blob/v0.1.0/docs/grading.md#L3}{\texttt{benchmark-memory-conflict:docs/grading.md\#L3}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-memory-conflict/blob/v0.1.0/docs/grading.md#L3}{\texttt{benchmark-memory-conflict:docs/grading.md\#L3}}.}
 
 The index entry summarises the grader as: ``Deterministic simulator replay; see docs/grading.md.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-memory-conflict.grader}).
 Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README line that describes it, and the quoted lines follow.
@@ -153,10 +153,10 @@ Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README 
 \toprule
 Surface & README line \\
 \midrule
-TypeScript SDK & \href{https://github.com/pooriaarab/benchmark-memory-conflict/blob/v0.1.0/README.md#L82}{\texttt{README.md\#L82}} \\
-Command-line interface & \href{https://github.com/pooriaarab/benchmark-memory-conflict/blob/v0.1.0/README.md#L10}{\texttt{README.md\#L10}} \\
-Model Context Protocol server & \href{https://github.com/pooriaarab/benchmark-memory-conflict/blob/v0.1.0/README.md#L94}{\texttt{README.md\#L94}} \\
-Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-memory-conflict/blob/v0.1.0/README.md#L101}{\texttt{README.md\#L101}} \\
+TypeScript SDK & \href{https://github.com/itsryanarmani/benchmark-memory-conflict/blob/v0.1.0/README.md#L82}{\texttt{README.md\#L82}} \\
+Command-line interface & \href{https://github.com/itsryanarmani/benchmark-memory-conflict/blob/v0.1.0/README.md#L10}{\texttt{README.md\#L10}} \\
+Model Context Protocol server & \href{https://github.com/itsryanarmani/benchmark-memory-conflict/blob/v0.1.0/README.md#L94}{\texttt{README.md\#L94}} \\
+Fetch-style HTTP API & \href{https://github.com/itsryanarmani/benchmark-memory-conflict/blob/v0.1.0/README.md#L101}{\texttt{README.md\#L101}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -165,24 +165,24 @@ Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-memory-conf
 import~\{~benchmark,~createBenchmark,~run,~score~\}~from\\
 $\hookrightarrow$\hspace*{0.5em}~"benchmark-memory-conflict";\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-memory-conflict/blob/v0.1.0/README.md#L82}{\texttt{benchmark-memory-conflict:README.md\#L82}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-memory-conflict/blob/v0.1.0/README.md#L82}{\texttt{benchmark-memory-conflict:README.md\#L82}}.}
 % quote: benchmark-memory-conflict/README.md#L10
 \begin{quote}\ttfamily
 npx~benchmark-memory-conflict~run~-{}-model~offline~-{}-provider\\
 $\hookrightarrow$\hspace*{0.5em}~mock~-{}-json\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-memory-conflict/blob/v0.1.0/README.md#L10}{\texttt{benchmark-memory-conflict:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-memory-conflict/blob/v0.1.0/README.md#L10}{\texttt{benchmark-memory-conflict:README.md\#L10}}.}
 % quote: benchmark-memory-conflict/README.md#L94
 \begin{quote}\ttfamily
 npx~benchmark-memory-conflict~mcp\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-memory-conflict/blob/v0.1.0/README.md#L94}{\texttt{benchmark-memory-conflict:README.md\#L94}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-memory-conflict/blob/v0.1.0/README.md#L94}{\texttt{benchmark-memory-conflict:README.md\#L94}}.}
 % quote: benchmark-memory-conflict/README.md#L101
 \begin{quote}
 \texttt{handler} from \texttt{benchmark-memory-conflict/api}, or
 \texttt{npx benchmark-memory-conflict serve}.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-memory-conflict/blob/v0.1.0/README.md#L101}{\texttt{benchmark-memory-conflict:README.md\#L101}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-memory-conflict/blob/v0.1.0/README.md#L101}{\texttt{benchmark-memory-conflict:README.md\#L101}}.}
 
 \section{Offline validation}
 No real model was run. The family data records mock runs at seeds \pkgMockSeedA{} and \pkgMockSeedB{}
@@ -199,7 +199,7 @@ The README prints a sample run:
 $\hookrightarrow$\hspace*{0.5em}.35,"high":0.65\},"totals":\{"tasks":40,"pass\\
 $\hookrightarrow$\hspace*{0.5em}ed":20,"failed":0\}\}\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-memory-conflict/blob/v0.1.0/README.md#L14}{\texttt{benchmark-memory-conflict:README.md\#L14}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-memory-conflict/blob/v0.1.0/README.md#L14}{\texttt{benchmark-memory-conflict:README.md\#L14}}.}
 
 \section{Review record}
 The package went through \pkgFixRounds{} fix rounds recorded in \texttt{paper/data/review-rounds.csv}, counted from release \texttt{review-log-v1} of this repository.
@@ -213,7 +213,7 @@ Table~\ref{tab:defects} lists the defect class that touched this package, each c
 \toprule
 Defect class & Record kind & Locators \\
 \midrule
-\texttt{blind-\allowbreak strategy-\allowbreak credit} & {\footnotesize issues and changelogs (per-package locators)} & \href{https://github.com/pooriaarab/benchmark-memory-conflict/issues/16}{\texttt{benchmark-\allowbreak memory-\allowbreak conflict\#16}};\ \href{https://github.com/pooriaarab/benchmark-memory-conflict/issues/23}{\texttt{benchmark-\allowbreak memory-\allowbreak conflict\#23}} \\
+\texttt{blind-\allowbreak strategy-\allowbreak credit} & {\footnotesize issues and changelogs (per-package locators)} & \href{https://github.com/itsryanarmani/benchmark-memory-conflict/issues/16}{\texttt{benchmark-\allowbreak memory-\allowbreak conflict\#16}};\ \href{https://github.com/itsryanarmani/benchmark-memory-conflict/issues/23}{\texttt{benchmark-\allowbreak memory-\allowbreak conflict\#23}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -230,8 +230,8 @@ and \pkgCouncilFailed{} requests that ever showed a failing \texttt{vibecoderevi
 \toprule
 Pull request & Council reviews & Approved & Council run & CI check \\
 \midrule
-\href{https://github.com/pooriaarab/benchmark-memory-conflict/pull/11}{\#11} & 1 & no & success & success \\
-\href{https://github.com/pooriaarab/benchmark-memory-conflict/pull/28}{\#28} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-memory-conflict/pull/11}{\#11} & 1 & no & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-memory-conflict/pull/28}{\#28} & 2 & yes & success & success \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -250,7 +250,7 @@ tasks may enter training data; keep a separately seeded hidden split
 for final comparisons (\texttt{-{}-split hidden}). Grading does not
 judge natural-language quality beyond tool effects.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-memory-conflict/blob/v0.1.0/README.md#L107}{\texttt{benchmark-memory-conflict:README.md\#L107}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-memory-conflict/blob/v0.1.0/README.md#L107}{\texttt{benchmark-memory-conflict:README.md\#L107}}.}
 
 This report claims no model capability: it records no real-model run, no leaderboard, and no comparison between models.
 These offline numbers describe the graders and the scripted policies. They say nothing about a hosted model.
@@ -264,18 +264,18 @@ The README gives the install and the offline run:
 npx~benchmark-memory-conflict~run~-{}-model~offline~-{}-provider\\
 $\hookrightarrow$\hspace*{0.5em}~mock~-{}-json\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-memory-conflict/blob/v0.1.0/README.md#L10}{\texttt{benchmark-memory-conflict:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-memory-conflict/blob/v0.1.0/README.md#L10}{\texttt{benchmark-memory-conflict:README.md\#L10}}.}
 % quote: benchmark-memory-conflict/README.md#L24
 \begin{quote}\ttfamily
 npm~install~benchmark-memory-conflict\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-memory-conflict/blob/v0.1.0/README.md#L24}{\texttt{benchmark-memory-conflict:README.md\#L24}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-memory-conflict/blob/v0.1.0/README.md#L24}{\texttt{benchmark-memory-conflict:README.md\#L24}}.}
 % quote: benchmark-memory-conflict/README.md#L30
 \begin{quote}\ttfamily
 npx~benchmark-memory-conflict~run~-{}-model~offline~-{}-provider\\
 $\hookrightarrow$\hspace*{0.5em}~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-memory-conflict/blob/v0.1.0/README.md#L30}{\texttt{benchmark-memory-conflict:README.md\#L30}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-memory-conflict/blob/v0.1.0/README.md#L30}{\texttt{benchmark-memory-conflict:README.md\#L30}}.}
 
 The README also gives a run against a paid provider; it needs a paid key, and this report does not run it:
 % quote: benchmark-memory-conflict/README.md#L36
@@ -285,7 +285,7 @@ npx~benchmark-memory-conflict~run~-{}-model\\
 $\hookrightarrow$\hspace*{0.5em}~anthropic/claude-sonnet-4~-{}-provider\\
 $\hookrightarrow$\hspace*{0.5em}~openrouter\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-memory-conflict/blob/v0.1.0/README.md#L36}{\texttt{benchmark-memory-conflict:README.md\#L36}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-memory-conflict/blob/v0.1.0/README.md#L36}{\texttt{benchmark-memory-conflict:README.md\#L36}}.}
 
 \noindent\texttt{npm install benchmark-memory-conflict@\pkgVersion{}} installs the measured version.
 Table~\ref{tab:sources} lists the declared data sources from the index entry (\texttt{paper/data/suite.json}).

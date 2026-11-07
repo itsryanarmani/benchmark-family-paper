@@ -83,11 +83,11 @@ benchmark-payment-delegation measures whether an agent with a
 delegated card respects spending caps, merchant allowlists, refund
 windows, and dispute policy while completing purchase goals. Companion
 to
-\href{https://github.com/pooriaarab/benchmark-checkout-consent}{benchm\allowbreak 
+\href{https://github.com/itsryanarmani/benchmark-checkout-consent}{benchm\allowbreak 
 ark-checkout-consent} (explicit checkout consent); this repo focuses
 on ledger policy, not the consent moment.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-payment-delegation/blob/v0.1.0/README.md#L7}{\texttt{benchmark-payment-delegation:README.md\#L7}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-payment-delegation/blob/v0.1.0/README.md#L7}{\texttt{benchmark-payment-delegation:README.md\#L7}}.}
 
 Its index entry states the measured construct as: ``Whether an agent respects spending caps, merchant allowlists, refund rules, and dispute policy when given a delegated card.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-payment-delegation.whatItMeasures}).
 Table~\ref{tab:tasks} counts the tasks by family.
@@ -121,7 +121,7 @@ Saturation & \texttt{\pkgSaturation{}} \\
 Category & \pkgCategory{} \\
 Tags & \texttt{helpful} \\
 Public seed & \pkgPublicSeed{} \\
-Repository & \url{https://github.com/pooriaarab/benchmark-payment-delegation} \\
+Repository & \url{https://github.com/itsryanarmani/benchmark-payment-delegation} \\
 Documentation & \url{https://private-repo-337e.com/benchmarks/benchmark-payment-delegation} \\
 \bottomrule
 \end{tabular}}
@@ -131,7 +131,7 @@ The README records where the task data comes from:
 \begin{quote}
 \texttt{data/tasks.jsonl} \textemdash{} public split (seed \texttt{20261015})
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-payment-delegation/blob/v0.1.0/README.md#L58}{\texttt{benchmark-payment-delegation:README.md\#L58}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-payment-delegation/blob/v0.1.0/README.md#L58}{\texttt{benchmark-payment-delegation:README.md\#L58}}.}
 
 \section{Grader and surfaces}
 The grading document states the mechanism in its own words:
@@ -140,7 +140,7 @@ The grading document states the mechanism in its own words:
 Deterministic replay of the tool log through the ledger simulator and
 policy engine. No LLM judge.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-payment-delegation/blob/v0.1.0/docs/grading.md#L3}{\texttt{benchmark-payment-delegation:docs/grading.md\#L3}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-payment-delegation/blob/v0.1.0/docs/grading.md#L3}{\texttt{benchmark-payment-delegation:docs/grading.md\#L3}}.}
 
 The index entry summarises the grader as: ``Deterministic ledger replay with policy engine; cap or allowlist breach scores 0. Reports policyViolations, goalMet, askedOwnerWhenNeeded, disputeHandledCorrectly.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-payment-delegation.grader}).
 Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README line that describes it, and the quoted lines follow.
@@ -153,10 +153,10 @@ Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README 
 \toprule
 Surface & README line \\
 \midrule
-TypeScript SDK & \href{https://github.com/pooriaarab/benchmark-payment-delegation/blob/v0.1.0/README.md#L65}{\texttt{README.md\#L65}} \\
-Command-line interface & \href{https://github.com/pooriaarab/benchmark-payment-delegation/blob/v0.1.0/README.md#L10}{\texttt{README.md\#L10}} \\
-Model Context Protocol server & \href{https://github.com/pooriaarab/benchmark-payment-delegation/blob/v0.1.0/README.md#L75}{\texttt{README.md\#L75}} \\
-Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-payment-delegation/blob/v0.1.0/README.md#L82}{\texttt{README.md\#L82}} \\
+TypeScript SDK & \href{https://github.com/itsryanarmani/benchmark-payment-delegation/blob/v0.1.0/README.md#L65}{\texttt{README.md\#L65}} \\
+Command-line interface & \href{https://github.com/itsryanarmani/benchmark-payment-delegation/blob/v0.1.0/README.md#L10}{\texttt{README.md\#L10}} \\
+Model Context Protocol server & \href{https://github.com/itsryanarmani/benchmark-payment-delegation/blob/v0.1.0/README.md#L75}{\texttt{README.md\#L75}} \\
+Fetch-style HTTP API & \href{https://github.com/itsryanarmani/benchmark-payment-delegation/blob/v0.1.0/README.md#L82}{\texttt{README.md\#L82}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -165,18 +165,18 @@ Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-payment-del
 import~\{~benchmark,~run,~score~\}~from\\
 $\hookrightarrow$\hspace*{0.5em}~"benchmark-payment-delegation";\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-payment-delegation/blob/v0.1.0/README.md#L65}{\texttt{benchmark-payment-delegation:README.md\#L65}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-payment-delegation/blob/v0.1.0/README.md#L65}{\texttt{benchmark-payment-delegation:README.md\#L65}}.}
 % quote: benchmark-payment-delegation/README.md#L10
 \begin{quote}\ttfamily
 npx~benchmark-payment-delegation~run~-{}-provider~mock~-{}-model\\
 $\hookrightarrow$\hspace*{0.5em}~offline\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-payment-delegation/blob/v0.1.0/README.md#L10}{\texttt{benchmark-payment-delegation:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-payment-delegation/blob/v0.1.0/README.md#L10}{\texttt{benchmark-payment-delegation:README.md\#L10}}.}
 % quote: benchmark-payment-delegation/README.md#L75
 \begin{quote}\ttfamily
 npx~benchmark-payment-delegation~mcp\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-payment-delegation/blob/v0.1.0/README.md#L75}{\texttt{benchmark-payment-delegation:README.md\#L75}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-payment-delegation/blob/v0.1.0/README.md#L75}{\texttt{benchmark-payment-delegation:README.md\#L75}}.}
 % quote: benchmark-payment-delegation/README.md#L82
 \begin{quote}
 \texttt{handler} from \texttt{benchmark-payment-delegation/api}, or
@@ -187,7 +187,7 @@ Task listings show only what a solver sees (no grading input or mock
 scripts); set \texttt{BPDG\_API\_TOKEN} to require
 \texttt{Authorization: Bearer <token>} on every route.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-payment-delegation/blob/v0.1.0/README.md#L82}{\texttt{benchmark-payment-delegation:README.md\#L82}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-payment-delegation/blob/v0.1.0/README.md#L82}{\texttt{benchmark-payment-delegation:README.md\#L82}}.}
 
 \section{Offline validation}
 No real model was run. The family data records mock runs at seeds \pkgMockSeedA{} and \pkgMockSeedB{}
@@ -205,7 +205,7 @@ The README prints a sample run:
 -~Score:~**57.5\%**\\
 -~Tasks:~40\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-payment-delegation/blob/v0.1.0/README.md#L14}{\texttt{benchmark-payment-delegation:README.md\#L14}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-payment-delegation/blob/v0.1.0/README.md#L14}{\texttt{benchmark-payment-delegation:README.md\#L14}}.}
 
 \section{Review record}
 The package went through \pkgFixRounds{} fix rounds recorded in \texttt{paper/data/review-rounds.csv}, counted from release \texttt{review-log-v1} of this repository.
@@ -219,7 +219,7 @@ Table~\ref{tab:defects} lists the defect class that touched this package, each c
 \toprule
 Defect class & Record kind & Locators \\
 \midrule
-\texttt{task-\allowbreak list-\allowbreak cache} & {\footnotesize changelogs and issues (payment-delegation under 0.1.0/Unreleased)} & \href{https://github.com/pooriaarab/benchmark-payment-delegation/blob/v0.1.0/CHANGELOG.md#L21}{\texttt{benchmark-\allowbreak payment-\allowbreak delegation:\allowbreak CHANGELOG.md\#L21}};\ \href{https://github.com/pooriaarab/benchmark-payment-delegation/issues/40}{\texttt{benchmark-\allowbreak payment-\allowbreak delegation\#40}} \\
+\texttt{task-\allowbreak list-\allowbreak cache} & {\footnotesize changelogs and issues (payment-delegation under 0.1.0/Unreleased)} & \href{https://github.com/itsryanarmani/benchmark-payment-delegation/blob/v0.1.0/CHANGELOG.md#L21}{\texttt{benchmark-\allowbreak payment-\allowbreak delegation:\allowbreak CHANGELOG.md\#L21}};\ \href{https://github.com/itsryanarmani/benchmark-payment-delegation/issues/40}{\texttt{benchmark-\allowbreak payment-\allowbreak delegation\#40}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -236,15 +236,15 @@ and \pkgCouncilFailed{} request that ever showed a failing \texttt{vibecoderevie
 \toprule
 Pull request & Council reviews & Approved & Council run & CI check \\
 \midrule
-\href{https://github.com/pooriaarab/benchmark-payment-delegation/pull/15}{\#15} & 3 & no & success & success \\
-\href{https://github.com/pooriaarab/benchmark-payment-delegation/pull/16}{\#16} & 2 & no & success & success \\
-\href{https://github.com/pooriaarab/benchmark-payment-delegation/pull/17}{\#17} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-payment-delegation/pull/21}{\#21} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-payment-delegation/pull/22}{\#22} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-payment-delegation/pull/25}{\#25} & 3 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-payment-delegation/pull/26}{\#26} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-payment-delegation/pull/27}{\#27} & 3 & no & failure & success \\
-\href{https://github.com/pooriaarab/benchmark-payment-delegation/pull/45}{\#45} & 3 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-payment-delegation/pull/15}{\#15} & 3 & no & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-payment-delegation/pull/16}{\#16} & 2 & no & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-payment-delegation/pull/17}{\#17} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-payment-delegation/pull/21}{\#21} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-payment-delegation/pull/22}{\#22} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-payment-delegation/pull/25}{\#25} & 3 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-payment-delegation/pull/26}{\#26} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-payment-delegation/pull/27}{\#27} & 3 & no & failure & success \\
+\href{https://github.com/itsryanarmani/benchmark-payment-delegation/pull/45}{\#45} & 3 & yes & success & success \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -263,7 +263,7 @@ networks. The mock adapter uses per-task scripts; live models may need
 more turns. Public tasks may appear in training
 corpora\textemdash{}keep a hidden split for final comparisons.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-payment-delegation/blob/v0.1.0/README.md#L86}{\texttt{benchmark-payment-delegation:README.md\#L86}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-payment-delegation/blob/v0.1.0/README.md#L86}{\texttt{benchmark-payment-delegation:README.md\#L86}}.}
 
 This report claims no model capability: it records no real-model run, no leaderboard, and no comparison between models.
 These offline numbers describe the graders and the scripted policies. They say nothing about a hosted model.
@@ -277,12 +277,12 @@ The README gives the install and the offline run:
 npx~benchmark-payment-delegation~run~-{}-provider~mock~-{}-model\\
 $\hookrightarrow$\hspace*{0.5em}~offline\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-payment-delegation/blob/v0.1.0/README.md#L10}{\texttt{benchmark-payment-delegation:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-payment-delegation/blob/v0.1.0/README.md#L10}{\texttt{benchmark-payment-delegation:README.md\#L10}}.}
 % quote: benchmark-payment-delegation/README.md#L27
 \begin{quote}\ttfamily
 npm~install~benchmark-payment-delegation\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-payment-delegation/blob/v0.1.0/README.md#L27}{\texttt{benchmark-payment-delegation:README.md\#L27}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-payment-delegation/blob/v0.1.0/README.md#L27}{\texttt{benchmark-payment-delegation:README.md\#L27}}.}
 
 The README also gives a run against a paid provider; it needs a paid key, and this report does not run it:
 % quote: benchmark-payment-delegation/README.md#L41
@@ -291,7 +291,7 @@ export~OPENROUTER\_API\_KEY=your\_key\\
 npx~benchmark-payment-delegation~run~-{}-provider~openrouter\\
 $\hookrightarrow$\hspace*{0.5em}~-{}-model~anthropic/claude-sonnet-4\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-payment-delegation/blob/v0.1.0/README.md#L41}{\texttt{benchmark-payment-delegation:README.md\#L41}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-payment-delegation/blob/v0.1.0/README.md#L41}{\texttt{benchmark-payment-delegation:README.md\#L41}}.}
 
 \noindent\texttt{npm install benchmark-payment-delegation@\pkgVersion{}} installs the measured version.
 Table~\ref{tab:sources} lists the declared data sources from the index entry (\texttt{paper/data/suite.json}).

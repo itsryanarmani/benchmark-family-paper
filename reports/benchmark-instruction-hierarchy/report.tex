@@ -84,7 +84,7 @@ system rules} when long context, documents, quotes, and fake tool
 output push conflicting directives. Each task is a single turn with
 machine-checkable assertions (no LLM judge).
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L7}{\texttt{benchmark-instruction-hierarchy:README.md\#L7}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L7}{\texttt{benchmark-instruction-hierarchy:README.md\#L7}}.}
 
 Its index entry states the measured construct as: ``Whether a model keeps user and system rules when documents, quotes, and tool output contain conflicting or injected directives.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-instruction-hierarchy.whatItMeasures}).
 Table~\ref{tab:tasks} counts the tasks by family.
@@ -118,7 +118,7 @@ Saturation & \texttt{\pkgSaturation{}} \\
 Category & \pkgCategory{} \\
 Tags & \texttt{helpful}, \texttt{science} \\
 Public seed & \pkgPublicSeed{} \\
-Repository & \url{https://github.com/pooriaarab/benchmark-instruction-hierarchy} \\
+Repository & \url{https://github.com/itsryanarmani/benchmark-instruction-hierarchy} \\
 Documentation & \url{https://private-repo-337e.com/benchmarks/benchmark-instruction-hierarchy} \\
 \bottomrule
 \end{tabular}}
@@ -130,7 +130,7 @@ The README records where the task data comes from:
 \texttt{20261015}, from \texttt{node scripts/gen-tasks.mjs -{}-seed
 20261015}.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L60}{\texttt{benchmark-instruction-hierarchy:README.md\#L60}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L60}{\texttt{benchmark-instruction-hierarchy:README.md\#L60}}.}
 
 \section{Grader and surfaces}
 The grading document states the mechanism in its own words:
@@ -138,7 +138,7 @@ The grading document states the mechanism in its own words:
 \begin{quote}
 Deterministic checks only. No LLM judge.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/blob/v0.1.0/docs/grading.md#L3}{\texttt{benchmark-instruction-hierarchy:docs/grading.md\#L3}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/blob/v0.1.0/docs/grading.md#L3}{\texttt{benchmark-instruction-hierarchy:docs/grading.md\#L3}}.}
 
 The index entry summarises the grader as: ``Deterministic assertion checks on the final answer (normalized match, forbidden tokens, regex shapes). Failed gate assertions score 0; soft checks give weighted partial credit. See docs/grading.md.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-instruction-hierarchy.grader}).
 Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README line that describes it, and the quoted lines follow.
@@ -151,10 +151,10 @@ Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README 
 \toprule
 Surface & README line \\
 \midrule
-TypeScript SDK & \href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L74}{\texttt{README.md\#L74}} \\
-Command-line interface & \href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L10}{\texttt{README.md\#L10}} \\
-Model Context Protocol server & \href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L84}{\texttt{README.md\#L84}} \\
-Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L91}{\texttt{README.md\#L91}} \\
+TypeScript SDK & \href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L74}{\texttt{README.md\#L74}} \\
+Command-line interface & \href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L10}{\texttt{README.md\#L10}} \\
+Model Context Protocol server & \href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L84}{\texttt{README.md\#L84}} \\
+Fetch-style HTTP API & \href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L91}{\texttt{README.md\#L91}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -163,28 +163,28 @@ Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-instruction
 import~\{~benchmark,~run,~score~\}~from\\
 $\hookrightarrow$\hspace*{0.5em}~"benchmark-instruction-hierarchy";\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L74}{\texttt{benchmark-instruction-hierarchy:README.md\#L74}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L74}{\texttt{benchmark-instruction-hierarchy:README.md\#L74}}.}
 % quote: benchmark-instruction-hierarchy/README.md#L10
 \begin{quote}\ttfamily
 npx~benchmark-instruction-hierarchy~run~-{}-model~offline\\
 $\hookrightarrow$\hspace*{0.5em}~-{}-provider~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L10}{\texttt{benchmark-instruction-hierarchy:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L10}{\texttt{benchmark-instruction-hierarchy:README.md\#L10}}.}
 % quote: benchmark-instruction-hierarchy/README.md#L84
 \begin{quote}\ttfamily
 npx~benchmark-instruction-hierarchy~mcp\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L84}{\texttt{benchmark-instruction-hierarchy:README.md\#L84}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L84}{\texttt{benchmark-instruction-hierarchy:README.md\#L84}}.}
 % quote: benchmark-instruction-hierarchy/README.md#L91
 \begin{quote}
 Import \texttt{handler} from \texttt{benchmark-instruction-hierarchy/api}, or:
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L91}{\texttt{benchmark-instruction-hierarchy:README.md\#L91}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L91}{\texttt{benchmark-instruction-hierarchy:README.md\#L91}}.}
 % quote: benchmark-instruction-hierarchy/README.md#L94
 \begin{quote}\ttfamily
 npx~benchmark-instruction-hierarchy~serve~8787\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L94}{\texttt{benchmark-instruction-hierarchy:README.md\#L94}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L94}{\texttt{benchmark-instruction-hierarchy:README.md\#L94}}.}
 
 \section{Offline validation}
 No real model was run. The family data records mock runs at seeds \pkgMockSeedA{} and \pkgMockSeedB{}
@@ -204,7 +204,7 @@ The README prints a sample run:
 -~95\%~CI:~38.3\%\textendash{}61.7\%\\
 -~Tasks:~60\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L16}{\texttt{benchmark-instruction-hierarchy:README.md\#L16}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L16}{\texttt{benchmark-instruction-hierarchy:README.md\#L16}}.}
 
 \section{Review record}
 The package went through \pkgFixRounds{} fix rounds recorded in \texttt{paper/data/review-rounds.csv}, counted from release \texttt{review-log-v1} of this repository.
@@ -218,7 +218,7 @@ Table~\ref{tab:defects} lists the defect class that touched this package, each c
 \toprule
 Defect class & Record kind & Locators \\
 \midrule
-\texttt{blind-\allowbreak strategy-\allowbreak credit} & {\footnotesize issues and changelogs (per-package locators)} & \href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/issues/8}{\texttt{benchmark-\allowbreak instruction-\allowbreak hierarchy\#8}} \\
+\texttt{blind-\allowbreak strategy-\allowbreak credit} & {\footnotesize issues and changelogs (per-package locators)} & \href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/issues/8}{\texttt{benchmark-\allowbreak instruction-\allowbreak hierarchy\#8}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -235,11 +235,11 @@ and \pkgCouncilFailed{} requests that ever showed a failing \texttt{vibecoderevi
 \toprule
 Pull request & Council reviews & Approved & Council run & CI check \\
 \midrule
-\href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/pull/4}{\#4} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/pull/5}{\#5} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/pull/6}{\#6} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/pull/10}{\#10} & 2 & no & success & success \\
-\href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/pull/29}{\#29} & 3 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/pull/4}{\#4} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/pull/5}{\#5} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/pull/6}{\#6} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/pull/10}{\#10} & 2 & no & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/pull/29}{\#29} & 3 & yes & success & success \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -255,7 +255,7 @@ The package documents its own limit:
 \begin{quote}
 Single-turn answers only; no multi-step tool episodes yet.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L101}{\texttt{benchmark-instruction-hierarchy:README.md\#L101}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L101}{\texttt{benchmark-instruction-hierarchy:README.md\#L101}}.}
 
 This report claims no model capability: it records no real-model run, no leaderboard, and no comparison between models.
 These offline numbers describe the graders and the scripted policies. They say nothing about a hosted model.
@@ -269,12 +269,12 @@ The README gives the install and the offline run:
 npx~benchmark-instruction-hierarchy~run~-{}-model~offline\\
 $\hookrightarrow$\hspace*{0.5em}~-{}-provider~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L10}{\texttt{benchmark-instruction-hierarchy:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L10}{\texttt{benchmark-instruction-hierarchy:README.md\#L10}}.}
 % quote: benchmark-instruction-hierarchy/README.md#L31
 \begin{quote}\ttfamily
 npm~install~benchmark-instruction-hierarchy\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L31}{\texttt{benchmark-instruction-hierarchy:README.md\#L31}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L31}{\texttt{benchmark-instruction-hierarchy:README.md\#L31}}.}
 
 The README also gives a run against a paid provider; it needs a paid key, and this report does not run it:
 % quote: benchmark-instruction-hierarchy/README.md#L43
@@ -284,7 +284,7 @@ npx~benchmark-instruction-hierarchy~run~-{}-model\\
 $\hookrightarrow$\hspace*{0.5em}~anthropic/claude-sonnet-4~-{}-provider\\
 $\hookrightarrow$\hspace*{0.5em}~openrouter\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L43}{\texttt{benchmark-instruction-hierarchy:README.md\#L43}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-instruction-hierarchy/blob/v0.1.0/README.md#L43}{\texttt{benchmark-instruction-hierarchy:README.md\#L43}}.}
 
 \noindent\texttt{npm install benchmark-instruction-hierarchy@\pkgVersion{}} installs the measured version.
 Table~\ref{tab:sources} lists the declared data sources from the index entry (\texttt{paper/data/suite.json}).

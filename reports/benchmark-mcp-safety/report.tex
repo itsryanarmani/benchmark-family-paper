@@ -89,7 +89,7 @@ benchmark-mcp-safety is an open-source Model Context Protocol (MCP)
 security benchmark. It tests whether an agent rejects poisoned tools
 while finishing a normal job.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-mcp-safety/blob/v0.2.0/README.md#L7}{\texttt{benchmark-mcp-safety:README.md\#L7}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-mcp-safety/blob/v0.2.0/README.md#L7}{\texttt{benchmark-mcp-safety:README.md\#L7}}.}
 
 Its index entry states the measured construct as: ``Whether an agent completes a normal MCP job without obeying poisoned metadata, using shadow tools, overreaching permissions, or leaking a canary.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-mcp-safety.whatItMeasures}).
 Table~\ref{tab:tasks} counts the tasks by family.
@@ -123,7 +123,7 @@ Saturation & \texttt{\pkgSaturation{}} \\
 Category & \pkgCategory{} \\
 Tags & \texttt{helpful}, \texttt{viral} \\
 Public seed & \pkgPublicSeed{} \\
-Repository & \url{https://github.com/pooriaarab/benchmark-mcp-safety} \\
+Repository & \url{https://github.com/itsryanarmani/benchmark-mcp-safety} \\
 Documentation & \url{https://private-repo-337e.com/benchmarks/benchmark-mcp-safety} \\
 \bottomrule
 \end{tabular}}
@@ -133,7 +133,7 @@ The README records where the task data comes from:
 \begin{quote}
 \texttt{data/tasks.jsonl} contains the public split. Seed \texttt{20261015} reproduces it:
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-mcp-safety/blob/v0.2.0/README.md#L158}{\texttt{benchmark-mcp-safety:README.md\#L158}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-mcp-safety/blob/v0.2.0/README.md#L158}{\texttt{benchmark-mcp-safety:README.md\#L158}}.}
 
 \section{Grader and surfaces}
 The grading document states the mechanism in its own words:
@@ -142,7 +142,7 @@ The grading document states the mechanism in its own words:
 The deterministic grader replays the submitted tool log in a fresh
 simulator. It reports two binary measures in \texttt{details}:
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-mcp-safety/blob/v0.2.0/docs/grading.md#L3}{\texttt{benchmark-mcp-safety:docs/grading.md\#L3}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-mcp-safety/blob/v0.2.0/docs/grading.md#L3}{\texttt{benchmark-mcp-safety:docs/grading.md\#L3}}.}
 
 The index entry summarises the grader as: ``Deterministic tool-log replay; headline score is safetyScore times usefulnessScore, with both components reported.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-mcp-safety.grader}).
 Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README line that describes it, and the quoted lines follow.
@@ -155,10 +155,10 @@ Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README 
 \toprule
 Surface & README line \\
 \midrule
-TypeScript SDK & \href{https://github.com/pooriaarab/benchmark-mcp-safety/blob/v0.2.0/README.md#L133}{\texttt{README.md\#L133}} \\
-Command-line interface & \href{https://github.com/pooriaarab/benchmark-mcp-safety/blob/v0.2.0/README.md#L10}{\texttt{README.md\#L10}} \\
-Model Context Protocol server & \href{https://github.com/pooriaarab/benchmark-mcp-safety/blob/v0.2.0/README.md#L145}{\texttt{README.md\#L145}} \\
-Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-mcp-safety/blob/v0.2.0/README.md#L152}{\texttt{README.md\#L152}} \\
+TypeScript SDK & \href{https://github.com/itsryanarmani/benchmark-mcp-safety/blob/v0.2.0/README.md#L133}{\texttt{README.md\#L133}} \\
+Command-line interface & \href{https://github.com/itsryanarmani/benchmark-mcp-safety/blob/v0.2.0/README.md#L10}{\texttt{README.md\#L10}} \\
+Model Context Protocol server & \href{https://github.com/itsryanarmani/benchmark-mcp-safety/blob/v0.2.0/README.md#L145}{\texttt{README.md\#L145}} \\
+Fetch-style HTTP API & \href{https://github.com/itsryanarmani/benchmark-mcp-safety/blob/v0.2.0/README.md#L152}{\texttt{README.md\#L152}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -167,23 +167,23 @@ Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-mcp-safety/
 import~\{~benchmark,~run,~score~\}~from\\
 $\hookrightarrow$\hspace*{0.5em}~"benchmark-mcp-safety";\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-mcp-safety/blob/v0.2.0/README.md#L133}{\texttt{benchmark-mcp-safety:README.md\#L133}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-mcp-safety/blob/v0.2.0/README.md#L133}{\texttt{benchmark-mcp-safety:README.md\#L133}}.}
 % quote: benchmark-mcp-safety/README.md#L10
 \begin{quote}\ttfamily
 npx~benchmark-mcp-safety~run~-{}-provider~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-mcp-safety/blob/v0.2.0/README.md#L10}{\texttt{benchmark-mcp-safety:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-mcp-safety/blob/v0.2.0/README.md#L10}{\texttt{benchmark-mcp-safety:README.md\#L10}}.}
 % quote: benchmark-mcp-safety/README.md#L145
 \begin{quote}\ttfamily
 npx~benchmark-mcp-safety~mcp\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-mcp-safety/blob/v0.2.0/README.md#L145}{\texttt{benchmark-mcp-safety:README.md\#L145}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-mcp-safety/blob/v0.2.0/README.md#L145}{\texttt{benchmark-mcp-safety:README.md\#L145}}.}
 % quote: benchmark-mcp-safety/README.md#L152
 \begin{quote}
 Import \texttt{handler} from \texttt{benchmark-mcp-safety/api}, or run
 \texttt{npx benchmark-mcp-safety serve}.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-mcp-safety/blob/v0.2.0/README.md#L152}{\texttt{benchmark-mcp-safety:README.md\#L152}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-mcp-safety/blob/v0.2.0/README.md#L152}{\texttt{benchmark-mcp-safety:README.md\#L152}}.}
 
 \section{Offline validation}
 No real model was run. The family data records mock runs at seeds \pkgMockSeedA{} and \pkgMockSeedB{}
@@ -210,7 +210,7 @@ $\hookrightarrow$\hspace*{0.5em}~quadrant=unsafe-yet-useful;~...~|\\
 -~Safety~score:~50.0\%~of~40~evaluated\\
 -~Usefulness~score:~100.0\%\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-mcp-safety/blob/v0.2.0/README.md#L16}{\texttt{benchmark-mcp-safety:README.md\#L16}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-mcp-safety/blob/v0.2.0/README.md#L16}{\texttt{benchmark-mcp-safety:README.md\#L16}}.}
 
 \section{Review record}
 The package went through \pkgFixRounds{} fix rounds recorded in \texttt{paper/data/review-rounds.csv}, counted from release \texttt{review-log-v1} of this repository.
@@ -224,9 +224,9 @@ Table~\ref{tab:defects} lists the defect classes that touched this package, each
 \toprule
 Defect class & Record kind & Locators \\
 \midrule
-\texttt{blind-\allowbreak strategy-\allowbreak credit} & {\footnotesize issues and changelogs (per-package locators)} & \href{https://github.com/pooriaarab/benchmark-mcp-safety/issues/8}{\texttt{benchmark-\allowbreak mcp-\allowbreak safety\#8}} \\
-\texttt{hidden-\allowbreak split-\allowbreak not-\allowbreak hidden} & {\footnotesize review issues and PRs (per-package locators); 0.2.0 changelogs} & \href{https://github.com/pooriaarab/benchmark-mcp-safety/issues/7}{\texttt{benchmark-\allowbreak mcp-\allowbreak safety\#7}} \\
-\texttt{task-\allowbreak list-\allowbreak cache} & {\footnotesize changelogs and issues (payment-delegation under 0.1.0/Unreleased)} & \href{https://github.com/pooriaarab/benchmark-mcp-safety/blob/v0.2.0/CHANGELOG.md#L18}{\texttt{benchmark-\allowbreak mcp-\allowbreak safety:\allowbreak CHANGELOG.md\#L18}} \\
+\texttt{blind-\allowbreak strategy-\allowbreak credit} & {\footnotesize issues and changelogs (per-package locators)} & \href{https://github.com/itsryanarmani/benchmark-mcp-safety/issues/8}{\texttt{benchmark-\allowbreak mcp-\allowbreak safety\#8}} \\
+\texttt{hidden-\allowbreak split-\allowbreak not-\allowbreak hidden} & {\footnotesize review issues and PRs (per-package locators); 0.2.0 changelogs} & \href{https://github.com/itsryanarmani/benchmark-mcp-safety/issues/7}{\texttt{benchmark-\allowbreak mcp-\allowbreak safety\#7}} \\
+\texttt{task-\allowbreak list-\allowbreak cache} & {\footnotesize changelogs and issues (payment-delegation under 0.1.0/Unreleased)} & \href{https://github.com/itsryanarmani/benchmark-mcp-safety/blob/v0.2.0/CHANGELOG.md#L18}{\texttt{benchmark-\allowbreak mcp-\allowbreak safety:\allowbreak CHANGELOG.md\#L18}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -235,7 +235,7 @@ The package changelog for this version states:
 \begin{quote}
 Scoring changed; \textbf{0.1.0 scores are not comparable.}
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-mcp-safety/blob/v0.2.0/CHANGELOG.md#L5}{\texttt{benchmark-mcp-safety:CHANGELOG.md\#L5}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-mcp-safety/blob/v0.2.0/CHANGELOG.md#L5}{\texttt{benchmark-mcp-safety:CHANGELOG.md\#L5}}.}
 
 The merged feature pull requests for this package are listed in Table~\ref{tab:council}:
 \pkgCouncilPrs{} requests, \pkgCouncilReviews{} council reviews, \pkgCouncilApproved{} approvals,
@@ -249,13 +249,13 @@ and \pkgCouncilFailed{} requests that ever showed a failing \texttt{vibecoderevi
 \toprule
 Pull request & Council reviews & Approved & Council run & CI check \\
 \midrule
-\href{https://github.com/pooriaarab/benchmark-mcp-safety/pull/4}{\#4} & 3 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-mcp-safety/pull/5}{\#5} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-mcp-safety/pull/6}{\#6} & 3 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-mcp-safety/pull/11}{\#11} & 3 & yes & failure & success \\
-\href{https://github.com/pooriaarab/benchmark-mcp-safety/pull/12}{\#12} & 3 & yes & failure & success \\
-\href{https://github.com/pooriaarab/benchmark-mcp-safety/pull/13}{\#13} & 3 & yes & failure & success \\
-\href{https://github.com/pooriaarab/benchmark-mcp-safety/pull/14}{\#14} & 3 & yes & failure & success \\
+\href{https://github.com/itsryanarmani/benchmark-mcp-safety/pull/4}{\#4} & 3 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-mcp-safety/pull/5}{\#5} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-mcp-safety/pull/6}{\#6} & 3 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-mcp-safety/pull/11}{\#11} & 3 & yes & failure & success \\
+\href{https://github.com/itsryanarmani/benchmark-mcp-safety/pull/12}{\#12} & 3 & yes & failure & success \\
+\href{https://github.com/itsryanarmani/benchmark-mcp-safety/pull/13}{\#13} & 3 & yes & failure & success \\
+\href{https://github.com/itsryanarmani/benchmark-mcp-safety/pull/14}{\#14} & 3 & yes & failure & success \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -273,7 +273,7 @@ The package documents its own limit:
 \begin{quote}
 Public tasks can enter training data. Use an unreported hidden seed for final comparisons.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-mcp-safety/blob/v0.2.0/README.md#L171}{\texttt{benchmark-mcp-safety:README.md\#L171}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-mcp-safety/blob/v0.2.0/README.md#L171}{\texttt{benchmark-mcp-safety:README.md\#L171}}.}
 
 This report claims no model capability: it records no real-model run, no leaderboard, and no comparison between models.
 These offline numbers describe the graders and the scripted policies. They say nothing about a hosted model.
@@ -286,12 +286,12 @@ The README gives the install and the offline run:
 \begin{quote}\ttfamily
 npx~benchmark-mcp-safety~run~-{}-provider~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-mcp-safety/blob/v0.2.0/README.md#L10}{\texttt{benchmark-mcp-safety:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-mcp-safety/blob/v0.2.0/README.md#L10}{\texttt{benchmark-mcp-safety:README.md\#L10}}.}
 % quote: benchmark-mcp-safety/README.md#L40
 \begin{quote}\ttfamily
 npm~install~benchmark-mcp-safety\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-mcp-safety/blob/v0.2.0/README.md#L40}{\texttt{benchmark-mcp-safety:README.md\#L40}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-mcp-safety/blob/v0.2.0/README.md#L40}{\texttt{benchmark-mcp-safety:README.md\#L40}}.}
 
 The README also gives a run against a paid provider; it needs a paid key, and this report does not run it:
 % quote: benchmark-mcp-safety/README.md#L58
@@ -299,7 +299,7 @@ The README also gives a run against a paid provider; it needs a paid key, and th
 npx~benchmark-mcp-safety~run~-{}-model~openai/gpt-4.1-mini\\
 $\hookrightarrow$\hspace*{0.5em}~-{}-provider~openrouter\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-mcp-safety/blob/v0.2.0/README.md#L58}{\texttt{benchmark-mcp-safety:README.md\#L58}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-mcp-safety/blob/v0.2.0/README.md#L58}{\texttt{benchmark-mcp-safety:README.md\#L58}}.}
 
 \noindent\texttt{npm install benchmark-mcp-safety@\pkgVersion{}} installs the measured version.
 Table~\ref{tab:sources} lists the declared data sources from the index entry (\texttt{paper/data/suite.json}).

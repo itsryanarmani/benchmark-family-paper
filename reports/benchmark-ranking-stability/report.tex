@@ -89,7 +89,7 @@ benchmark-ranking-stability is an open-source model evaluation
 benchmark. It shows how rankings change across task samples, prompt
 wording, and repeated runs.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-ranking-stability/blob/v0.2.0/README.md#L7}{\texttt{benchmark-ranking-stability:README.md\#L7}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-ranking-stability/blob/v0.2.0/README.md#L7}{\texttt{benchmark-ranking-stability:README.md\#L7}}.}
 
 Its index entry states the measured construct as: ``How model rankings move when the seed, prompt wording, or task sample changes.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-ranking-stability.whatItMeasures}).
 Table~\ref{tab:tasks} counts the tasks by family.
@@ -123,7 +123,7 @@ Saturation & \texttt{\pkgSaturation{}} \\
 Category & \pkgCategory{} \\
 Tags & \texttt{helpful}, \texttt{viral}, \texttt{science} \\
 Public seed & \pkgPublicSeed{} \\
-Repository & \url{https://github.com/pooriaarab/benchmark-ranking-stability} \\
+Repository & \url{https://github.com/itsryanarmani/benchmark-ranking-stability} \\
 Documentation & \url{https://private-repo-337e.com/benchmarks/benchmark-ranking-stability} \\
 \bottomrule
 \end{tabular}}
@@ -134,7 +134,7 @@ The README records where the task data comes from:
 \texttt{scripts/gen-tasks.mjs} creates all Mode B data under the MIT
 license. Seed \texttt{20261015} reproduces the committed public split.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-ranking-stability/blob/v0.2.0/README.md#L154}{\texttt{benchmark-ranking-stability:README.md\#L154}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-ranking-stability/blob/v0.2.0/README.md#L154}{\texttt{benchmark-ranking-stability:README.md\#L154}}.}
 
 \section{Grader and surfaces}
 The grading document states the mechanism in its own words:
@@ -143,7 +143,7 @@ The grading document states the mechanism in its own words:
 Each Mode B task has one generated answer. The grader normalizes the
 submission before comparing:
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-ranking-stability/blob/v0.2.0/docs/grading.md#L5}{\texttt{benchmark-ranking-stability:docs/grading.md\#L5}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-ranking-stability/blob/v0.2.0/docs/grading.md#L5}{\texttt{benchmark-ranking-stability:docs/grading.md\#L5}}.}
 
 The index-entry grader summary trips this report's wording rule, so it is not quoted here (\texttt{paper/data/suite.json}, \texttt{benchmark-ranking-stability.grader}).
 Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README line that describes it, and the quoted lines follow.
@@ -156,10 +156,10 @@ Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README 
 \toprule
 Surface & README line \\
 \midrule
-TypeScript SDK & \href{https://github.com/pooriaarab/benchmark-ranking-stability/blob/v0.2.0/README.md#L116}{\texttt{README.md\#L116}} \\
-Command-line interface & \href{https://github.com/pooriaarab/benchmark-ranking-stability/blob/v0.2.0/README.md#L10}{\texttt{README.md\#L10}} \\
-Model Context Protocol server & \href{https://github.com/pooriaarab/benchmark-ranking-stability/blob/v0.2.0/README.md#L137}{\texttt{README.md\#L137}} \\
-Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-ranking-stability/blob/v0.2.0/README.md#L144}{\texttt{README.md\#L144}} \\
+TypeScript SDK & \href{https://github.com/itsryanarmani/benchmark-ranking-stability/blob/v0.2.0/README.md#L116}{\texttt{README.md\#L116}} \\
+Command-line interface & \href{https://github.com/itsryanarmani/benchmark-ranking-stability/blob/v0.2.0/README.md#L10}{\texttt{README.md\#L10}} \\
+Model Context Protocol server & \href{https://github.com/itsryanarmani/benchmark-ranking-stability/blob/v0.2.0/README.md#L137}{\texttt{README.md\#L137}} \\
+Fetch-style HTTP API & \href{https://github.com/itsryanarmani/benchmark-ranking-stability/blob/v0.2.0/README.md#L144}{\texttt{README.md\#L144}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -168,29 +168,29 @@ Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-ranking-sta
 import~\{~benchmark,~run,~score,~scoreStabilityFiles~\}~from\\
 $\hookrightarrow$\hspace*{0.5em}~"benchmark-ranking-stability";\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-ranking-stability/blob/v0.2.0/README.md#L116}{\texttt{benchmark-ranking-stability:README.md\#L116}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-ranking-stability/blob/v0.2.0/README.md#L116}{\texttt{benchmark-ranking-stability:README.md\#L116}}.}
 % quote: benchmark-ranking-stability/README.md#L10
 \begin{quote}\ttfamily
 npx~benchmark-ranking-stability~run~-{}-provider~mock~-{}-json\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-ranking-stability/blob/v0.2.0/README.md#L10}{\texttt{benchmark-ranking-stability:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-ranking-stability/blob/v0.2.0/README.md#L10}{\texttt{benchmark-ranking-stability:README.md\#L10}}.}
 % quote: benchmark-ranking-stability/README.md#L137
 \begin{quote}\ttfamily
 npx~benchmark-ranking-stability~mcp\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-ranking-stability/blob/v0.2.0/README.md#L137}{\texttt{benchmark-ranking-stability:README.md\#L137}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-ranking-stability/blob/v0.2.0/README.md#L137}{\texttt{benchmark-ranking-stability:README.md\#L137}}.}
 % quote: benchmark-ranking-stability/README.md#L144
 \begin{quote}
 Import \texttt{handler} from \texttt{benchmark-ranking-stability/api},
 or call \texttt{createApi(\{ tasksPath \})} for a handler bound to a
 split file. To self-host on Node:
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-ranking-stability/blob/v0.2.0/README.md#L144}{\texttt{benchmark-ranking-stability:README.md\#L144}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-ranking-stability/blob/v0.2.0/README.md#L144}{\texttt{benchmark-ranking-stability:README.md\#L144}}.}
 % quote: benchmark-ranking-stability/README.md#L147
 \begin{quote}\ttfamily
 npx~benchmark-ranking-stability~serve~3000\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-ranking-stability/blob/v0.2.0/README.md#L147}{\texttt{benchmark-ranking-stability:README.md\#L147}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-ranking-stability/blob/v0.2.0/README.md#L147}{\texttt{benchmark-ranking-stability:README.md\#L147}}.}
 
 \section{Offline validation}
 No real model was run. The family data records mock runs at seeds \pkgMockSeedA{} and \pkgMockSeedB{}
@@ -218,7 +218,7 @@ $\hookrightarrow$\hspace*{0.5em}3":\{"tasks":60,"mean":0.5\},"v4":\{"tasks":60\\
 $\hookrightarrow$\hspace*{0.5em},"mean":0.5\},"v5":\{"tasks":60,"mean":0.5\}\}\}\\
 $\hookrightarrow$\hspace*{0.5em}\}\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-ranking-stability/blob/v0.2.0/README.md#L14}{\texttt{benchmark-ranking-stability:README.md\#L14}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-ranking-stability/blob/v0.2.0/README.md#L14}{\texttt{benchmark-ranking-stability:README.md\#L14}}.}
 
 \section{Review record}
 The package went through \pkgFixRounds{} fix rounds recorded in \texttt{paper/data/review-rounds.csv}, counted from release \texttt{review-log-v1} of this repository.
@@ -232,10 +232,10 @@ Table~\ref{tab:defects} lists the defect classes that touched this package, each
 \toprule
 Defect class & Record kind & Locators \\
 \midrule
-\texttt{blind-\allowbreak strategy-\allowbreak credit} & {\footnotesize issues and changelogs (per-package locators)} & \href{https://github.com/pooriaarab/benchmark-ranking-stability/issues/7}{\texttt{benchmark-\allowbreak ranking-\allowbreak stability\#7}} \\
-\texttt{honest-\allowbreak answer-\allowbreak rejected} & {\footnotesize review issues and PRs (per-package locators)} & \href{https://github.com/pooriaarab/benchmark-ranking-stability/issues/7}{\texttt{benchmark-\allowbreak ranking-\allowbreak stability\#7}} \\
-\texttt{hidden-\allowbreak split-\allowbreak not-\allowbreak hidden} & {\footnotesize review issues and PRs (per-package locators); 0.2.0 changelogs} & \href{https://github.com/pooriaarab/benchmark-ranking-stability/issues/7}{\texttt{benchmark-\allowbreak ranking-\allowbreak stability\#7}};\ \href{https://github.com/pooriaarab/benchmark-ranking-stability/issues/15}{\texttt{benchmark-\allowbreak ranking-\allowbreak stability\#15}} \\
-\texttt{generator-\allowbreak bugs} & {\footnotesize accessibility-fix changelog; ranking-stability issue 7} & \href{https://github.com/pooriaarab/benchmark-ranking-stability/issues/7}{\texttt{benchmark-\allowbreak ranking-\allowbreak stability\#7}} \\
+\texttt{blind-\allowbreak strategy-\allowbreak credit} & {\footnotesize issues and changelogs (per-package locators)} & \href{https://github.com/itsryanarmani/benchmark-ranking-stability/issues/7}{\texttt{benchmark-\allowbreak ranking-\allowbreak stability\#7}} \\
+\texttt{honest-\allowbreak answer-\allowbreak rejected} & {\footnotesize review issues and PRs (per-package locators)} & \href{https://github.com/itsryanarmani/benchmark-ranking-stability/issues/7}{\texttt{benchmark-\allowbreak ranking-\allowbreak stability\#7}} \\
+\texttt{hidden-\allowbreak split-\allowbreak not-\allowbreak hidden} & {\footnotesize review issues and PRs (per-package locators); 0.2.0 changelogs} & \href{https://github.com/itsryanarmani/benchmark-ranking-stability/issues/7}{\texttt{benchmark-\allowbreak ranking-\allowbreak stability\#7}};\ \href{https://github.com/itsryanarmani/benchmark-ranking-stability/issues/15}{\texttt{benchmark-\allowbreak ranking-\allowbreak stability\#15}} \\
+\texttt{generator-\allowbreak bugs} & {\footnotesize accessibility-fix changelog; ranking-stability issue 7} & \href{https://github.com/itsryanarmani/benchmark-ranking-stability/issues/7}{\texttt{benchmark-\allowbreak ranking-\allowbreak stability\#7}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -244,7 +244,7 @@ The package changelog for this version states:
 \begin{quote}
 Scores from 0.1.0 are not comparable to 0.2.0.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-ranking-stability/blob/v0.2.0/CHANGELOG.md#L5}{\texttt{benchmark-ranking-stability:CHANGELOG.md\#L5}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-ranking-stability/blob/v0.2.0/CHANGELOG.md#L5}{\texttt{benchmark-ranking-stability:CHANGELOG.md\#L5}}.}
 
 The merged feature pull requests for this package are listed in Table~\ref{tab:council}:
 \pkgCouncilPrs{} requests, \pkgCouncilReviews{} council reviews, \pkgCouncilApproved{} approvals,
@@ -258,11 +258,11 @@ and \pkgCouncilFailed{} request that ever showed a failing \texttt{vibecoderevie
 \toprule
 Pull request & Council reviews & Approved & Council run & CI check \\
 \midrule
-\href{https://github.com/pooriaarab/benchmark-ranking-stability/pull/2}{\#2} & 1 & no & success & success \\
-\href{https://github.com/pooriaarab/benchmark-ranking-stability/pull/4}{\#4} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-ranking-stability/pull/6}{\#6} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-ranking-stability/pull/11}{\#11} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-ranking-stability/pull/16}{\#16} & 2 & yes & failure & success \\
+\href{https://github.com/itsryanarmani/benchmark-ranking-stability/pull/2}{\#2} & 1 & no & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-ranking-stability/pull/4}{\#4} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-ranking-stability/pull/6}{\#6} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-ranking-stability/pull/11}{\#11} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-ranking-stability/pull/16}{\#16} & 2 & yes & failure & success \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -283,7 +283,7 @@ final claims. The hidden split stays hidden only while its seed is
 private and its prompts are not served publicly; anyone who learns the
 seed or sees the prompts can rebuild it.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-ranking-stability/blob/v0.2.0/README.md#L168}{\texttt{benchmark-ranking-stability:README.md\#L168}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-ranking-stability/blob/v0.2.0/README.md#L168}{\texttt{benchmark-ranking-stability:README.md\#L168}}.}
 
 This report claims no model capability: it records no real-model run, no leaderboard, and no comparison between models.
 These offline numbers describe the graders and the scripted policies. They say nothing about a hosted model.
@@ -296,12 +296,12 @@ The README gives the install and the offline run:
 \begin{quote}\ttfamily
 npx~benchmark-ranking-stability~run~-{}-provider~mock~-{}-json\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-ranking-stability/blob/v0.2.0/README.md#L10}{\texttt{benchmark-ranking-stability:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-ranking-stability/blob/v0.2.0/README.md#L10}{\texttt{benchmark-ranking-stability:README.md\#L10}}.}
 % quote: benchmark-ranking-stability/README.md#L30
 \begin{quote}\ttfamily
 npm~install~benchmark-ranking-stability\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-ranking-stability/blob/v0.2.0/README.md#L30}{\texttt{benchmark-ranking-stability:README.md\#L30}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-ranking-stability/blob/v0.2.0/README.md#L30}{\texttt{benchmark-ranking-stability:README.md\#L30}}.}
 
 The README also gives a run against a paid provider; it needs a paid key, and this report does not run it:
 % quote: benchmark-ranking-stability/README.md#L22
@@ -310,7 +310,7 @@ OPENROUTER\_API\_KEY=your\_key~npx~benchmark-ranking-stability\\
 $\hookrightarrow$\hspace*{0.5em}~run~-{}-provider~openrouter~-{}-model\\
 $\hookrightarrow$\hspace*{0.5em}~openai/gpt-5-mini~-{}-json\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-ranking-stability/blob/v0.2.0/README.md#L22}{\texttt{benchmark-ranking-stability:README.md\#L22}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-ranking-stability/blob/v0.2.0/README.md#L22}{\texttt{benchmark-ranking-stability:README.md\#L22}}.}
 
 \noindent\texttt{npm install benchmark-ranking-stability@\pkgVersion{}} installs the measured version.
 Table~\ref{tab:sources} lists the declared data sources from the index entry (\texttt{paper/data/suite.json}).
