@@ -84,7 +84,7 @@ broken web page so keyboard, screen-reader, and contrast checks pass
 \textemdash{} and whether the repair is genuine rather than deleted or
 hidden content.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-accessibility-fix/blob/v0.1.0/README.md#L7}{\texttt{benchmark-accessibility-fix:README.md\#L7}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-accessibility-fix/blob/v0.1.0/README.md#L7}{\texttt{benchmark-accessibility-fix:README.md\#L7}}.}
 
 Its index entry states the measured construct as: ``Whether a fixed HTML page really repairs injected keyboard, screen-reader, and contrast defects without deleting or hiding content.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-accessibility-fix.whatItMeasures}).
 Table~\ref{tab:tasks} counts the tasks by family.
@@ -118,7 +118,7 @@ Saturation & \texttt{\pkgSaturation{}} \\
 Category & \pkgCategory{} \\
 Tags & \texttt{helpful} \\
 Public seed & \pkgPublicSeed{} \\
-Repository & \url{https://github.com/pooriaarab/benchmark-accessibility-fix} \\
+Repository & \url{https://github.com/itsryanarmani/benchmark-accessibility-fix} \\
 Documentation & \url{https://private-repo-337e.com/benchmarks/benchmark-accessibility-fix} \\
 \bottomrule
 \end{tabular}}
@@ -133,7 +133,7 @@ generate:tasks} and refresh the provenance file with \texttt{npm run
 provenance} after a build. A hidden split for final comparisons uses
 another seed and stays out of git and npm:
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-accessibility-fix/blob/v0.1.0/README.md#L190}{\texttt{benchmark-accessibility-fix:README.md\#L190}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-accessibility-fix/blob/v0.1.0/README.md#L190}{\texttt{benchmark-accessibility-fix:README.md\#L190}}.}
 
 \section{Grader and surfaces}
 The grading document states the mechanism in its own words:
@@ -146,7 +146,7 @@ dependency-free: a light HTML parser plus a small CSS cascade
 (specificity, source order, inheritance), no browser and no runtime
 layout engine.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-accessibility-fix/blob/v0.1.0/docs/grading.md#L3}{\texttt{benchmark-accessibility-fix:docs/grading.md\#L3}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-accessibility-fix/blob/v0.1.0/docs/grading.md#L3}{\texttt{benchmark-accessibility-fix:docs/grading.md\#L3}}.}
 
 The index entry summarises the grader as: ``Deterministic static analysis of the fixed HTML: ten WCAG-cited checks score defects fixed, minus regressions, content loss, element removal, and hiding abuse. Model judging is off.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-accessibility-fix.grader}).
 Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README line that describes it, and the quoted lines follow.
@@ -159,10 +159,10 @@ Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README 
 \toprule
 Surface & README line \\
 \midrule
-TypeScript SDK & \href{https://github.com/pooriaarab/benchmark-accessibility-fix/blob/v0.1.0/README.md#L165}{\texttt{README.md\#L165}} \\
-Command-line interface & \href{https://github.com/pooriaarab/benchmark-accessibility-fix/blob/v0.1.0/README.md#L12}{\texttt{README.md\#L12}} \\
-Model Context Protocol server & \href{https://github.com/pooriaarab/benchmark-accessibility-fix/blob/v0.1.0/README.md#L179}{\texttt{README.md\#L179}} \\
-Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-accessibility-fix/blob/v0.1.0/README.md#L186}{\texttt{README.md\#L186}} \\
+TypeScript SDK & \href{https://github.com/itsryanarmani/benchmark-accessibility-fix/blob/v0.1.0/README.md#L165}{\texttt{README.md\#L165}} \\
+Command-line interface & \href{https://github.com/itsryanarmani/benchmark-accessibility-fix/blob/v0.1.0/README.md#L12}{\texttt{README.md\#L12}} \\
+Model Context Protocol server & \href{https://github.com/itsryanarmani/benchmark-accessibility-fix/blob/v0.1.0/README.md#L179}{\texttt{README.md\#L179}} \\
+Fetch-style HTTP API & \href{https://github.com/itsryanarmani/benchmark-accessibility-fix/blob/v0.1.0/README.md#L186}{\texttt{README.md\#L186}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -171,18 +171,18 @@ Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-accessibili
 import~\{~benchmark,~run,~score~\}~from\\
 $\hookrightarrow$\hspace*{0.5em}~"benchmark-accessibility-fix";\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-accessibility-fix/blob/v0.1.0/README.md#L165}{\texttt{benchmark-accessibility-fix:README.md\#L165}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-accessibility-fix/blob/v0.1.0/README.md#L165}{\texttt{benchmark-accessibility-fix:README.md\#L165}}.}
 % quote: benchmark-accessibility-fix/README.md#L12
 \begin{quote}\ttfamily
 npx~benchmark-accessibility-fix~run~-{}-model~offline\\
 $\hookrightarrow$\hspace*{0.5em}~-{}-provider~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-accessibility-fix/blob/v0.1.0/README.md#L12}{\texttt{benchmark-accessibility-fix:README.md\#L12}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-accessibility-fix/blob/v0.1.0/README.md#L12}{\texttt{benchmark-accessibility-fix:README.md\#L12}}.}
 % quote: benchmark-accessibility-fix/README.md#L179
 \begin{quote}\ttfamily
 npx~benchmark-accessibility-fix~mcp\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-accessibility-fix/blob/v0.1.0/README.md#L179}{\texttt{benchmark-accessibility-fix:README.md\#L179}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-accessibility-fix/blob/v0.1.0/README.md#L179}{\texttt{benchmark-accessibility-fix:README.md\#L179}}.}
 % quote: benchmark-accessibility-fix/README.md#L186
 \begin{quote}
 Import \texttt{handler} from \texttt{benchmark-accessibility-fix/api},
@@ -191,7 +191,7 @@ or run \texttt{npx benchmark-accessibility-fix serve}. Routes are
 /v1/tasks/:id}, \texttt{POST /v1/score}, \texttt{GET /v1/provenance},
 and \texttt{GET /v1/index-entry}.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-accessibility-fix/blob/v0.1.0/README.md#L186}{\texttt{benchmark-accessibility-fix:README.md\#L186}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-accessibility-fix/blob/v0.1.0/README.md#L186}{\texttt{benchmark-accessibility-fix:README.md\#L186}}.}
 
 \section{Offline validation}
 No real model was run. The family data records mock runs at seeds \pkgMockSeedA{} and \pkgMockSeedB{}
@@ -220,7 +220,7 @@ $\hookrightarrow$\hspace*{0.5em}~kept~100\%.~|\\
 |~a11y-01~|~0.0\%~|~Fixed~1/2~defects;~3~regressions;~text\\
 $\hookrightarrow$\hspace*{0.5em}~kept~0\%.~|\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-accessibility-fix/blob/v0.1.0/README.md#L16}{\texttt{benchmark-accessibility-fix:README.md\#L16}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-accessibility-fix/blob/v0.1.0/README.md#L16}{\texttt{benchmark-accessibility-fix:README.md\#L16}}.}
 
 \section{Review record}
 The package went through \pkgFixRounds{} fix rounds recorded in \texttt{paper/data/review-rounds.csv}, counted from release \texttt{review-log-v1} of this repository.
@@ -234,8 +234,8 @@ Table~\ref{tab:defects} lists the defect classes that touched this package, each
 \toprule
 Defect class & Record kind & Locators \\
 \midrule
-\texttt{blind-\allowbreak strategy-\allowbreak credit} & {\footnotesize issues and changelogs (per-package locators)} & \href{https://github.com/pooriaarab/benchmark-accessibility-fix/issues/7}{\texttt{benchmark-\allowbreak accessibility-\allowbreak fix\#7}} \\
-\texttt{generator-\allowbreak bugs} & {\footnotesize accessibility-fix changelog; ranking-stability issue 7} & \href{https://github.com/pooriaarab/benchmark-accessibility-fix/blob/v0.1.0/CHANGELOG.md#L55}{\texttt{benchmark-\allowbreak accessibility-\allowbreak fix:\allowbreak CHANGELOG.md\#L55}} \\
+\texttt{blind-\allowbreak strategy-\allowbreak credit} & {\footnotesize issues and changelogs (per-package locators)} & \href{https://github.com/itsryanarmani/benchmark-accessibility-fix/issues/7}{\texttt{benchmark-\allowbreak accessibility-\allowbreak fix\#7}} \\
+\texttt{generator-\allowbreak bugs} & {\footnotesize accessibility-fix changelog; ranking-stability issue 7} & \href{https://github.com/itsryanarmani/benchmark-accessibility-fix/blob/v0.1.0/CHANGELOG.md#L55}{\texttt{benchmark-\allowbreak accessibility-\allowbreak fix:\allowbreak CHANGELOG.md\#L55}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -252,11 +252,11 @@ and \pkgCouncilFailed{} requests that ever showed a failing \texttt{vibecoderevi
 \toprule
 Pull request & Council reviews & Approved & Council run & CI check \\
 \midrule
-\href{https://github.com/pooriaarab/benchmark-accessibility-fix/pull/2}{\#2} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-accessibility-fix/pull/4}{\#4} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-accessibility-fix/pull/6}{\#6} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-accessibility-fix/pull/12}{\#12} & 2 & no & success & success \\
-\href{https://github.com/pooriaarab/benchmark-accessibility-fix/pull/32}{\#32} & 0 & no & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-accessibility-fix/pull/2}{\#2} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-accessibility-fix/pull/4}{\#4} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-accessibility-fix/pull/6}{\#6} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-accessibility-fix/pull/12}{\#12} & 2 & no & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-accessibility-fix/pull/32}{\#32} & 0 & no & success & success \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -286,7 +286,7 @@ sites. Public tasks can enter training data, so keep a separately
 seeded hidden split for final comparisons. Remote providers can add
 cost and retain prompts under their own policies.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-accessibility-fix/blob/v0.1.0/README.md#L222}{\texttt{benchmark-accessibility-fix:README.md\#L222}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-accessibility-fix/blob/v0.1.0/README.md#L222}{\texttt{benchmark-accessibility-fix:README.md\#L222}}.}
 
 This report claims no model capability: it records no real-model run, no leaderboard, and no comparison between models.
 These offline numbers describe the graders and the scripted policies. They say nothing about a hosted model.
@@ -300,12 +300,12 @@ The README gives the install and the offline run:
 npx~benchmark-accessibility-fix~run~-{}-model~offline\\
 $\hookrightarrow$\hspace*{0.5em}~-{}-provider~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-accessibility-fix/blob/v0.1.0/README.md#L12}{\texttt{benchmark-accessibility-fix:README.md\#L12}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-accessibility-fix/blob/v0.1.0/README.md#L12}{\texttt{benchmark-accessibility-fix:README.md\#L12}}.}
 % quote: benchmark-accessibility-fix/README.md#L53
 \begin{quote}\ttfamily
 npm~install~benchmark-accessibility-fix\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-accessibility-fix/blob/v0.1.0/README.md#L53}{\texttt{benchmark-accessibility-fix:README.md\#L53}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-accessibility-fix/blob/v0.1.0/README.md#L53}{\texttt{benchmark-accessibility-fix:README.md\#L53}}.}
 
 The README also gives a run against a paid provider; it needs a paid key, and this report does not run it:
 % quote: benchmark-accessibility-fix/README.md#L67
@@ -315,7 +315,7 @@ npx~benchmark-accessibility-fix~run~-{}-model\\
 $\hookrightarrow$\hspace*{0.5em}~"anthropic/claude-sonnet-4"~-{}-provider\\
 $\hookrightarrow$\hspace*{0.5em}~openrouter\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-accessibility-fix/blob/v0.1.0/README.md#L67}{\texttt{benchmark-accessibility-fix:README.md\#L67}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-accessibility-fix/blob/v0.1.0/README.md#L67}{\texttt{benchmark-accessibility-fix:README.md\#L67}}.}
 
 \noindent\texttt{npm install benchmark-accessibility-fix@\pkgVersion{}} installs the measured version.
 Table~\ref{tab:sources} lists the declared data sources from the index entry (\texttt{paper/data/suite.json}).

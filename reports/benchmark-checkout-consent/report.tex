@@ -91,7 +91,7 @@ Each episode exposes \texttt{search}, \texttt{add\_to\_cart},
 model never receives a valid payment token until it asks about the
 current cart's exact total and address.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-checkout-consent/blob/v0.2.0/README.md#L38}{\texttt{benchmark-checkout-consent:README.md\#L38}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-checkout-consent/blob/v0.2.0/README.md#L38}{\texttt{benchmark-checkout-consent:README.md\#L38}}.}
 
 Its index entry states the measured construct as: ``Whether a shopping agent preserves the requested cart and spends only after exact-total and shipping consent.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-checkout-consent.whatItMeasures}).
 Table~\ref{tab:tasks} counts the tasks by family.
@@ -125,7 +125,7 @@ Saturation & \texttt{\pkgSaturation{}} \\
 Category & \pkgCategory{} \\
 Tags & \texttt{viral} \\
 Public seed & \pkgPublicSeed{} \\
-Repository & \url{https://github.com/pooriaarab/benchmark-checkout-consent} \\
+Repository & \url{https://github.com/itsryanarmani/benchmark-checkout-consent} \\
 Documentation & \url{https://private-repo-337e.com/benchmarks/benchmark-checkout-consent} \\
 \bottomrule
 \end{tabular}}
@@ -137,7 +137,7 @@ The generator uses only project-authored product names and a small
 deterministic random function. It does not use Open Food Facts or
 another external catalog. Code and fixtures are MIT licensed.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-checkout-consent/blob/v0.2.0/README.md#L60}{\texttt{benchmark-checkout-consent:README.md\#L60}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-checkout-consent/blob/v0.2.0/README.md#L60}{\texttt{benchmark-checkout-consent:README.md\#L60}}.}
 
 \section{Grader and surfaces}
 The grading document states the mechanism in its own words:
@@ -147,7 +147,7 @@ The grader replays the recorded tool log in a fresh deterministic
 shop. It does not trust a model's prose, reported cart, or final
 state.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-checkout-consent/blob/v0.2.0/docs/grading.md#L3}{\texttt{benchmark-checkout-consent:docs/grading.md\#L3}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-checkout-consent/blob/v0.2.0/docs/grading.md#L3}{\texttt{benchmark-checkout-consent:docs/grading.md\#L3}}.}
 
 The index entry summarises the grader as: ``Deterministic replay of cart, quote, consent token, cap, shipping, and test-payment ledger rules.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-checkout-consent.grader}).
 Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README line that describes it, and the quoted lines follow.
@@ -160,10 +160,10 @@ Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README 
 \toprule
 Surface & README line \\
 \midrule
-TypeScript SDK & \href{https://github.com/pooriaarab/benchmark-checkout-consent/blob/v0.2.0/README.md#L83}{\texttt{README.md\#L83}} \\
-Command-line interface & \href{https://github.com/pooriaarab/benchmark-checkout-consent/blob/v0.2.0/README.md#L10}{\texttt{README.md\#L10}} \\
-Model Context Protocol server & \href{https://github.com/pooriaarab/benchmark-checkout-consent/blob/v0.2.0/README.md#L111}{\texttt{README.md\#L111}} \\
-Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-checkout-consent/blob/v0.2.0/README.md#L118}{\texttt{README.md\#L118}} \\
+TypeScript SDK & \href{https://github.com/itsryanarmani/benchmark-checkout-consent/blob/v0.2.0/README.md#L83}{\texttt{README.md\#L83}} \\
+Command-line interface & \href{https://github.com/itsryanarmani/benchmark-checkout-consent/blob/v0.2.0/README.md#L10}{\texttt{README.md\#L10}} \\
+Model Context Protocol server & \href{https://github.com/itsryanarmani/benchmark-checkout-consent/blob/v0.2.0/README.md#L111}{\texttt{README.md\#L111}} \\
+Fetch-style HTTP API & \href{https://github.com/itsryanarmani/benchmark-checkout-consent/blob/v0.2.0/README.md#L118}{\texttt{README.md\#L118}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -172,27 +172,27 @@ Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-checkout-co
 import~\{~benchmark,~run,~score~\}~from\\
 $\hookrightarrow$\hspace*{0.5em}~"benchmark-checkout-consent";\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-checkout-consent/blob/v0.2.0/README.md#L83}{\texttt{benchmark-checkout-consent:README.md\#L83}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-checkout-consent/blob/v0.2.0/README.md#L83}{\texttt{benchmark-checkout-consent:README.md\#L83}}.}
 % quote: benchmark-checkout-consent/README.md#L10
 \begin{quote}\ttfamily
 npx~benchmark-checkout-consent~run~-{}-provider~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-checkout-consent/blob/v0.2.0/README.md#L10}{\texttt{benchmark-checkout-consent:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-checkout-consent/blob/v0.2.0/README.md#L10}{\texttt{benchmark-checkout-consent:README.md\#L10}}.}
 % quote: benchmark-checkout-consent/README.md#L111
 \begin{quote}\ttfamily
 npx~benchmark-checkout-consent~mcp\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-checkout-consent/blob/v0.2.0/README.md#L111}{\texttt{benchmark-checkout-consent:README.md\#L111}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-checkout-consent/blob/v0.2.0/README.md#L111}{\texttt{benchmark-checkout-consent:README.md\#L111}}.}
 % quote: benchmark-checkout-consent/README.md#L118
 \begin{quote}
 Import \texttt{handler} from \texttt{benchmark-checkout-consent/api}, or start the Node server:
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-checkout-consent/blob/v0.2.0/README.md#L118}{\texttt{benchmark-checkout-consent:README.md\#L118}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-checkout-consent/blob/v0.2.0/README.md#L118}{\texttt{benchmark-checkout-consent:README.md\#L118}}.}
 % quote: benchmark-checkout-consent/README.md#L121
 \begin{quote}\ttfamily
 npx~benchmark-checkout-consent~serve~3000\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-checkout-consent/blob/v0.2.0/README.md#L121}{\texttt{benchmark-checkout-consent:README.md\#L121}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-checkout-consent/blob/v0.2.0/README.md#L121}{\texttt{benchmark-checkout-consent:README.md\#L121}}.}
 
 \section{Offline validation}
 No real model was run. The family data records mock runs at seeds \pkgMockSeedA{} and \pkgMockSeedB{}
@@ -212,7 +212,7 @@ The README prints a sample run:
 -~95\%~CI:~30.0\%\textendash{}60.0\%\\
 -~Tasks:~40\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-checkout-consent/blob/v0.2.0/README.md#L16}{\texttt{benchmark-checkout-consent:README.md\#L16}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-checkout-consent/blob/v0.2.0/README.md#L16}{\texttt{benchmark-checkout-consent:README.md\#L16}}.}
 
 \section{Review record}
 The package went through \pkgFixRounds{} fix rounds recorded in \texttt{paper/data/review-rounds.csv}, counted from release \texttt{review-log-v1} of this repository.
@@ -226,8 +226,8 @@ Table~\ref{tab:defects} lists the defect classes that touched this package, each
 \toprule
 Defect class & Record kind & Locators \\
 \midrule
-\texttt{honest-\allowbreak answer-\allowbreak rejected} & {\footnotesize review issues and PRs (per-package locators)} & \href{https://github.com/pooriaarab/benchmark-checkout-consent/issues/8}{\texttt{benchmark-\allowbreak checkout-\allowbreak consent\#8}} \\
-\texttt{hidden-\allowbreak split-\allowbreak not-\allowbreak hidden} & {\footnotesize review issues and PRs (per-package locators); 0.2.0 changelogs} & \href{https://github.com/pooriaarab/benchmark-checkout-consent/issues/7}{\texttt{benchmark-\allowbreak checkout-\allowbreak consent\#7}} \\
+\texttt{honest-\allowbreak answer-\allowbreak rejected} & {\footnotesize review issues and PRs (per-package locators)} & \href{https://github.com/itsryanarmani/benchmark-checkout-consent/issues/8}{\texttt{benchmark-\allowbreak checkout-\allowbreak consent\#8}} \\
+\texttt{hidden-\allowbreak split-\allowbreak not-\allowbreak hidden} & {\footnotesize review issues and PRs (per-package locators); 0.2.0 changelogs} & \href{https://github.com/itsryanarmani/benchmark-checkout-consent/issues/7}{\texttt{benchmark-\allowbreak checkout-\allowbreak consent\#7}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -236,7 +236,7 @@ The package changelog for this version states:
 \begin{quote}
 Scoring changed; results from \texttt{0.1.0} are not comparable.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-checkout-consent/blob/v0.2.0/CHANGELOG.md#L5}{\texttt{benchmark-checkout-consent:CHANGELOG.md\#L5}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-checkout-consent/blob/v0.2.0/CHANGELOG.md#L5}{\texttt{benchmark-checkout-consent:CHANGELOG.md\#L5}}.}
 
 The merged feature pull requests for this package are listed in Table~\ref{tab:council}:
 \pkgCouncilPrs{} requests, \pkgCouncilReviews{} council reviews, \pkgCouncilApproved{} approvals,
@@ -250,11 +250,11 @@ and \pkgCouncilFailed{} requests that ever showed a failing \texttt{vibecoderevi
 \toprule
 Pull request & Council reviews & Approved & Council run & CI check \\
 \midrule
-\href{https://github.com/pooriaarab/benchmark-checkout-consent/pull/4}{\#4} & 3 & yes & failure & success \\
-\href{https://github.com/pooriaarab/benchmark-checkout-consent/pull/5}{\#5} & 3 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-checkout-consent/pull/6}{\#6} & 3 & yes & failure & success \\
-\href{https://github.com/pooriaarab/benchmark-checkout-consent/pull/12}{\#12} & 1 & no & success & success \\
-\href{https://github.com/pooriaarab/benchmark-checkout-consent/pull/16}{\#16} & 3 & yes & failure & success \\
+\href{https://github.com/itsryanarmani/benchmark-checkout-consent/pull/4}{\#4} & 3 & yes & failure & success \\
+\href{https://github.com/itsryanarmani/benchmark-checkout-consent/pull/5}{\#5} & 3 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-checkout-consent/pull/6}{\#6} & 3 & yes & failure & success \\
+\href{https://github.com/itsryanarmani/benchmark-checkout-consent/pull/12}{\#12} & 1 & no & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-checkout-consent/pull/16}{\#16} & 3 & yes & failure & success \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -273,7 +273,7 @@ The package documents its own limit:
 Public tasks and answers can enter training data; use a private seeded
 split for final comparisons.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-checkout-consent/blob/v0.2.0/README.md#L128}{\texttt{benchmark-checkout-consent:README.md\#L128}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-checkout-consent/blob/v0.2.0/README.md#L128}{\texttt{benchmark-checkout-consent:README.md\#L128}}.}
 
 This report claims no model capability: it records no real-model run, no leaderboard, and no comparison between models.
 These offline numbers describe the graders and the scripted policies. They say nothing about a hosted model.
@@ -286,18 +286,18 @@ The README gives the install and the offline run:
 \begin{quote}\ttfamily
 npx~benchmark-checkout-consent~run~-{}-provider~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-checkout-consent/blob/v0.2.0/README.md#L10}{\texttt{benchmark-checkout-consent:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-checkout-consent/blob/v0.2.0/README.md#L10}{\texttt{benchmark-checkout-consent:README.md\#L10}}.}
 % quote: benchmark-checkout-consent/README.md#L65
 \begin{quote}\ttfamily
 npx~benchmark-checkout-consent~run~-{}-provider~mock~-{}-tasks\\
 $\hookrightarrow$\hspace*{0.5em}~hidden/tasks.hidden.jsonl\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-checkout-consent/blob/v0.2.0/README.md#L65}{\texttt{benchmark-checkout-consent:README.md\#L65}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-checkout-consent/blob/v0.2.0/README.md#L65}{\texttt{benchmark-checkout-consent:README.md\#L65}}.}
 % quote: benchmark-checkout-consent/README.md#L77
 \begin{quote}\ttfamily
 npm~install~benchmark-checkout-consent\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-checkout-consent/blob/v0.2.0/README.md#L77}{\texttt{benchmark-checkout-consent:README.md\#L77}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-checkout-consent/blob/v0.2.0/README.md#L77}{\texttt{benchmark-checkout-consent:README.md\#L77}}.}
 
 The README also gives a run against a paid provider; it needs a paid key, and this report does not run it:
 % quote: benchmark-checkout-consent/README.md#L47
@@ -306,7 +306,7 @@ OPENROUTER\_API\_KEY=your-key~npx~benchmark-checkout-consent\\
 $\hookrightarrow$\hspace*{0.5em}~run~-{}-provider~openrouter~-{}-model\\
 $\hookrightarrow$\hspace*{0.5em}~openai/gpt-5-mini\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-checkout-consent/blob/v0.2.0/README.md#L47}{\texttt{benchmark-checkout-consent:README.md\#L47}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-checkout-consent/blob/v0.2.0/README.md#L47}{\texttt{benchmark-checkout-consent:README.md\#L47}}.}
 
 \noindent\texttt{npm install benchmark-checkout-consent@\pkgVersion{}} installs the measured version.
 Table~\ref{tab:sources} lists the declared data sources from the index entry (\texttt{paper/data/suite.json}).
