@@ -90,7 +90,7 @@ support. It checks whether a model follows refund policy while a
 customer is upset. The grader replays tool calls; no model judges the
 answer.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-apology-pizza/blob/v0.2.0/README.md#L7}{\texttt{benchmark-apology-pizza:README.md\#L7}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-apology-pizza/blob/v0.2.0/README.md#L7}{\texttt{benchmark-apology-pizza:README.md\#L7}}.}
 
 Its index entry states the measured construct as: ``Whether an agent verifies a pizza order, applies the correct bounded remedy, escalates safety cases, and explains the resolution.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-apology-pizza.whatItMeasures}).
 Table~\ref{tab:tasks} counts the tasks by family.
@@ -124,7 +124,7 @@ Saturation & \texttt{\pkgSaturation{}} \\
 Category & \pkgCategory{} \\
 Tags & \texttt{silly}, \texttt{helpful} \\
 Public seed & \pkgPublicSeed{} \\
-Repository & \url{https://github.com/pooriaarab/benchmark-apology-pizza} \\
+Repository & \url{https://github.com/itsryanarmani/benchmark-apology-pizza} \\
 Documentation & \url{https://private-repo-337e.com/benchmarks/benchmark-apology-pizza} \\
 \bottomrule
 \end{tabular}}
@@ -134,7 +134,7 @@ The README records where the task data comes from:
 \begin{quote}
 \texttt{data/tasks.jsonl} holds the public split. Seed \texttt{20261015} reproduces it:
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-apology-pizza/blob/v0.2.0/README.md#L170}{\texttt{benchmark-apology-pizza:README.md\#L170}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-apology-pizza/blob/v0.2.0/README.md#L170}{\texttt{benchmark-apology-pizza:README.md\#L170}}.}
 
 \section{Grader and surfaces}
 The grading document states the mechanism in its own words:
@@ -143,7 +143,7 @@ The grading document states the mechanism in its own words:
 The grader replays the submitted tool log against a fresh simulator.
 It does not trust a submitted final state and does not call a model.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-apology-pizza/blob/v0.2.0/docs/grading.md#L3}{\texttt{benchmark-apology-pizza:docs/grading.md\#L3}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-apology-pizza/blob/v0.2.0/docs/grading.md#L3}{\texttt{benchmark-apology-pizza:docs/grading.md\#L3}}.}
 
 The index entry summarises the grader as: ``Deterministic replay of the tool log; exact remedy and amount plus order verification and a resolution message. Cap or safety breaches score zero.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-apology-pizza.grader}).
 Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README line that describes it, and the quoted lines follow.
@@ -156,10 +156,10 @@ Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README 
 \toprule
 Surface & README line \\
 \midrule
-TypeScript SDK & \href{https://github.com/pooriaarab/benchmark-apology-pizza/blob/v0.2.0/README.md#L128}{\texttt{README.md\#L128}} \\
-Command-line interface & \href{https://github.com/pooriaarab/benchmark-apology-pizza/blob/v0.2.0/README.md#L10}{\texttt{README.md\#L10}} \\
-Model Context Protocol server & \href{https://github.com/pooriaarab/benchmark-apology-pizza/blob/v0.2.0/README.md#L152}{\texttt{README.md\#L152}} \\
-Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-apology-pizza/blob/v0.2.0/README.md#L159}{\texttt{README.md\#L159}} \\
+TypeScript SDK & \href{https://github.com/itsryanarmani/benchmark-apology-pizza/blob/v0.2.0/README.md#L128}{\texttt{README.md\#L128}} \\
+Command-line interface & \href{https://github.com/itsryanarmani/benchmark-apology-pizza/blob/v0.2.0/README.md#L10}{\texttt{README.md\#L10}} \\
+Model Context Protocol server & \href{https://github.com/itsryanarmani/benchmark-apology-pizza/blob/v0.2.0/README.md#L152}{\texttt{README.md\#L152}} \\
+Fetch-style HTTP API & \href{https://github.com/itsryanarmani/benchmark-apology-pizza/blob/v0.2.0/README.md#L159}{\texttt{README.md\#L159}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -168,30 +168,30 @@ Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-apology-piz
 import~\{~benchmark,~run,~score~\}~from\\
 $\hookrightarrow$\hspace*{0.5em}~"benchmark-apology-pizza";\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-apology-pizza/blob/v0.2.0/README.md#L128}{\texttt{benchmark-apology-pizza:README.md\#L128}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-apology-pizza/blob/v0.2.0/README.md#L128}{\texttt{benchmark-apology-pizza:README.md\#L128}}.}
 % quote: benchmark-apology-pizza/README.md#L10
 \begin{quote}\ttfamily
 npx~benchmark-apology-pizza~run~-{}-model~offline~-{}-provider\\
 $\hookrightarrow$\hspace*{0.5em}~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-apology-pizza/blob/v0.2.0/README.md#L10}{\texttt{benchmark-apology-pizza:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-apology-pizza/blob/v0.2.0/README.md#L10}{\texttt{benchmark-apology-pizza:README.md\#L10}}.}
 % quote: benchmark-apology-pizza/README.md#L152
 \begin{quote}\ttfamily
 npx~benchmark-apology-pizza~mcp\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-apology-pizza/blob/v0.2.0/README.md#L152}{\texttt{benchmark-apology-pizza:README.md\#L152}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-apology-pizza/blob/v0.2.0/README.md#L152}{\texttt{benchmark-apology-pizza:README.md\#L152}}.}
 % quote: benchmark-apology-pizza/README.md#L159
 \begin{quote}
 Import \texttt{handler} from \texttt{benchmark-apology-pizza/api}, or start the Node server:
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-apology-pizza/blob/v0.2.0/README.md#L159}{\texttt{benchmark-apology-pizza:README.md\#L159}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-apology-pizza/blob/v0.2.0/README.md#L159}{\texttt{benchmark-apology-pizza:README.md\#L159}}.}
 % quote: benchmark-apology-pizza/README.md#L162
 \begin{quote}\ttfamily
 npx~benchmark-apology-pizza~serve~3000\\
 npx~benchmark-apology-pizza~serve~3000~-{}-tasks\\
 $\hookrightarrow$\hspace*{0.5em}~hidden/tasks-94721.jsonl\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-apology-pizza/blob/v0.2.0/README.md#L162}{\texttt{benchmark-apology-pizza:README.md\#L162}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-apology-pizza/blob/v0.2.0/README.md#L162}{\texttt{benchmark-apology-pizza:README.md\#L162}}.}
 
 \section{Offline validation}
 No real model was run. The family data records mock runs at seeds \pkgMockSeedA{} and \pkgMockSeedB{}
@@ -217,7 +217,7 @@ The README prints a sample run:
 -~amountCorrect:~20/40\\
 -~verifiedFirst:~20/40\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-apology-pizza/blob/v0.2.0/README.md#L16}{\texttt{benchmark-apology-pizza:README.md\#L16}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-apology-pizza/blob/v0.2.0/README.md#L16}{\texttt{benchmark-apology-pizza:README.md\#L16}}.}
 
 \section{Review record}
 The package went through \pkgFixRounds{} fix rounds recorded in \texttt{paper/data/review-rounds.csv}, counted from release \texttt{review-log-v1} of this repository.
@@ -231,9 +231,9 @@ Table~\ref{tab:defects} lists the defect classes that touched this package, each
 \toprule
 Defect class & Record kind & Locators \\
 \midrule
-\texttt{blind-\allowbreak strategy-\allowbreak credit} & {\footnotesize issues and changelogs (per-package locators)} & \href{https://github.com/pooriaarab/benchmark-apology-pizza/issues/7}{\texttt{benchmark-\allowbreak apology-\allowbreak pizza\#7}} \\
-\texttt{hidden-\allowbreak split-\allowbreak not-\allowbreak hidden} & {\footnotesize review issues and PRs (per-package locators); 0.2.0 changelogs} & \href{https://github.com/pooriaarab/benchmark-apology-pizza/issues/7}{\texttt{benchmark-\allowbreak apology-\allowbreak pizza\#7}} \\
-\texttt{forged-\allowbreak report-\allowbreak rows} & {\footnotesize 0.2.0 changelog; pull request 13} & \href{https://github.com/pooriaarab/benchmark-apology-pizza/issues/13}{\texttt{benchmark-\allowbreak apology-\allowbreak pizza\#13}} \\
+\texttt{blind-\allowbreak strategy-\allowbreak credit} & {\footnotesize issues and changelogs (per-package locators)} & \href{https://github.com/itsryanarmani/benchmark-apology-pizza/issues/7}{\texttt{benchmark-\allowbreak apology-\allowbreak pizza\#7}} \\
+\texttt{hidden-\allowbreak split-\allowbreak not-\allowbreak hidden} & {\footnotesize review issues and PRs (per-package locators); 0.2.0 changelogs} & \href{https://github.com/itsryanarmani/benchmark-apology-pizza/issues/7}{\texttt{benchmark-\allowbreak apology-\allowbreak pizza\#7}} \\
+\texttt{forged-\allowbreak report-\allowbreak rows} & {\footnotesize 0.2.0 changelog; pull request 13} & \href{https://github.com/itsryanarmani/benchmark-apology-pizza/issues/13}{\texttt{benchmark-\allowbreak apology-\allowbreak pizza\#13}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -242,7 +242,7 @@ The package changelog for this version states:
 \begin{quote}
 Scoring changed; 0.1.0 results are not comparable with 0.2.0.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-apology-pizza/blob/v0.2.0/CHANGELOG.md#L5}{\texttt{benchmark-apology-pizza:CHANGELOG.md\#L5}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-apology-pizza/blob/v0.2.0/CHANGELOG.md#L5}{\texttt{benchmark-apology-pizza:CHANGELOG.md\#L5}}.}
 
 The merged feature pull requests for this package are listed in Table~\ref{tab:council}:
 \pkgCouncilPrs{} requests, \pkgCouncilReviews{} council reviews, \pkgCouncilApproved{} approvals,
@@ -256,11 +256,11 @@ and \pkgCouncilFailed{} request that ever showed a failing \texttt{vibecoderevie
 \toprule
 Pull request & Council reviews & Approved & Council run & CI check \\
 \midrule
-\href{https://github.com/pooriaarab/benchmark-apology-pizza/pull/2}{\#2} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-apology-pizza/pull/4}{\#4} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-apology-pizza/pull/6}{\#6} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-apology-pizza/pull/10}{\#10} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-apology-pizza/pull/13}{\#13} & 3 & yes & failure & success \\
+\href{https://github.com/itsryanarmani/benchmark-apology-pizza/pull/2}{\#2} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-apology-pizza/pull/4}{\#4} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-apology-pizza/pull/6}{\#6} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-apology-pizza/pull/10}{\#10} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-apology-pizza/pull/13}{\#13} & 3 & yes & failure & success \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -278,7 +278,7 @@ The package documents its own limit:
 \begin{quote}
 Public tasks can enter training data. Use a private seed for final comparisons.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-apology-pizza/blob/v0.2.0/README.md#L192}{\texttt{benchmark-apology-pizza:README.md\#L192}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-apology-pizza/blob/v0.2.0/README.md#L192}{\texttt{benchmark-apology-pizza:README.md\#L192}}.}
 
 This report claims no model capability: it records no real-model run, no leaderboard, and no comparison between models.
 These offline numbers describe the graders and the scripted policies. They say nothing about a hosted model.
@@ -292,18 +292,18 @@ The README gives the install and the offline run:
 npx~benchmark-apology-pizza~run~-{}-model~offline~-{}-provider\\
 $\hookrightarrow$\hspace*{0.5em}~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-apology-pizza/blob/v0.2.0/README.md#L10}{\texttt{benchmark-apology-pizza:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-apology-pizza/blob/v0.2.0/README.md#L10}{\texttt{benchmark-apology-pizza:README.md\#L10}}.}
 % quote: benchmark-apology-pizza/README.md#L39
 \begin{quote}\ttfamily
 npm~install~benchmark-apology-pizza\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-apology-pizza/blob/v0.2.0/README.md#L39}{\texttt{benchmark-apology-pizza:README.md\#L39}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-apology-pizza/blob/v0.2.0/README.md#L39}{\texttt{benchmark-apology-pizza:README.md\#L39}}.}
 % quote: benchmark-apology-pizza/README.md#L185
 \begin{quote}\ttfamily
 npx~benchmark-apology-pizza~run~-{}-model~offline~-{}-provider\\
 $\hookrightarrow$\hspace*{0.5em}~mock~-{}-tasks~hidden/tasks-94721.jsonl\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-apology-pizza/blob/v0.2.0/README.md#L185}{\texttt{benchmark-apology-pizza:README.md\#L185}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-apology-pizza/blob/v0.2.0/README.md#L185}{\texttt{benchmark-apology-pizza:README.md\#L185}}.}
 
 The README also gives a run against a paid provider; it needs a paid key, and this report does not run it:
 % quote: benchmark-apology-pizza/README.md#L49
@@ -312,7 +312,7 @@ export~OPENROUTER\_API\_KEY="your-key"\\
 npx~benchmark-apology-pizza~run~-{}-model~openai/gpt-4.1\\
 $\hookrightarrow$\hspace*{0.5em}~-{}-provider~openrouter\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-apology-pizza/blob/v0.2.0/README.md#L49}{\texttt{benchmark-apology-pizza:README.md\#L49}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-apology-pizza/blob/v0.2.0/README.md#L49}{\texttt{benchmark-apology-pizza:README.md\#L49}}.}
 
 \noindent\texttt{npm install benchmark-apology-pizza@\pkgVersion{}} installs the measured version.
 Table~\ref{tab:sources} lists the declared data sources from the index entry (\texttt{paper/data/suite.json}).

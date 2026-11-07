@@ -90,7 +90,7 @@ dollars per verified back-office task. It measures successful work,
 retries, turns, and tokens. Deterministic simulators check every
 result.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-cost-per-task/blob/v0.2.0/README.md#L7}{\texttt{benchmark-cost-per-task:README.md\#L7}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-cost-per-task/blob/v0.2.0/README.md#L7}{\texttt{benchmark-cost-per-task:README.md\#L7}}.}
 
 Its index entry states the measured construct as: ``Cost, retries, turns, and tokens required for deterministic back-office task success.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-cost-per-task.whatItMeasures}).
 Table~\ref{tab:tasks} counts the tasks by family.
@@ -124,7 +124,7 @@ Saturation & \texttt{\pkgSaturation{}} \\
 Category & \pkgCategory{} \\
 Tags & \texttt{helpful} \\
 Public seed & \pkgPublicSeed{} \\
-Repository & \url{https://github.com/pooriaarab/benchmark-cost-per-task} \\
+Repository & \url{https://github.com/itsryanarmani/benchmark-cost-per-task} \\
 Documentation & \url{https://private-repo-337e.com/benchmarks/benchmark-cost-per-task} \\
 \bottomrule
 \end{tabular}}
@@ -137,7 +137,7 @@ seed 20261015. The generator ships inside the npm package, so an
 installed copy works too. Generate an unpublished split without
 committing it:
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-cost-per-task/blob/v0.2.0/README.md#L173}{\texttt{benchmark-cost-per-task:README.md\#L173}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-cost-per-task/blob/v0.2.0/README.md#L173}{\texttt{benchmark-cost-per-task:README.md\#L173}}.}
 
 \section{Grader and surfaces}
 The grading document states the mechanism in its own words:
@@ -150,7 +150,7 @@ only when all files and CRM records exactly match the task's expected
 state and \texttt{finish\_task} was called. Otherwise it scores 0 with
 the mismatched state named in the reason.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-cost-per-task/blob/v0.2.0/docs/grading.md#L3}{\texttt{benchmark-cost-per-task:docs/grading.md\#L3}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-cost-per-task/blob/v0.2.0/docs/grading.md#L3}{\texttt{benchmark-cost-per-task:docs/grading.md\#L3}}.}
 
 The index entry summarises the grader as: ``Deterministic replay followed by exact virtual file-system and CRM state verification.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-cost-per-task.grader}).
 Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README line that describes it, and the quoted lines follow.
@@ -163,10 +163,10 @@ Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README 
 \toprule
 Surface & README line \\
 \midrule
-TypeScript SDK & \href{https://github.com/pooriaarab/benchmark-cost-per-task/blob/v0.2.0/README.md#L130}{\texttt{README.md\#L130}} \\
-Command-line interface & \href{https://github.com/pooriaarab/benchmark-cost-per-task/blob/v0.2.0/README.md#L10}{\texttt{README.md\#L10}} \\
-Model Context Protocol server & \href{https://github.com/pooriaarab/benchmark-cost-per-task/blob/v0.2.0/README.md#L148}{\texttt{README.md\#L148}} \\
-Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-cost-per-task/blob/v0.2.0/README.md#L155}{\texttt{README.md\#L155}} \\
+TypeScript SDK & \href{https://github.com/itsryanarmani/benchmark-cost-per-task/blob/v0.2.0/README.md#L130}{\texttt{README.md\#L130}} \\
+Command-line interface & \href{https://github.com/itsryanarmani/benchmark-cost-per-task/blob/v0.2.0/README.md#L10}{\texttt{README.md\#L10}} \\
+Model Context Protocol server & \href{https://github.com/itsryanarmani/benchmark-cost-per-task/blob/v0.2.0/README.md#L148}{\texttt{README.md\#L148}} \\
+Fetch-style HTTP API & \href{https://github.com/itsryanarmani/benchmark-cost-per-task/blob/v0.2.0/README.md#L155}{\texttt{README.md\#L155}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -175,29 +175,29 @@ Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-cost-per-ta
 import~\{~benchmark,~run,~score,~compareReports~\}~from\\
 $\hookrightarrow$\hspace*{0.5em}~"benchmark-cost-per-task";\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-cost-per-task/blob/v0.2.0/README.md#L130}{\texttt{benchmark-cost-per-task:README.md\#L130}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-cost-per-task/blob/v0.2.0/README.md#L130}{\texttt{benchmark-cost-per-task:README.md\#L130}}.}
 % quote: benchmark-cost-per-task/README.md#L10
 \begin{quote}\ttfamily
 npx~benchmark-cost-per-task~run~-{}-provider~mock~-{}-model\\
 $\hookrightarrow$\hspace*{0.5em}~openai/gpt-4o-mini\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-cost-per-task/blob/v0.2.0/README.md#L10}{\texttt{benchmark-cost-per-task:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-cost-per-task/blob/v0.2.0/README.md#L10}{\texttt{benchmark-cost-per-task:README.md\#L10}}.}
 % quote: benchmark-cost-per-task/README.md#L148
 \begin{quote}\ttfamily
 npx~benchmark-cost-per-task~mcp\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-cost-per-task/blob/v0.2.0/README.md#L148}{\texttt{benchmark-cost-per-task:README.md\#L148}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-cost-per-task/blob/v0.2.0/README.md#L148}{\texttt{benchmark-cost-per-task:README.md\#L148}}.}
 % quote: benchmark-cost-per-task/README.md#L155
 \begin{quote}
 Import \texttt{handler} from \texttt{benchmark-cost-per-task/api}, or
 start the self-hosted server:
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-cost-per-task/blob/v0.2.0/README.md#L155}{\texttt{benchmark-cost-per-task:README.md\#L155}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-cost-per-task/blob/v0.2.0/README.md#L155}{\texttt{benchmark-cost-per-task:README.md\#L155}}.}
 % quote: benchmark-cost-per-task/README.md#L158
 \begin{quote}\ttfamily
 npx~benchmark-cost-per-task~serve~3000\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-cost-per-task/blob/v0.2.0/README.md#L158}{\texttt{benchmark-cost-per-task:README.md\#L158}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-cost-per-task/blob/v0.2.0/README.md#L158}{\texttt{benchmark-cost-per-task:README.md\#L158}}.}
 
 \section{Offline validation}
 No real model was run. The family data records mock runs at seeds \pkgMockSeedA{} and \pkgMockSeedB{}
@@ -223,7 +223,7 @@ The README prints a sample run:
 |~-{}-{}-~|~-{}-{}-:~|\\
 |~Verified~successes~|~16/30~|\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-cost-per-task/blob/v0.2.0/README.md#L14}{\texttt{benchmark-cost-per-task:README.md\#L14}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-cost-per-task/blob/v0.2.0/README.md#L14}{\texttt{benchmark-cost-per-task:README.md\#L14}}.}
 
 \section{Review record}
 The package went through \pkgFixRounds{} fix rounds recorded in \texttt{paper/data/review-rounds.csv}, counted from release \texttt{review-log-v1} of this repository.
@@ -237,7 +237,7 @@ Table~\ref{tab:defects} lists the defect class that touched this package, each c
 \toprule
 Defect class & Record kind & Locators \\
 \midrule
-\texttt{hidden-\allowbreak split-\allowbreak not-\allowbreak hidden} & {\footnotesize review issues and PRs (per-package locators); 0.2.0 changelogs} & \href{https://github.com/pooriaarab/benchmark-cost-per-task/issues/22}{\texttt{benchmark-\allowbreak cost-\allowbreak per-\allowbreak task\#22}} \\
+\texttt{hidden-\allowbreak split-\allowbreak not-\allowbreak hidden} & {\footnotesize review issues and PRs (per-package locators); 0.2.0 changelogs} & \href{https://github.com/itsryanarmani/benchmark-cost-per-task/issues/22}{\texttt{benchmark-\allowbreak cost-\allowbreak per-\allowbreak task\#22}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -249,7 +249,7 @@ not comparable to 0.2.0 because retry spend and pricing fixes change
 totals; the public tasks were also regenerated, so per-task rows
 differ too.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-cost-per-task/blob/v0.2.0/CHANGELOG.md#L5}{\texttt{benchmark-cost-per-task:CHANGELOG.md\#L5}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-cost-per-task/blob/v0.2.0/CHANGELOG.md#L5}{\texttt{benchmark-cost-per-task:CHANGELOG.md\#L5}}.}
 
 The merged feature pull requests for this package are listed in Table~\ref{tab:council}:
 \pkgCouncilPrs{} requests, \pkgCouncilReviews{} council reviews, \pkgCouncilApproved{} approvals,
@@ -263,12 +263,12 @@ and \pkgCouncilFailed{} requests that ever showed a failing \texttt{vibecoderevi
 \toprule
 Pull request & Council reviews & Approved & Council run & CI check \\
 \midrule
-\href{https://github.com/pooriaarab/benchmark-cost-per-task/pull/13}{\#13} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-cost-per-task/pull/14}{\#14} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-cost-per-task/pull/15}{\#15} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-cost-per-task/pull/16}{\#16} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-cost-per-task/pull/19}{\#19} & 1 & no & success & success \\
-\href{https://github.com/pooriaarab/benchmark-cost-per-task/pull/23}{\#23} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-cost-per-task/pull/13}{\#13} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-cost-per-task/pull/14}{\#14} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-cost-per-task/pull/15}{\#15} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-cost-per-task/pull/16}{\#16} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-cost-per-task/pull/19}{\#19} & 1 & no & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-cost-per-task/pull/23}{\#23} & 2 & yes & success & success \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -286,7 +286,7 @@ The package documents its own limit:
 \begin{quote}
 Public tasks and expected states can enter training data.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-cost-per-task/blob/v0.2.0/README.md#L185}{\texttt{benchmark-cost-per-task:README.md\#L185}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-cost-per-task/blob/v0.2.0/README.md#L185}{\texttt{benchmark-cost-per-task:README.md\#L185}}.}
 
 This report claims no model capability: it records no real-model run, no leaderboard, and no comparison between models.
 These offline numbers describe the graders and the scripted policies. They say nothing about a hosted model.
@@ -300,17 +300,17 @@ The README gives the install and the offline run:
 npx~benchmark-cost-per-task~run~-{}-provider~mock~-{}-model\\
 $\hookrightarrow$\hspace*{0.5em}~openai/gpt-4o-mini\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-cost-per-task/blob/v0.2.0/README.md#L10}{\texttt{benchmark-cost-per-task:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-cost-per-task/blob/v0.2.0/README.md#L10}{\texttt{benchmark-cost-per-task:README.md\#L10}}.}
 % quote: benchmark-cost-per-task/README.md#L44
 \begin{quote}\ttfamily
 npm~install~benchmark-cost-per-task\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-cost-per-task/blob/v0.2.0/README.md#L44}{\texttt{benchmark-cost-per-task:README.md\#L44}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-cost-per-task/blob/v0.2.0/README.md#L44}{\texttt{benchmark-cost-per-task:README.md\#L44}}.}
 % quote: benchmark-cost-per-task/README.md#L54
 \begin{quote}\ttfamily
 npx~benchmark-cost-per-task~run~-{}-provider~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-cost-per-task/blob/v0.2.0/README.md#L54}{\texttt{benchmark-cost-per-task:README.md\#L54}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-cost-per-task/blob/v0.2.0/README.md#L54}{\texttt{benchmark-cost-per-task:README.md\#L54}}.}
 
 The README also gives a run against a paid provider; it needs a paid key, and this report does not run it:
 % quote: benchmark-cost-per-task/README.md#L66
@@ -319,7 +319,7 @@ OPENROUTER\_API\_KEY=your\_key~npx~benchmark-cost-per-task~run\\
 $\hookrightarrow$\hspace*{0.5em}~-{}-model~openai/gpt-5-mini~-{}-provider\\
 $\hookrightarrow$\hspace*{0.5em}~openrouter\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-cost-per-task/blob/v0.2.0/README.md#L66}{\texttt{benchmark-cost-per-task:README.md\#L66}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-cost-per-task/blob/v0.2.0/README.md#L66}{\texttt{benchmark-cost-per-task:README.md\#L66}}.}
 
 \noindent\texttt{npm install benchmark-cost-per-task@\pkgVersion{}} installs the measured version.
 Table~\ref{tab:sources} lists the declared data sources from the index entry (\texttt{paper/data/suite.json}).

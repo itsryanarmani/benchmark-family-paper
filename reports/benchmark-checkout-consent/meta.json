@@ -18,8 +18,8 @@
     "deterministic-grader",
     "benchmark-checkout-consent"
   ],
-  "comments": "Generated per-package technical report for benchmark-checkout-consent 0.2.0; data from pooriaarab/benchmark-family-paper paper/data and cached package sources.",
-  "code_url": "https://github.com/pooriaarab/benchmark-checkout-consent",
+  "comments": "Generated per-package technical report for benchmark-checkout-consent 0.2.0; data from itsryanarmani/benchmark-family-paper paper/data and cached package sources.",
+  "code_url": "https://github.com/itsryanarmani/benchmark-checkout-consent",
   "data_url": "https://huggingface.co/datasets/pooria/benchmark-checkout-consent",
   "data_concept_dois": [
     "10.5281/zenodo.23422377",

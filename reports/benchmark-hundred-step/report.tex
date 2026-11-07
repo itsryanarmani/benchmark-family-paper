@@ -89,7 +89,7 @@ benchmark-hundred-step measures whether an AI agent can preserve
 dependencies, recover from faults, and roll back correctly across 25,
 50, 75, or 100 tool steps. Run the complete benchmark offline:
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/README.md#L7}{\texttt{benchmark-hundred-step:README.md\#L7}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/README.md#L7}{\texttt{benchmark-hundred-step:README.md\#L7}}.}
 
 Its index entry states the measured construct as: ``Whether an agent preserves dependencies and recovers correctly across 25, 50, 75, and 100 workflow steps.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-hundred-step.whatItMeasures}).
 Table~\ref{tab:tasks} counts the tasks by family.
@@ -123,7 +123,7 @@ Saturation & \texttt{\pkgSaturation{}} \\
 Category & \pkgCategory{} \\
 Tags & \texttt{helpful} \\
 Public seed & \pkgPublicSeed{} \\
-Repository & \url{https://github.com/pooriaarab/benchmark-hundred-step} \\
+Repository & \url{https://github.com/itsryanarmani/benchmark-hundred-step} \\
 Documentation & \url{https://private-repo-337e.com/benchmarks/benchmark-hundred-step} \\
 \bottomrule
 \end{tabular}}
@@ -136,7 +136,7 @@ crossed with four lengths. Failure positions come from a seeded
 shuffle; each task contains at least one rollback and one transient
 fault. Regenerate the public data exactly:
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/README.md#L175}{\texttt{benchmark-hundred-step:README.md\#L175}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/README.md#L175}{\texttt{benchmark-hundred-step:README.md\#L175}}.}
 
 \section{Grader and surfaces}
 The grading document states the mechanism in its own words:
@@ -146,7 +146,7 @@ The grader replays the submitted tool log against a fresh
 deterministic state machine. It never trusts a submitted final state
 or asks a model to judge one.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/docs/grading.md#L3}{\texttt{benchmark-hundred-step:docs/grading.md\#L3}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/docs/grading.md#L3}{\texttt{benchmark-hundred-step:docs/grading.md\#L3}}.}
 
 The index entry summarises the grader as: ``Deterministic tool-log replay combining survival (60\%), final success (25\%), injected-failure recovery (10\%), and rollback correctness (5\%); unfinished episodes earn survival-proportional partial credit.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-hundred-step.grader}).
 Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README line that describes it, and the quoted lines follow.
@@ -159,10 +159,10 @@ Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README 
 \toprule
 Surface & README line \\
 \midrule
-TypeScript SDK & \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/README.md#L202}{\texttt{README.md\#L202}} \\
-Command-line interface & \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/README.md#L12}{\texttt{README.md\#L12}} \\
-Model Context Protocol server & \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/README.md#L217}{\texttt{README.md\#L217}} \\
-Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/README.md#L225}{\texttt{README.md\#L225}} \\
+TypeScript SDK & \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/README.md#L202}{\texttt{README.md\#L202}} \\
+Command-line interface & \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/README.md#L12}{\texttt{README.md\#L12}} \\
+Model Context Protocol server & \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/README.md#L217}{\texttt{README.md\#L217}} \\
+Fetch-style HTTP API & \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/README.md#L225}{\texttt{README.md\#L225}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -171,27 +171,27 @@ Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-hundred-ste
 import~\{~benchmark,~run,~score~\}~from\\
 $\hookrightarrow$\hspace*{0.5em}~"benchmark-hundred-step";\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/README.md#L202}{\texttt{benchmark-hundred-step:README.md\#L202}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/README.md#L202}{\texttt{benchmark-hundred-step:README.md\#L202}}.}
 % quote: benchmark-hundred-step/README.md#L12
 \begin{quote}\ttfamily
 npx~benchmark-hundred-step~run~-{}-provider~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/README.md#L12}{\texttt{benchmark-hundred-step:README.md\#L12}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/README.md#L12}{\texttt{benchmark-hundred-step:README.md\#L12}}.}
 % quote: benchmark-hundred-step/README.md#L217
 \begin{quote}\ttfamily
 npx~benchmark-hundred-step~mcp\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/README.md#L217}{\texttt{benchmark-hundred-step:README.md\#L217}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/README.md#L217}{\texttt{benchmark-hundred-step:README.md\#L217}}.}
 % quote: benchmark-hundred-step/README.md#L225
 \begin{quote}
 Import \texttt{handler} from \texttt{benchmark-hundred-step/api}, or start the local server:
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/README.md#L225}{\texttt{benchmark-hundred-step:README.md\#L225}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/README.md#L225}{\texttt{benchmark-hundred-step:README.md\#L225}}.}
 % quote: benchmark-hundred-step/README.md#L228
 \begin{quote}\ttfamily
 npx~benchmark-hundred-step~serve~3000\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/README.md#L228}{\texttt{benchmark-hundred-step:README.md\#L228}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/README.md#L228}{\texttt{benchmark-hundred-step:README.md\#L228}}.}
 
 \section{Offline validation}
 No real model was run. The family data records mock runs at seeds \pkgMockSeedA{} and \pkgMockSeedB{}
@@ -218,7 +218,7 @@ $\hookrightarrow$\hspace*{0.5em}~recoveries=2/2;~rollback=1/1~|\\
 \\
 |~Length~|~Tasks~|~Finished~|~Mean~score~|~Mean~survival~|\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/README.md#L18}{\texttt{benchmark-hundred-step:README.md\#L18}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/README.md#L18}{\texttt{benchmark-hundred-step:README.md\#L18}}.}
 
 \section{Review record}
 The package went through \pkgFixRounds{} fix round recorded in \texttt{paper/data/review-rounds.csv}, counted from release \texttt{review-log-v1} of this repository.
@@ -232,9 +232,9 @@ Table~\ref{tab:defects} lists the defect classes that touched this package, each
 \toprule
 Defect class & Record kind & Locators \\
 \midrule
-\texttt{unsolvable-\allowbreak tasks} & {\footnotesize 0.2.0 changelogs; schema-mutation Unreleased changelog and issue 20; silent-constraints issue 9} & \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/CHANGELOG.md#L24}{\texttt{benchmark-\allowbreak hundred-\allowbreak step:\allowbreak CHANGELOG.md\#L24}};\ \href{https://github.com/pooriaarab/benchmark-hundred-step/issues/16}{\texttt{benchmark-\allowbreak hundred-\allowbreak step\#16}} \\
-\texttt{hidden-\allowbreak split-\allowbreak not-\allowbreak hidden} & {\footnotesize review issues and PRs (per-package locators); 0.2.0 changelogs} & \href{https://github.com/pooriaarab/benchmark-hundred-step/issues/9}{\texttt{benchmark-\allowbreak hundred-\allowbreak step\#9}} \\
-\texttt{docs-\allowbreak ahead-\allowbreak of-\allowbreak code} & {\footnotesize review issues and PR review comments} & \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/README.md#L90}{\texttt{benchmark-\allowbreak hundred-\allowbreak step:\allowbreak README.md\#L90}} \\
+\texttt{unsolvable-\allowbreak tasks} & {\footnotesize 0.2.0 changelogs; schema-mutation Unreleased changelog and issue 20; silent-constraints issue 9} & \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/CHANGELOG.md#L24}{\texttt{benchmark-\allowbreak hundred-\allowbreak step:\allowbreak CHANGELOG.md\#L24}};\ \href{https://github.com/itsryanarmani/benchmark-hundred-step/issues/16}{\texttt{benchmark-\allowbreak hundred-\allowbreak step\#16}} \\
+\texttt{hidden-\allowbreak split-\allowbreak not-\allowbreak hidden} & {\footnotesize review issues and PRs (per-package locators); 0.2.0 changelogs} & \href{https://github.com/itsryanarmani/benchmark-hundred-step/issues/9}{\texttt{benchmark-\allowbreak hundred-\allowbreak step\#9}} \\
+\texttt{docs-\allowbreak ahead-\allowbreak of-\allowbreak code} & {\footnotesize review issues and PR review comments} & \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/README.md#L90}{\texttt{benchmark-\allowbreak hundred-\allowbreak step:\allowbreak README.md\#L90}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -245,7 +245,7 @@ The package changelog for this version states:
 could be gamed into \texttt{final=true} with zero recoveries, and
 partial credit worked differently.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/CHANGELOG.md#L5}{\texttt{benchmark-hundred-step:CHANGELOG.md\#L5}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/CHANGELOG.md#L5}{\texttt{benchmark-hundred-step:CHANGELOG.md\#L5}}.}
 
 The merged feature pull requests for this package are listed in Table~\ref{tab:council}:
 \pkgCouncilPrs{} requests, \pkgCouncilReviews{} council reviews, \pkgCouncilApproved{} approvals,
@@ -259,13 +259,13 @@ and \pkgCouncilFailed{} requests that ever showed a failing \texttt{vibecoderevi
 \toprule
 Pull request & Council reviews & Approved & Council run & CI check \\
 \midrule
-\href{https://github.com/pooriaarab/benchmark-hundred-step/pull/4}{\#4} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-hundred-step/pull/5}{\#5} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-hundred-step/pull/8}{\#8} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-hundred-step/pull/12}{\#12} & 3 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-hundred-step/pull/13}{\#13} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-hundred-step/pull/16}{\#16} & 2 & no & success & success \\
-\href{https://github.com/pooriaarab/benchmark-hundred-step/pull/17}{\#17} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-hundred-step/pull/4}{\#4} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-hundred-step/pull/5}{\#5} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-hundred-step/pull/8}{\#8} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-hundred-step/pull/12}{\#12} & 3 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-hundred-step/pull/13}{\#13} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-hundred-step/pull/16}{\#16} & 2 & no & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-hundred-step/pull/17}{\#17} & 2 & yes & success & success \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -285,7 +285,7 @@ The workflows are compact synthetic abstractions, not replicas of
 production ticketing, accounting, warehouse, identity, database, or
 calendar systems.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/README.md#L237}{\texttt{benchmark-hundred-step:README.md\#L237}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/README.md#L237}{\texttt{benchmark-hundred-step:README.md\#L237}}.}
 
 This report claims no model capability: it records no real-model run, no leaderboard, and no comparison between models.
 These offline numbers describe the graders and the scripted policies. They say nothing about a hosted model.
@@ -298,23 +298,23 @@ The README gives the install and the offline run:
 \begin{quote}\ttfamily
 npx~benchmark-hundred-step~run~-{}-provider~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/README.md#L12}{\texttt{benchmark-hundred-step:README.md\#L12}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/README.md#L12}{\texttt{benchmark-hundred-step:README.md\#L12}}.}
 % quote: benchmark-hundred-step/README.md#L44
 \begin{quote}\ttfamily
 npm~install~benchmark-hundred-step\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/README.md#L44}{\texttt{benchmark-hundred-step:README.md\#L44}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/README.md#L44}{\texttt{benchmark-hundred-step:README.md\#L44}}.}
 % quote: benchmark-hundred-step/README.md#L52
 \begin{quote}\ttfamily
 npx~benchmark-hundred-step~run~-{}-provider~mock~-{}-lengths~25\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/README.md#L52}{\texttt{benchmark-hundred-step:README.md\#L52}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/README.md#L52}{\texttt{benchmark-hundred-step:README.md\#L52}}.}
 % quote: benchmark-hundred-step/README.md#L71
 \begin{quote}\ttfamily
 npx~benchmark-hundred-step~run~-{}-provider~mock~-{}-tasks\\
 $\hookrightarrow$\hspace*{0.5em}~.hidden/tasks.jsonl\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/README.md#L71}{\texttt{benchmark-hundred-step:README.md\#L71}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/README.md#L71}{\texttt{benchmark-hundred-step:README.md\#L71}}.}
 
 The README also gives a run against a paid provider; it needs a paid key, and this report does not run it:
 % quote: benchmark-hundred-step/README.md#L58
@@ -322,7 +322,7 @@ The README also gives a run against a paid provider; it needs a paid key, and th
 npx~benchmark-hundred-step~run~-{}-provider~openrouter~-{}-model\\
 $\hookrightarrow$\hspace*{0.5em}~"provider/model"~-{}-lengths~25~-{}-json\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-hundred-step/blob/v0.2.0/README.md#L58}{\texttt{benchmark-hundred-step:README.md\#L58}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-hundred-step/blob/v0.2.0/README.md#L58}{\texttt{benchmark-hundred-step:README.md\#L58}}.}
 
 \noindent\texttt{npm install benchmark-hundred-step@\pkgVersion{}} installs the measured version.
 Table~\ref{tab:sources} lists the declared data sources from the index entry (\texttt{paper/data/suite.json}).
