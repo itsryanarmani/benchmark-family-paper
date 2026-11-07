@@ -89,7 +89,7 @@ benchmark-test-weakening is an open-source coding-agent benchmark. It
 checks whether an agent fixes buggy JavaScript or makes the tests
 easier to pass. All 30 tasks use deterministic grading.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/README.md#L7}{\texttt{benchmark-test-weakening:README.md\#L7}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/README.md#L7}{\texttt{benchmark-test-weakening:README.md\#L7}}.}
 
 Its index entry states the measured construct as: ``Whether a coding agent repairs buggy JavaScript while preserving the original tests and their mutation strength.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-test-weakening.whatItMeasures}).
 Table~\ref{tab:tasks} counts the tasks by family.
@@ -123,7 +123,7 @@ Saturation & \texttt{\pkgSaturation{}} \\
 Category & \pkgCategory{} \\
 Tags & \texttt{helpful}, \texttt{viral} \\
 Public seed & \pkgPublicSeed{} \\
-Repository & \url{https://github.com/pooriaarab/benchmark-test-weakening} \\
+Repository & \url{https://github.com/itsryanarmani/benchmark-test-weakening} \\
 Documentation & \url{https://private-repo-337e.com/benchmarks/benchmark-test-weakening} \\
 \bottomrule
 \end{tabular}}
@@ -138,7 +138,7 @@ inputs and the run seed, so no held-out data ships in the package;
 pass a private \texttt{-{}-seed} when the evaluation must stay
 unreplayable.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/README.md#L187}{\texttt{benchmark-test-weakening:README.md\#L187}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/README.md#L187}{\texttt{benchmark-test-weakening:README.md\#L187}}.}
 
 \section{Grader and surfaces}
 The grading document states the mechanism in its own words:
@@ -148,7 +148,7 @@ The grader replays the submitted tool log into a fresh virtual
 repository. It never trusts the submitted final state and never calls
 a model.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/docs/grading.md#L3}{\texttt{benchmark-test-weakening:docs/grading.md\#L3}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/docs/grading.md#L3}{\texttt{benchmark-test-weakening:docs/grading.md\#L3}}.}
 
 The index entry summarises the grader as: ``Deterministic trace replay, hidden original and run-seeded held-out cases, plus mutation-shield preservation; no model judge.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-test-weakening.grader}).
 Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README line that describes it, and the quoted lines follow.
@@ -161,10 +161,10 @@ Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README 
 \toprule
 Surface & README line \\
 \midrule
-TypeScript SDK & \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/README.md#L133}{\texttt{README.md\#L133}} \\
-Command-line interface & \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/README.md#L10}{\texttt{README.md\#L10}} \\
-Model Context Protocol server & \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/README.md#L154}{\texttt{README.md\#L154}} \\
-Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/README.md#L161}{\texttt{README.md\#L161}} \\
+TypeScript SDK & \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/README.md#L133}{\texttt{README.md\#L133}} \\
+Command-line interface & \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/README.md#L10}{\texttt{README.md\#L10}} \\
+Model Context Protocol server & \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/README.md#L154}{\texttt{README.md\#L154}} \\
+Fetch-style HTTP API & \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/README.md#L161}{\texttt{README.md\#L161}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -173,29 +173,29 @@ Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-test-weaken
 import~\{~benchmark,~run,~score~\}~from\\
 $\hookrightarrow$\hspace*{0.5em}~"benchmark-test-weakening";\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/README.md#L133}{\texttt{benchmark-test-weakening:README.md\#L133}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/README.md#L133}{\texttt{benchmark-test-weakening:README.md\#L133}}.}
 % quote: benchmark-test-weakening/README.md#L10
 \begin{quote}\ttfamily
 npx~benchmark-test-weakening~run~-{}-model~offline~-{}-provider\\
 $\hookrightarrow$\hspace*{0.5em}~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/README.md#L10}{\texttt{benchmark-test-weakening:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/README.md#L10}{\texttt{benchmark-test-weakening:README.md\#L10}}.}
 % quote: benchmark-test-weakening/README.md#L154
 \begin{quote}\ttfamily
 npx~benchmark-test-weakening~mcp\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/README.md#L154}{\texttt{benchmark-test-weakening:README.md\#L154}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/README.md#L154}{\texttt{benchmark-test-weakening:README.md\#L154}}.}
 % quote: benchmark-test-weakening/README.md#L161
 \begin{quote}
 Import \texttt{handler} from \texttt{benchmark-test-weakening/api}, or
 start the self-hosted Node server:
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/README.md#L161}{\texttt{benchmark-test-weakening:README.md\#L161}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/README.md#L161}{\texttt{benchmark-test-weakening:README.md\#L161}}.}
 % quote: benchmark-test-weakening/README.md#L164
 \begin{quote}\ttfamily
 npx~benchmark-test-weakening~serve~3000\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/README.md#L164}{\texttt{benchmark-test-weakening:README.md\#L164}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/README.md#L164}{\texttt{benchmark-test-weakening:README.md\#L164}}.}
 
 \section{Offline validation}
 No real model was run. The family data records mock runs at seeds \pkgMockSeedA{} and \pkgMockSeedB{}
@@ -222,7 +222,7 @@ Shield~breakdown:~mean~ratio~0.86;~mutants~killed~145/180~by\\
 $\hookrightarrow$\hspace*{0.5em}~final~suites,~170/180~by~originals;~flags:\\
 $\hookrightarrow$\hspace*{0.5em}~removedTests=24~loosenedAssertions=24\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/README.md#L14}{\texttt{benchmark-test-weakening:README.md\#L14}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/README.md#L14}{\texttt{benchmark-test-weakening:README.md\#L14}}.}
 
 \section{Review record}
 The package went through \pkgFixRounds{} fix rounds recorded in \texttt{paper/data/review-rounds.csv}, counted from release \texttt{review-log-v1} of this repository.
@@ -236,8 +236,8 @@ Table~\ref{tab:defects} lists the defect classes that touched this package, each
 \toprule
 Defect class & Record kind & Locators \\
 \midrule
-\texttt{hidden-\allowbreak split-\allowbreak not-\allowbreak hidden} & {\footnotesize review issues and PRs (per-package locators); 0.2.0 changelogs} & \href{https://github.com/pooriaarab/benchmark-test-weakening/issues/9}{\texttt{benchmark-\allowbreak test-\allowbreak weakening\#9}} \\
-\texttt{evaluator-\allowbreak escape} & {\footnotesize 0.2.0 changelog; npm deprecation note} & \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/CHANGELOG.md#L9-15}{\texttt{benchmark-\allowbreak test-\allowbreak weakening:\allowbreak CHANGELOG.md\#L9-15}} \\
+\texttt{hidden-\allowbreak split-\allowbreak not-\allowbreak hidden} & {\footnotesize review issues and PRs (per-package locators); 0.2.0 changelogs} & \href{https://github.com/itsryanarmani/benchmark-test-weakening/issues/9}{\texttt{benchmark-\allowbreak test-\allowbreak weakening\#9}} \\
+\texttt{evaluator-\allowbreak escape} & {\footnotesize 0.2.0 changelog; npm deprecation note} & \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/CHANGELOG.md#L9-15}{\texttt{benchmark-\allowbreak test-\allowbreak weakening:\allowbreak CHANGELOG.md\#L9-15}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -246,7 +246,7 @@ The package changelog for this version states:
 \begin{quote}
 Results produced by 0.1.0 are not comparable with 0.2.0.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/CHANGELOG.md#L5}{\texttt{benchmark-test-weakening:CHANGELOG.md\#L5}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/CHANGELOG.md#L5}{\texttt{benchmark-test-weakening:CHANGELOG.md\#L5}}.}
 
 The merged feature pull requests for this package are listed in Table~\ref{tab:council}:
 \pkgCouncilPrs{} requests, \pkgCouncilReviews{} council reviews, \pkgCouncilApproved{} approvals,
@@ -260,12 +260,12 @@ and \pkgCouncilFailed{} requests that ever showed a failing \texttt{vibecoderevi
 \toprule
 Pull request & Council reviews & Approved & Council run & CI check \\
 \midrule
-\href{https://github.com/pooriaarab/benchmark-test-weakening/pull/4}{\#4} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-test-weakening/pull/5}{\#5} & 3 & yes & failure & success \\
-\href{https://github.com/pooriaarab/benchmark-test-weakening/pull/6}{\#6} & 3 & yes & failure & success \\
-\href{https://github.com/pooriaarab/benchmark-test-weakening/pull/8}{\#8} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-test-weakening/pull/14}{\#14} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-test-weakening/pull/38}{\#38} & 0 & no & none & success \\
+\href{https://github.com/itsryanarmani/benchmark-test-weakening/pull/4}{\#4} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-test-weakening/pull/5}{\#5} & 3 & yes & failure & success \\
+\href{https://github.com/itsryanarmani/benchmark-test-weakening/pull/6}{\#6} & 3 & yes & failure & success \\
+\href{https://github.com/itsryanarmani/benchmark-test-weakening/pull/8}{\#8} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-test-weakening/pull/14}{\#14} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-test-weakening/pull/38}{\#38} & 0 & no & none & success \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -283,7 +283,7 @@ The package documents its own limit:
 \begin{quote}
 The public tasks and references can enter model training data.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/README.md#L200}{\texttt{benchmark-test-weakening:README.md\#L200}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/README.md#L200}{\texttt{benchmark-test-weakening:README.md\#L200}}.}
 
 This report claims no model capability: it records no real-model run, no leaderboard, and no comparison between models.
 These offline numbers describe the graders and the scripted policies. They say nothing about a hosted model.
@@ -297,25 +297,25 @@ The README gives the install and the offline run:
 npx~benchmark-test-weakening~run~-{}-model~offline~-{}-provider\\
 $\hookrightarrow$\hspace*{0.5em}~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/README.md#L10}{\texttt{benchmark-test-weakening:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/README.md#L10}{\texttt{benchmark-test-weakening:README.md\#L10}}.}
 % quote: benchmark-test-weakening/README.md#L46
 \begin{quote}\ttfamily
 npm~install~benchmark-test-weakening\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/README.md#L46}{\texttt{benchmark-test-weakening:README.md\#L46}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/README.md#L46}{\texttt{benchmark-test-weakening:README.md\#L46}}.}
 % quote: benchmark-test-weakening/README.md#L60
 \begin{quote}\ttfamily
 npx~benchmark-test-weakening~run~-{}-model~offline~-{}-provider\\
 $\hookrightarrow$\hspace*{0.5em}~mock~-{}-json~>~report.json\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/README.md#L60}{\texttt{benchmark-test-weakening:README.md\#L60}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/README.md#L60}{\texttt{benchmark-test-weakening:README.md\#L60}}.}
 % quote: benchmark-test-weakening/README.md#L144
 \begin{quote}\ttfamily
 npx~benchmark-test-weakening~run~-{}-tasks\\
 $\hookrightarrow$\hspace*{0.5em}~hidden/tasks-hidden.jsonl~-{}-model~offline\\
 $\hookrightarrow$\hspace*{0.5em}~-{}-provider~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/README.md#L144}{\texttt{benchmark-test-weakening:README.md\#L144}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/README.md#L144}{\texttt{benchmark-test-weakening:README.md\#L144}}.}
 
 The README also gives a run against a paid provider; it needs a paid key, and this report does not run it:
 % quote: benchmark-test-weakening/README.md#L38
@@ -323,7 +323,7 @@ The README also gives a run against a paid provider; it needs a paid key, and th
 OPENROUTER\_API\_KEY=your\_key~npx~benchmark-test-weakening~run\\
 $\hookrightarrow$\hspace*{0.5em}~-{}-provider~openrouter~-{}-model~openai/gpt-5\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-test-weakening/blob/v0.2.0/README.md#L38}{\texttt{benchmark-test-weakening:README.md\#L38}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-test-weakening/blob/v0.2.0/README.md#L38}{\texttt{benchmark-test-weakening:README.md\#L38}}.}
 
 \noindent\texttt{npm install benchmark-test-weakening@\pkgVersion{}} installs the measured version.
 Table~\ref{tab:sources} lists the declared data sources from the index entry (\texttt{paper/data/suite.json}).

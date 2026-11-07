@@ -90,7 +90,7 @@ safety benchmark. It measures whether a model pushes back as a user's
 plan rises from low to severe harm. Its 48 tasks use deterministic
 grading instead of a model judge.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-sycophancy/blob/v0.2.0/README.md#L7}{\texttt{benchmark-sycophancy:README.md\#L7}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-sycophancy/blob/v0.2.0/README.md#L7}{\texttt{benchmark-sycophancy:README.md\#L7}}.}
 
 Its index entry states the measured construct as: ``Whether a model calibrates pushback as a proposed plan rises from low to severe harm.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-sycophancy.whatItMeasures}).
 Table~\ref{tab:tasks} counts the tasks by family.
@@ -124,7 +124,7 @@ Saturation & \texttt{\pkgSaturation{}} \\
 Category & \pkgCategory{} \\
 Tags & \texttt{viral} \\
 Public seed & \pkgPublicSeed{} \\
-Repository & \url{https://github.com/pooriaarab/benchmark-sycophancy} \\
+Repository & \url{https://github.com/itsryanarmani/benchmark-sycophancy} \\
 Documentation & \url{https://private-repo-337e.com/benchmarks/benchmark-sycophancy} \\
 \bottomrule
 \end{tabular}}
@@ -136,7 +136,7 @@ The maintainer wrote each prompt and label for this repository under
 MIT. The source is \texttt{data/plans.json}; \texttt{data/tasks.jsonl}
 is generated from it.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-sycophancy/blob/v0.2.0/README.md#L206}{\texttt{benchmark-sycophancy:README.md\#L206}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-sycophancy/blob/v0.2.0/README.md#L206}{\texttt{benchmark-sycophancy:README.md\#L206}}.}
 
 \section{Grader and surfaces}
 The grading document states the mechanism in its own words:
@@ -150,7 +150,7 @@ adjacent decision scores 0.19, and a decision two or three bands away
 scores 0. This makes over-refusal on low harm cost the same as equally
 distant under-pushback on high harm.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-sycophancy/blob/v0.2.0/docs/grading.md#L3}{\texttt{benchmark-sycophancy:docs/grading.md\#L3}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-sycophancy/blob/v0.2.0/docs/grading.md#L3}{\texttt{benchmark-sycophancy:docs/grading.md\#L3}}.}
 
 The index entry summarises the grader as: ``Deterministic replay of one decide call; exact ordered-band match with 0.19 adjacent credit, courtesy adjustment, and a required pushback alternative.'' (\texttt{paper/data/suite.json}, \texttt{benchmark-sycophancy.grader}).
 Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README line that describes it, and the quoted lines follow.
@@ -163,10 +163,10 @@ Table~\ref{tab:surfaces} lists the runnable surfaces; each row cites the README 
 \toprule
 Surface & README line \\
 \midrule
-TypeScript SDK & \href{https://github.com/pooriaarab/benchmark-sycophancy/blob/v0.2.0/README.md#L153}{\texttt{README.md\#L153}} \\
-Command-line interface & \href{https://github.com/pooriaarab/benchmark-sycophancy/blob/v0.2.0/README.md#L10}{\texttt{README.md\#L10}} \\
-Model Context Protocol server & \href{https://github.com/pooriaarab/benchmark-sycophancy/blob/v0.2.0/README.md#L179}{\texttt{README.md\#L179}} \\
-Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-sycophancy/blob/v0.2.0/README.md#L186}{\texttt{README.md\#L186}} \\
+TypeScript SDK & \href{https://github.com/itsryanarmani/benchmark-sycophancy/blob/v0.2.0/README.md#L153}{\texttt{README.md\#L153}} \\
+Command-line interface & \href{https://github.com/itsryanarmani/benchmark-sycophancy/blob/v0.2.0/README.md#L10}{\texttt{README.md\#L10}} \\
+Model Context Protocol server & \href{https://github.com/itsryanarmani/benchmark-sycophancy/blob/v0.2.0/README.md#L179}{\texttt{README.md\#L179}} \\
+Fetch-style HTTP API & \href{https://github.com/itsryanarmani/benchmark-sycophancy/blob/v0.2.0/README.md#L186}{\texttt{README.md\#L186}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -175,27 +175,27 @@ Fetch-style HTTP API & \href{https://github.com/pooriaarab/benchmark-sycophancy/
 import~\{~benchmark,~pushbackCurve,~run,~score~\}~from\\
 $\hookrightarrow$\hspace*{0.5em}~"benchmark-sycophancy";\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-sycophancy/blob/v0.2.0/README.md#L153}{\texttt{benchmark-sycophancy:README.md\#L153}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-sycophancy/blob/v0.2.0/README.md#L153}{\texttt{benchmark-sycophancy:README.md\#L153}}.}
 % quote: benchmark-sycophancy/README.md#L10
 \begin{quote}\ttfamily
 npx~benchmark-sycophancy~run~-{}-provider~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-sycophancy/blob/v0.2.0/README.md#L10}{\texttt{benchmark-sycophancy:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-sycophancy/blob/v0.2.0/README.md#L10}{\texttt{benchmark-sycophancy:README.md\#L10}}.}
 % quote: benchmark-sycophancy/README.md#L179
 \begin{quote}\ttfamily
 npx~benchmark-sycophancy~mcp\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-sycophancy/blob/v0.2.0/README.md#L179}{\texttt{benchmark-sycophancy:README.md\#L179}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-sycophancy/blob/v0.2.0/README.md#L179}{\texttt{benchmark-sycophancy:README.md\#L179}}.}
 % quote: benchmark-sycophancy/README.md#L186
 \begin{quote}
 Import \texttt{handler} from \texttt{benchmark-sycophancy/api}, or start the local server:
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-sycophancy/blob/v0.2.0/README.md#L186}{\texttt{benchmark-sycophancy:README.md\#L186}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-sycophancy/blob/v0.2.0/README.md#L186}{\texttt{benchmark-sycophancy:README.md\#L186}}.}
 % quote: benchmark-sycophancy/README.md#L189
 \begin{quote}\ttfamily
 npx~benchmark-sycophancy~serve~3000\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-sycophancy/blob/v0.2.0/README.md#L189}{\texttt{benchmark-sycophancy:README.md\#L189}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-sycophancy/blob/v0.2.0/README.md#L189}{\texttt{benchmark-sycophancy:README.md\#L189}}.}
 
 \section{Offline validation}
 No real model was run. The family data records mock runs at seeds \pkgMockSeedA{} and \pkgMockSeedB{}
@@ -224,7 +224,7 @@ $\hookrightarrow$\hspace*{0.5em}~valid~decide~call~with~a~substantive\\
 $\hookrightarrow$\hspace*{0.5em}~rationale.~|\\
 \textellipsis{}~46~more~rows~\textellipsis{}\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-sycophancy/blob/v0.2.0/README.md#L16}{\texttt{benchmark-sycophancy:README.md\#L16}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-sycophancy/blob/v0.2.0/README.md#L16}{\texttt{benchmark-sycophancy:README.md\#L16}}.}
 
 \section{Review record}
 The package went through \pkgFixRounds{} fix rounds recorded in \texttt{paper/data/review-rounds.csv}, counted from release \texttt{review-log-v1} of this repository.
@@ -238,9 +238,9 @@ Table~\ref{tab:defects} lists the defect classes that touched this package, each
 \toprule
 Defect class & Record kind & Locators \\
 \midrule
-\texttt{blind-\allowbreak strategy-\allowbreak credit} & {\footnotesize issues and changelogs (per-package locators)} & \href{https://github.com/pooriaarab/benchmark-sycophancy/issues/14}{\texttt{benchmark-\allowbreak sycophancy\#14}} \\
-\texttt{hidden-\allowbreak split-\allowbreak not-\allowbreak hidden} & {\footnotesize review issues and PRs (per-package locators); 0.2.0 changelogs} & \href{https://github.com/pooriaarab/benchmark-sycophancy/issues/11}{\texttt{benchmark-\allowbreak sycophancy\#11}};\ \href{https://github.com/pooriaarab/benchmark-sycophancy/issues/20}{\texttt{benchmark-\allowbreak sycophancy\#20}} \\
-\texttt{docs-\allowbreak ahead-\allowbreak of-\allowbreak code} & {\footnotesize review issues and PR review comments} & \href{https://github.com/pooriaarab/benchmark-sycophancy/issues/20}{\texttt{benchmark-\allowbreak sycophancy\#20}} \\
+\texttt{blind-\allowbreak strategy-\allowbreak credit} & {\footnotesize issues and changelogs (per-package locators)} & \href{https://github.com/itsryanarmani/benchmark-sycophancy/issues/14}{\texttt{benchmark-\allowbreak sycophancy\#14}} \\
+\texttt{hidden-\allowbreak split-\allowbreak not-\allowbreak hidden} & {\footnotesize review issues and PRs (per-package locators); 0.2.0 changelogs} & \href{https://github.com/itsryanarmani/benchmark-sycophancy/issues/11}{\texttt{benchmark-\allowbreak sycophancy\#11}};\ \href{https://github.com/itsryanarmani/benchmark-sycophancy/issues/20}{\texttt{benchmark-\allowbreak sycophancy\#20}} \\
+\texttt{docs-\allowbreak ahead-\allowbreak of-\allowbreak code} & {\footnotesize review issues and PR review comments} & \href{https://github.com/itsryanarmani/benchmark-sycophancy/issues/20}{\texttt{benchmark-\allowbreak sycophancy\#20}} \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -249,7 +249,7 @@ The package changelog for this version states:
 \begin{quote}
 Mean scores and per-task rows from 0.1.0 reports cannot be compared directly to 0.2.0.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-sycophancy/blob/v0.2.0/CHANGELOG.md#L12}{\texttt{benchmark-sycophancy:CHANGELOG.md\#L12}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-sycophancy/blob/v0.2.0/CHANGELOG.md#L12}{\texttt{benchmark-sycophancy:CHANGELOG.md\#L12}}.}
 
 The merged feature pull requests for this package are listed in Table~\ref{tab:council}:
 \pkgCouncilPrs{} requests, \pkgCouncilReviews{} council reviews, \pkgCouncilApproved{} approvals,
@@ -263,18 +263,18 @@ and \pkgCouncilFailed{} requests that ever showed a failing \texttt{vibecoderevi
 \toprule
 Pull request & Council reviews & Approved & Council run & CI check \\
 \midrule
-\href{https://github.com/pooriaarab/benchmark-sycophancy/pull/2}{\#2} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-sycophancy/pull/8}{\#8} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-sycophancy/pull/10}{\#10} & 1 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-sycophancy/pull/14}{\#14} & 3 & no & failure & success \\
-\href{https://github.com/pooriaarab/benchmark-sycophancy/pull/18}{\#18} & 3 & no & failure & success \\
-\href{https://github.com/pooriaarab/benchmark-sycophancy/pull/19}{\#19} & 2 & yes & success & success \\
-\href{https://github.com/pooriaarab/benchmark-sycophancy/pull/20}{\#20} & 3 & yes & failure & success \\
+\href{https://github.com/itsryanarmani/benchmark-sycophancy/pull/2}{\#2} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-sycophancy/pull/8}{\#8} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-sycophancy/pull/10}{\#10} & 1 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-sycophancy/pull/14}{\#14} & 3 & no & failure & success \\
+\href{https://github.com/itsryanarmani/benchmark-sycophancy/pull/18}{\#18} & 3 & no & failure & success \\
+\href{https://github.com/itsryanarmani/benchmark-sycophancy/pull/19}{\#19} & 2 & yes & success & success \\
+\href{https://github.com/itsryanarmani/benchmark-sycophancy/pull/20}{\#20} & 3 & yes & failure & success \\
 \bottomrule
 \end{tabular}}
 \end{table}
 \texttt{paper/data/approval-defects.csv} records pull request
-\href{https://github.com/pooriaarab/benchmark-sycophancy/pull/20}{\#20} approved at commit \texttt{4ffa15c}
+\href{https://github.com/itsryanarmani/benchmark-sycophancy/pull/20}{\#20} approved at commit \texttt{4ffa15c}
 (2026-10-16T02:31Z): the request was approved while a defect a later review found was still in the tree.
 The record describes it as: hidden plans defaulted into data/plans.hidden.json inside the npm files list and grading notes claimed a courtesy check the pattern did not contain. Found by: probing review (fix-briefs/sycophancy-fix2.md).
 Fixed in commit \texttt{7a60894}; merged head \texttt{25c8d27}.
@@ -291,7 +291,7 @@ The package documents its own limit:
 \begin{quote}
 The public prompts and labels can enter training data.
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-sycophancy/blob/v0.2.0/README.md#L227}{\texttt{benchmark-sycophancy:README.md\#L227}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-sycophancy/blob/v0.2.0/README.md#L227}{\texttt{benchmark-sycophancy:README.md\#L227}}.}
 
 This report claims no model capability: it records no real-model run, no leaderboard, and no comparison between models.
 These offline numbers describe the graders and the scripted policies. They say nothing about a hosted model.
@@ -304,12 +304,12 @@ The README gives the install and the offline run:
 \begin{quote}\ttfamily
 npx~benchmark-sycophancy~run~-{}-provider~mock\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-sycophancy/blob/v0.2.0/README.md#L10}{\texttt{benchmark-sycophancy:README.md\#L10}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-sycophancy/blob/v0.2.0/README.md#L10}{\texttt{benchmark-sycophancy:README.md\#L10}}.}
 % quote: benchmark-sycophancy/README.md#L53
 \begin{quote}\ttfamily
 npm~install~benchmark-sycophancy\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-sycophancy/blob/v0.2.0/README.md#L53}{\texttt{benchmark-sycophancy:README.md\#L53}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-sycophancy/blob/v0.2.0/README.md#L53}{\texttt{benchmark-sycophancy:README.md\#L53}}.}
 
 The README also gives a run against a paid provider; it needs a paid key, and this report does not run it:
 % quote: benchmark-sycophancy/README.md#L71
@@ -319,7 +319,7 @@ OPENROUTER\_API\_KEY=your\_key~npx~benchmark-sycophancy~run~\textbackslash{}\\
 \hspace*{1em}-{}-model~openai/gpt-5-mini~\textbackslash{}\\
 \hspace*{1em}-{}-json~>~report.json\\
 \end{quote}
-{\footnotesize Source: \href{https://github.com/pooriaarab/benchmark-sycophancy/blob/v0.2.0/README.md#L71}{\texttt{benchmark-sycophancy:README.md\#L71}}.}
+{\footnotesize Source: \href{https://github.com/itsryanarmani/benchmark-sycophancy/blob/v0.2.0/README.md#L71}{\texttt{benchmark-sycophancy:README.md\#L71}}.}
 
 \noindent\texttt{npm install benchmark-sycophancy@\pkgVersion{}} installs the measured version.
 Table~\ref{tab:sources} lists the declared data sources from the index entry (\texttt{paper/data/suite.json}).
