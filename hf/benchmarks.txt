@@ -1,4 +1,4 @@
-# One benchmark-<id> per line. publish.py clones pooriaarab/<name> at main
+# One benchmark-<id> per line. publish.py clones itsryanarmani/<name> at main
 # and stages data/ + scripts/gen-tasks.mjs for upload to pooria/<name>.
 # Ids without an npm release are skipped with a message, so a wave can be
 # listed before every package ships.

@@ -85,7 +85,7 @@ function ghGraphql(query, vars) {
 // failed vibecodereview run on benchmark-honesty#16 is hidden that way).
 function checkRuns(repo, sha) {
   const data = JSON.parse(run("gh", [
-    "api", `repos/pooriaarab/${repo}/commits/${sha}/check-runs?per_page=100&filter=all`,
+    "api", `repos/itsryanarmani/${repo}/commits/${sha}/check-runs?per_page=100&filter=all`,
   ]));
   const byName = new Map();
   for (const cr of data.check_runs || []) {
@@ -113,7 +113,7 @@ function main() {
   for (const repo of repos) {
     let cursor = null;
     for (;;) {
-      const query = `query($repo:String!,$cursor:String){repository(owner:"pooriaarab",name:$repo){pullRequests(first:100,after:$cursor,states:[OPEN,CLOSED,MERGED]){pageInfo{hasNextPage,endCursor} nodes{number title state mergedAt headRefOid reviews(first:100){nodes{author{login} state body submittedAt}}}}}}`;
+      const query = `query($repo:String!,$cursor:String){repository(owner:"itsryanarmani",name:$repo){pullRequests(first:100,after:$cursor,states:[OPEN,CLOSED,MERGED]){pageInfo{hasNextPage,endCursor} nodes{number title state mergedAt headRefOid reviews(first:100){nodes{author{login} state body submittedAt}}}}}}`;
       const vars = { repo };
       if (cursor) vars.cursor = cursor;
       const page = ghGraphql(query, vars).repository.pullRequests;
@@ -153,7 +153,7 @@ function main() {
     // A failed `check` run on an earlier commit of the request does not
     // show on the merge head; count those separately.
     const commits = run("gh", [
-      "api", "--paginate", `repos/pooriaarab/${pr.repo}/pulls/${pr.number}/commits?per_page=100`,
+      "api", "--paginate", `repos/itsryanarmani/${pr.repo}/pulls/${pr.number}/commits?per_page=100`,
       "--jq", ".[].sha",
     ]).trim().split("\n").filter(Boolean);
     let earlierCheckFail = 0;

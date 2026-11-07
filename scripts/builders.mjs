@@ -32,7 +32,7 @@ const agents = new Map();
 let prsTotal = 0;
 for (const repo of repos) {
   const prs = JSON.parse(run("gh", [
-    "pr", "list", "-R", `pooriaarab/${repo}`, "--state", "all",
+    "pr", "list", "-R", `itsryanarmani/${repo}`, "--state", "all",
     "--limit", "1000", "--json", "number,title,state,mergedAt,body",
   ]));
   prsTotal += prs.length;
@@ -60,7 +60,7 @@ const prsReviewed = new Map();
 for (const repo of repos) {
   let cursor = null;
   for (;;) {
-    const query = `query($repo:String!,$cursor:String){repository(owner:"pooriaarab",name:$repo){pullRequests(first:100,after:$cursor,states:[OPEN,CLOSED,MERGED]){pageInfo{hasNextPage,endCursor} nodes{reviews(first:100){nodes{author{login}}}}}}}`;
+    const query = `query($repo:String!,$cursor:String){repository(owner:"itsryanarmani",name:$repo){pullRequests(first:100,after:$cursor,states:[OPEN,CLOSED,MERGED]){pageInfo{hasNextPage,endCursor} nodes{reviews(first:100){nodes{author{login}}}}}}}`;
     const args = ["api", "graphql", "-f", `query=${query}`, "-F", `repo=${repo}`];
     if (cursor) args.push("-F", `cursor=${cursor}`);
     const data = JSON.parse(run("gh", args)).data.repository.pullRequests;

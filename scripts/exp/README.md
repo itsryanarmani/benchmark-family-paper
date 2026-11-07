@@ -14,7 +14,7 @@ fail; read it before changing anything.
   Verifies each tarball's sha512 before install, fails loudly on a
   mismatch, and is idempotent via an `install.ok` marker.
 - `trivial-policy-server.py` — OpenAI-compatible endpoint that plays a
-  fixed trivial policy, vendored from `pooriaarab/scripts` (source
+  fixed trivial policy, vendored from `itsryanarmani/scripts` (source
   commit in its header) so this repo reproduces alone.
 - `scaffold.test.sh` — the end-to-end check for all of the above.
 - `probes.json` — the frozen E4 contract probes (honest variants,

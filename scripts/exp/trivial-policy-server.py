@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-# Vendored from pooriaarab/scripts/trivial-policy-server.py
+# Vendored from itsryanarmani/scripts/trivial-policy-server.py
 # Source commit: 3381492e52d0dea0b3aa36d895ed3d4e1fb8efb3
-# Licence: MIT (pooriaarab/scripts/LICENSE), copyright Pooria Arab.
+# Licence: MIT (itsryanarmani/scripts/LICENSE), copyright Pooria Arab.
 """trivial-policy-server - an OpenAI-compatible chat endpoint that plays a fixed trivial policy.
 
 Point a benchmark package at it (OPENAI_BASE_URL=http://127.0.0.1:PORT/v1, any API key) and pick the
