@@ -2,7 +2,7 @@
 """Stage benchmark-* package data for Hugging Face upload.
 
 For every package listed in benchmarks.txt (one ``benchmark-<id>`` per line)
-this tool clones ``pooriaarab/<package>`` at ``main``, builds a staging folder
+this tool clones ``itsryanarmani/<package>`` at ``main``, builds a staging folder
 with the public task data, the refresh generator, a dataset card and a
 Croissant file (core + minimal RAI fields, per the NeurIPS 2026 Evaluations &
 Datasets hosting guidelines).
@@ -31,7 +31,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 LIST_FILE = HERE / "benchmarks.txt"
 OUT_DIR = HERE / "out"
-GITHUB_ORG = "pooriaarab"
+GITHUB_ORG = "itsryanarmani"
 HF_OWNER = "pooria"
 COLLECTION_TITLE = "AI Benchmark Index"
 TOKEN_FILE = Path.home() / ".config" / "agents" / "hf-token"

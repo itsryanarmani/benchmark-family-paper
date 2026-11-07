@@ -9,7 +9,7 @@ collection in sync.
 
 1. Add the package name to `benchmarks.txt` (one `benchmark-<id>` per line).
 2. Dry run: `python3 hf/publish.py --dry-run`. This clones
-   `pooriaarab/<package>` at `main`, builds `hf/out/<package>/` (data split,
+   `itsryanarmani/<package>` at `main`, builds `hf/out/<package>/` (data split,
    `scripts/gen-tasks.mjs`, dataset card, `croissant.json`) and validates the
    Croissant file with `mlcroissant` (required - the run fails without it).
    Fix the source repo, not the staging folder, when something looks wrong.

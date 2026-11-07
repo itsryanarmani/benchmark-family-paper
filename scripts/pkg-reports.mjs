@@ -30,7 +30,7 @@ const ghHeaders = () => (ghToken ? { authorization: `Bearer ${ghToken}` } : {});
 async function fetchFile(pkg, path, ref) {
   const file = join(cacheDir(pkg), path); mkdirSync(dirname(file), { recursive: true });
   if (!REFRESH && existsSync(file)) return;
-  const url = `https://raw.githubusercontent.com/pooriaarab/${pkg}/${ref}/${path}`;
+  const url = `https://raw.githubusercontent.com/itsryanarmani/${pkg}/${ref}/${path}`;
   const res = await fetch(url, { redirect: "follow", headers: ghHeaders() });
   if (res.status !== 200) fail(`GET ${url} returned HTTP ${res.status}`); writeFileSync(file, Buffer.from(await res.arrayBuffer()));
 }
@@ -40,7 +40,7 @@ async function cachePackage(pkg, ref) {
   const stamp = join(cacheDir(pkg), "_ref");
   if (existsSync(cacheDir(pkg)) && (!existsSync(stamp) || readFileSync(stamp, "utf8").trim() !== ref)) rmSync(cacheDir(pkg), { recursive: true, force: true });
   for (const p of ["README.md", "CHANGELOG.md", "package.json"]) await fetchFile(pkg, p, ref);
-  const turl = `https://api.github.com/repos/pooriaarab/${pkg}/git/trees/${ref}?recursive=1`;
+  const turl = `https://api.github.com/repos/itsryanarmani/${pkg}/git/trees/${ref}?recursive=1`;
   const res = await fetch(turl, { headers: ghHeaders() }); if (res.status !== 200) fail(`GET ${turl} returned HTTP ${res.status}`);
   for (const n of JSON.parse(await res.text()).tree || [])
     if (n.type === "blob" && n.path.startsWith("docs/")) await fetchFile(pkg, n.path, ref);
@@ -186,8 +186,8 @@ const glyphLen = (e) => atoms(e).reduce((n, a) => n + atomW(a), 0);
 const absLink = (pkg, ref, file, u) => {
   const v = u.trim();
   if (/^[a-z][a-z0-9+.-]*:/i.test(v)) return v;
-  if (v.startsWith("/")) return `https://github.com/pooriaarab/${pkg}/blob/${ref}${v}`;
-  return new URL(v, `https://github.com/pooriaarab/${pkg}/blob/${ref}/${file}`).href;
+  if (v.startsWith("/")) return `https://github.com/itsryanarmani/${pkg}/blob/${ref}${v}`;
+  return new URL(v, `https://github.com/itsryanarmani/${pkg}/blob/${ref}/${file}`).href;
 };
 // Prose quotes: strip a leading list marker, set `code` spans in \texttt,
 // **bold** in \textbf and [text](url) as \href{url}{text}.
@@ -249,13 +249,13 @@ function wrapCode(e) {
   if (cur) parts.push(cur);
   return parts;
 }
-const blob = (pkg, ref, f, l) => `https://github.com/pooriaarab/${pkg}/blob/${ref}/${f}#L${l}`;
+const blob = (pkg, ref, f, l) => `https://github.com/itsryanarmani/${pkg}/blob/${ref}/${f}#L${l}`;
 // A locator is one \texttt token; break hints after - and / keep a long
 // package name or path from overflowing its table cell.
 const brk = (s) => s.replaceAll("/", "/\\allowbreak ").replaceAll("-", "-\\allowbreak ");
 const locatorLink = (pkg, ref, loc) => {
   const i = loc.match(/^([\w-]+)#(\d+)$/);
-  if (i) return `\\href{https://github.com/pooriaarab/${i[1]}/issues/${i[2]}}{\\texttt{${brk(tex(i[1]))}\\#${i[2]}}}`;
+  if (i) return `\\href{https://github.com/itsryanarmani/${i[1]}/issues/${i[2]}}{\\texttt{${brk(tex(i[1]))}\\#${i[2]}}}`;
   const f = loc.match(/^([\w-]+):([\w./-]+)#L(\d+(?:-\d+)?)$/);
   return f ? `\\href{${blob(f[1], ref, f[2], f[3])}}{\\texttt{${brk(tex(f[1]))}:\\allowbreak ${brk(tex(f[2]))}\\#L${f[3]}}}` : `\\texttt{${tex(loc)}}`;
 };
@@ -309,7 +309,7 @@ async function emit(pkg, data, d) {
     || fail("paper/data/README.md lacks trivial-check versions");
   const trivN = readFileSync(join(root, "paper/generated/trivial-macros.tex"), "utf8").match(/\\trivialPolicies\}\{(\d+)\}/)
     || fail("paper/generated/trivial-macros.tex lacks \\trivialPolicies");
-  const prs = council.map((r) => `\\href{https://github.com/pooriaarab/${pkg}/pull/${r.pr}}{\\#${r.pr}}`
+  const prs = council.map((r) => `\\href{https://github.com/itsryanarmani/${pkg}/pull/${r.pr}}{\\#${r.pr}}`
     + ` & ${r.council_reviews} & ${r.approved === "1" ? "yes" : "no"}`
     + ` & ${tex(r.vibecodereview_latest)} & ${tex(r.check_latest)} \\\\`);
   const approvedN = council.filter((r) => r.approved === "1").length, reviewsN = council.reduce((a, r) => a + Number(r.council_reviews), 0),
@@ -346,7 +346,7 @@ async function emit(pkg, data, d) {
       + `and \\pkgTrivialNew{} at \\pkgTrivialVerNew{}, won by \\texttt{\\pkgTrivialPolicy{}} (\\texttt{paper/data/trivial.csv}).`
     : `This package was not part of the preregistered check, so \\texttt{paper/data/trivial.csv} carries no row for it.`;
   const apprOne = (r) => `\\texttt{paper/data/approval-defects.csv} records pull request\n`
-    + `\\href{https://github.com/pooriaarab/${r.repo}/pull/${r.pr}}{\\#${r.pr}} approved at commit \\texttt{${tex(r.approved_commit)}}\n`
+    + `\\href{https://github.com/itsryanarmani/${r.repo}/pull/${r.pr}}{\\#${r.pr}} approved at commit \\texttt{${tex(r.approved_commit)}}\n`
     + `(${tex(r.approved_at)}): the request was approved while a defect a later review found was still in the tree.\n`
     + `The record describes it as: ${tex(r.defect)}. Found by: ${tex(r.found_by)}.\n`
     + `${r.fix_commit ? `Fixed in commit \\texttt{${tex(r.fix_commit)}};` : "The fix landed in a later pull request;"} merged head \\texttt{${tex(r.merged_head)}}.`;
@@ -479,7 +479,7 @@ and the family paper record \\texttt{${data.dois.paper.version_doi}} (\\texttt{p
   const meta = { generated_by: "scripts/pkg-reports.mjs", title, abstract, license: "cc-by-4.0", subject_class: "cs.AI",
     authors: [{ name: "Armani, Ryan", affiliation: "Independent researcher", orcid: process.env.ORCID_ID || null }],
     keywords: ["ai-benchmark", "llm-evaluation", "agent-evaluation", "deterministic-grader", pkg],
-    comments: `Generated per-package technical report for ${pkg} ${s.version}; data from pooriaarab/benchmark-family-paper paper/data and cached package sources.`,
+    comments: `Generated per-package technical report for ${pkg} ${s.version}; data from itsryanarmani/benchmark-family-paper paper/data and cached package sources.`,
     code_url: s.repo, data_url: `https://huggingface.co/datasets/pooria/${pkg}`,
     data_concept_dois: [dois.concept_doi, data.dois.paper.version_doi], venues: [] };
   if (meta.abstract.length < 100 || meta.abstract.length > 1920) fail(`${pkg}: abstract is ${meta.abstract.length} characters`);

@@ -30,7 +30,7 @@ is the end-to-end check; each row says which check catches it.
   without a DOI link.
 - Licence claim drift: the supplement states MIT for all 22 repos; if a
   repo relicenses, the claim is wrong. Verified once at authoring time
-  with `gh api repos/pooriaarab/<repo>/license` (all MIT, 2026-10-17);
+  with `gh api repos/itsryanarmani/<repo>/license` (all MIT, 2026-10-17);
   no live check in the test because the repos can change under us.
 - Clean-checkout coverage: `dmlr.test.sh` builds from `git archive HEAD`,
   so uncommitted files are invisible to it; commit before running.
